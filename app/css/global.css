@@ -224,14 +224,95 @@ html, body {
     width: 650px;
     float: left;
 }
-    .about-me, .my-experience {
+
+    .about-me, .my-work-experience {
         margin-bottom: 36px;
     }
-    .about-me-ul, .my-skills-ul, .my-work-experience-ul, .my-education-ul {
+
+    .about-me, .my-work-experience, .my-education {
+        background: #f5f4f3;
+        border: 1px solid #c3c2c2;
+        border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75),
+            inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
+    }
+    .about-me-title, .my-work-experience-title, .my-education-title {
+        height: 55px;
+        background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+        background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+        background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+
+        font-size: 24px;
+        color: rgb(238, 237, 236);
+        line-height: 0.917;
+        text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
+        padding: 14px 0 0 42px;
+        margin: 0;
+    }
+    .about-me-content, .my-work-experience-content, .my-education-content {
+        padding: 10px;
+        margin: 23px;
+    }
+    .about-me-ul, .my-work-experience-ul, .my-education-ul, .my-skills-ul{
         margin: 0;
         padding: 0;
         list-style: none;
     }
+    .about-me-content-left {
+        float: left;
+    }
+        .about-me-photo {
+            width: 150px;
+            height: 150px;
+            padding: 8px;
+            border: 1px solid #666;
+            border-radius: 50%;
+            -o-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+    
+    .about-me-content-right {
+        float:left;
+        margin-left: 20px;
+    }
+        .my-skills {
+            float: left;
+        }
+        .my-skills-ul {
+            float: left;
+            width: 260px;
+            margin: 2px 0 0 10px;
+        }
+        .my-skills-ul li{
+            display: inline-block;
+        }
+            .tag li{
+                list-style: none;
+                display: inline-block;
+                font-size: 14px;
+                line-height: 16px;
+                color: #1e7465;
+                padding: 0 5px;
+                margin: 0 10px 10px 0;
+                border: 2px solid #c5c5c5;
+                border-radius: 5px;
+                background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);        
+            }
+            .tag li:before {
+                content: ' ';
+                position: absolute;
+                width: 14px;
+                height: 25px;
+                margin: -5px 0 0 -15px;
+                background-image: url('img/arrow-tag.png');
+            }
 
 
 /********** FOOTER **********/
