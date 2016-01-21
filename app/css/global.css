@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    color: #727070;
+}
+
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content = "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*
+* for IE 6/7 only
+*/
+.cf {
+  *zoom: 1;
+}
+
+.screenreader {
+  position: absolute;
+  clip: rect(0 0 0 0);
+
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+
+  border: 0;
+  overflow: hidden;
+}
+
+.bg {
+	/* Устанавливаем правила для фона */
+	min-height: 100%;
+	min-width: 1024px;
+	
+	/* Устанавливаем пропорциональное масштабирование */
+	width: 100%;
+	height: auto;
+	
+	/* Устанавливаем позиционирование */
+	position: fixed;
+/*
+	top: 0;
+	left: 0;
+*/
+    background: url(img/2048x1152.jpg) top left;
+}
+
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
