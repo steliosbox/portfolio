@@ -178,196 +178,63 @@ html, body {
         margin-right: 59px;
     }
 
-    /********** ASIDE divIGATION **********/
-    .aside-navigation-ul {
-        margin: 0 0 30px 0;
-        padding: 0;
-        list-style: none;
-        border: 1px solid #c3c2c2;
-        border-radius: 5px;
-        -o-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
-    .aside-navigation-ul li {
-        margin: 0;
-        padding: 0;
-    }
-    .aside-navigation-ul li a {
-        display: block;
-        height: 56px;
-        text-decoration: none;
-        color: #727070;
-        padding: 17px 0 0 27px;
-        font-size: 20px;
-        line-height: 1.1;
+    /********** ASIDE NAVIGATION **********/
 
-        text-shadow: 1px 1px rgba(255,255,255,.75);
-
-        background: #faf9f9;
-        -webkit-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
-        -moz-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
-        box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
-        border: solid 1px #c1c1c1;
-
-        background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-        background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-        background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-        background-image: -ms-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-        background-image: linear-gradient(to top, #e7e5e4, #faf9f9 94%, #fff);    
-}
-    .aside-navigation-ul li a:hover {
-        
-        -webkit-box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
-        -moz-box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
-        box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
-
-        text-shadow: 1px 1px rgba(255,255,255,.75);
-        
-        background: #c0bebe;
-        background-image: -webkit-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-        background-image: -moz-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-        background-image: -o-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-        background-image: -ms-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-        background-image: linear-gradient(to top, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-    }
-
-    #aside-navigation-active {
-    	color: #467366;
-    	text-shadow: 1px 1px rgba(255,255,255,.75);
-
-        -webkit-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
-        -moz-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
-        box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
-        
-        background: #74b696;
-        background-image: -webkit-linear-gradient(bottom, #74b696, #a5e8cb);
-        background-image: -moz-linear-gradient(bottom, #74b696, #a5e8cb);
-        background-image: -o-linear-gradient(bottom, #74b696, #a5e8cb);
-        background-image: -ms-linear-gradient(bottom, #74b696, #a5e8cb);
-        background-image: linear-gradient(to top, #74b696, #a5e8cb);
-    }
 
     /********** ASIDE CONTACT **********/
-    .aside-contact-ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        font-size: 14px;
-        line-height: 1.1;
-        border: 1px solid #c3c2c2;
-        border-radius: 5px;
-        -o-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
 
-/*   title -  height: 42px;*/
-    .aside-contact-ul {
-        margin: 0;
-        padding: 0; 
-    }
 
-    #contact-title {
-        color: #d0982c;
-        font-size: 20px;
-        line-height: 22px;
-        height: 45px;
-        padding: 13px 0 0 27px;
-        -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
-        -moz-box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
-        box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
-        background: #dcb15d;
-        background-image: -webkit-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
-        background-image: -moz-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
-        background-image: -o-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
-        background-image: -ms-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
-        background-image: linear-gradient(to top, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);    
-    }
-    
-    .sprite-email-gold {
-        width: 17px;
-        height: 13px;
-        background-position: -220px -53px;
-        margin: 12px 0 0 18px;
-        float: left;
-    }
-    .sprite-telephone {
-        width: 17px;
-        height: 22px;
-        background-position: -249px -75px;
-        margin: 8px 0 0 18px;
-        float: left;
-    }
-    .sprite-skype {
-        width: 20px;
-        height: 20px;
-        background-position: -241px -130px;
-        margin: 12px -3px 0 18px;
-        float: left;
-    }
-    .sprite-arrow {
-        width: 10px;
-        height: 38px;
-        background-position: -179px -5px;
-        margin: 0px 0 0 13px;
-        float: left;
-    }
+		/********** ICONS **********/
+		.sprite-email-gold {
+			width: 17px;
+			height: 13px;
+			background-position: -220px -53px;
+			margin: 12px 0 0 18px;
+			float: left;
+		}
+		.sprite-telephone {
+			width: 17px;
+			height: 22px;
+			background-position: -249px -75px;
+			margin: 8px 0 0 18px;
+			float: left;
+		}
+		.sprite-skype {
+			width: 20px;
+			height: 20px;
+			background-position: -241px -130px;
+			margin: 12px -3px 0 18px;
+			float: left;
+		}
+		.sprite-arrow {
+			width: 10px;
+			height: 38px;
+			background-position: -179px -5px;
+			margin: 0px 0 0 13px;
+			float: left;
+		}
 
-    .sprite-contact {
-        display: inline-block;
-        margin: 10px 0 0 10px;
-    }
-    .aside-contact-ul li a {
-        height: 38px;
-        display: block;
-        font-family: OpenSans-Regular;
-        color: #727070;
-        text-decoration: none;
-/*        padding: 10px 0 0 7px;        */
-        border: solid 1px #d4d3d2;
-        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(113,111,111,.1);
-        -moz-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(113,111,111,.1);
-        box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(113,111,111,.1);
-        background: #fff;
-        background-image: -webkit-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
-        background-image: -moz-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
-        background-image: -o-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
-        background-image: -ms-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
-        background-image: linear-gradient(to top, rgba(232,231,230,.45), rgba(250,249,249,0));        
-    }    
-    .aside-contact-ul li a:hover {
-        border: solid 1px #d4d3d2;
-        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(113,111,111,.1);
-        -moz-box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(113,111,111,.1);
-        box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(113,111,111,.1);
-        background: #fff;
-        background-image: -webkit-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
-        background-image: -moz-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
-        background-image: -o-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
-        background-image: -ms-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
-        background-image: linear-gradient(to top, rgba(216,196,146,.45), rgba(250,249,249,0));
-    }
-/************** MAIN SITE CONTENT **************/
+		/************** MAIN SITE CONTENT **************/
 .main-section {
     width: 650px;
     float: left;
 }
     /************** MAIN SITE CONTENT - ABOUT ME **************/
-    .about-me {
+    .about-me, .my-work-experience, .my-education {
+		position: relative;
+		margin-bottom: 36px;
         background: #f5f4f3;
-        border: 1px solid #c3c2c2;
-        border-radius: 5px;
-        -o-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
         box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75),
             inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
-        
-        margin-bottom: 36px;
-    }
+        border: 1px solid #c3c2c2;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+		behavior: url(/css/pie/PIE.htc);
+	}
 
-    .about-me-title {
+    .about-me-title, .my-work-experience-title, .my-education-title {
+		position: relative;
         height: 55px;
         background: rgb(123,120,120);
         background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -381,6 +248,12 @@ html, body {
         text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
         padding: 14px 0 0 42px;
         margin: 0;
+		
+        border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+		-pie-background: linear-gradient(rgb(123,120,120), rgb(169,168,168));
+		behavior: url(/css/pie/PIE.htc);
     }
 
     .about-me-content {
@@ -401,17 +274,22 @@ html, body {
 
     .about-me-content-left {
         float: left;
-        padding: 8px 0px 0px 8px;
+        padding: 14px 0px 0px 10px;
     }
     .about-me-photo {
-        width: 152px;
-        height: 152px;
-        padding: 8px;
-        border: 1px solid #666;
+		padding: 8px;
+		position: relative;
+		width: 151px;
+		height: 151px;
+		background-color: #f7f6f5;
+		-webkit-box-shadow: 3px 2px 27px 5px rgba(236,232,227,.75), inset 0 2px 24px rgba(121,121,121,.23);
+		-moz-box-shadow: 3px 2px 27px 5px rgba(236,232,227,.75), inset 0 2px 24px rgba(121,121,121,.23);
+		box-shadow: 3px 2px 27px 5px rgba(236,232,227,.75), inset 0 2px 24px rgba(121,121,121,.23);
+		border: solid 1px rgba(195,194,194,.67);
         border-radius: 50%;
-        -o-border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
+		behavior: url(/css/pie/PIE.htc);
     }
     
     .about-me-content-right {
@@ -462,34 +340,6 @@ html, body {
     }
 
 /************** MAIN SITE CONTENT - my-work-experience **************/
-    .my-work-experience {
-        background: #f5f4f3;
-        border: 1px solid #c3c2c2;
-        border-radius: 5px;
-        -o-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75),
-            inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
-        
-        margin-bottom: 36px;
-    }
-
-    .my-work-experience-title {
-        height: 55px;
-        background: rgb(123,120,120);
-        background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-        background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-        background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-
-        font-size: 24px;
-        color: rgb(238, 237, 236);
-        line-height: 0.917;
-        text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
-        padding: 14px 0 0 42px;
-        margin: 0;
-    }
     .my-work-experience-container{
         margin: 0;
     }
@@ -505,33 +355,6 @@ html, body {
     }
 
 /************** MAIN SITE CONTENT - my-education **************/
-    .my-education {
-        background: #f5f4f3;
-        border: 1px solid #c3c2c2;
-        border-radius: 5px;
-        -o-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75),
-            inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
-    }
-    
-    .my-education-title {
-        height: 55px;
-        background: rgb(123,120,120);
-        background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-        background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-        background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-
-        font-size: 24px;
-        color: rgb(238, 237, 236);
-        line-height: 0.917;
-        text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
-        padding: 14px 0 0 42px;
-        margin: 0;
-    }
-    
     .my-education-content {
         padding: 35px 0 35px 100px;
         margin: 0 36px 0 36px ;
@@ -557,7 +380,7 @@ html, body {
 
     }
     .ico-school {
-        background: url(ico/school.png)no-repeat 4px center;
+        background: url(ico/school.png) no-repeat 4px center;
     }
 
     .no-borders {

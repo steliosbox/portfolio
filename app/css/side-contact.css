@@ -1,0 +1,124 @@
+	.aside-contact {
+		margin: 0;
+		padding: 0;		
+	}
+	.aside-contact-ul {
+        list-style: none;
+		margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.1;
+		
+		position: relative;
+        border: 1px solid #c3c2c2;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		behavior: url(/css/pie/PIE.htc);
+	}    
+	.aside-contact-ul li {
+		margin: 0;
+		padding: 0;
+	}
+    .aside-contact-ul li a {
+        display: block;
+		height: 38px;
+        font-family: OpenSans-Regular;
+		font-size: 14px;
+        color: #727070;
+        text-decoration: none;
+		position: relative;
+        border-bottom: 1px solid #d4d3d2;
+		
+		background: #fff;
+		
+		background-image: -webkit-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
+		background-image: -moz-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
+		background-image: -o-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
+		background-image: -ms-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
+		background-image: linear-gradient(to top, rgba(232,231,230,.45), rgba(250,249,249,0));
+
+		-pie-background: linear-gradient(rgba(232,231,230,.45), rgba(250,249,249,0));
+		behavior: url(/css/pie/PIE.htc);		
+    }  
+    .aside-contact-ul li a:hover {
+		position: relative;
+		background: #fff;
+
+		background-image: -webkit-linear-gradient(bottom, rgba(224,197,145,.45), rgba(251,249,249,0));
+		background-image: -moz-linear-gradient(bottom, rgba(224,197,145,.45), rgba(251,249,249,0));
+		background-image: -o-linear-gradient(bottom, rgba(224,197,145,.45), rgba(251,249,249,0));
+		background-image: -ms-linear-gradient(bottom, rgba(224,197,145,.45), rgba(251,249,249,0));
+		background-image: linear-gradient(to top, rgba(224,197,145,.45), rgba(251,249,249,0));
+		-pie-background: linear-gradient(#e8e7e7, #c4c2c2);
+		behavior: url(/css/pie/PIE.htc);		
+    }
+
+	li.aside-contact-ul-title {
+        font-size: 20px;
+		line-height: 22px;
+		height: 45px;
+		padding: 13px 0 0 27px;
+		color: #d0982c;
+		text-shadow: 0 1px rgba(255,255,255,.4), inset 0 1px rgba(173,135,56,.45);
+		
+		position: relative;
+		
+		-webkit-border-radius: 5px 5px 0 0;
+		-moz-border-radius: 5px 5px 0 0;
+		border-radius: 5px 5px 0 0;
+		
+		background: #dcb15d;
+		background-image: -webkit-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
+		background-image: -moz-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
+		background-image: -o-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
+		background-image: -ms-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
+		background-image: linear-gradient(to top, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
+		-pie-background: linear-gradient(#dcb15d, #f4cc7e);
+		behavior: url(/css/pie/PIE.htc);
+	}  
+	li.aside-contact-ul-skype a{
+		border-bottom: none;
+		
+		position: relative;
+		
+		-webkit-border-radius: 0 0 5px 5px;
+		-moz-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
+		behavior: url(/css/pie/PIE.htc);
+	}  
+	
+    .sprite-email-gold {
+        width: 17px;
+        height: 13px;
+        background-position: -220px -53px;
+        margin: 12px 0 0 18px;
+        float: left;
+    }
+    .sprite-telephone {
+        width: 17px;
+        height: 22px;
+        background-position: -249px -75px;
+        margin: 8px 0 0 18px;
+        float: left;
+    }
+    .sprite-skype {
+        width: 20px;
+        height: 20px;
+        background-position: -241px -130px;
+        margin: 12px -3px 0 18px;
+        float: left;
+    }
+    .sprite-arrow {
+        width: 10px;
+        height: 38px;
+        background-position: -179px -5px;
+        margin: 0px 0 0 13px;
+        float: left;
+    }
+
+    .sprite-contact {
+        display: inline-block;
+        margin: 10px 0 0 10px;
+    }
+  
