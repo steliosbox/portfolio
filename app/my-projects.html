@@ -6,6 +6,14 @@
     <!--    Просим IE переключить в последний режим -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+        <!--  Кор<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    
+    <!--    Просим IE переключить в последний режим -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
         <!--  Корректное масштабирование на разных устройствах  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
@@ -17,51 +25,124 @@
    
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="css/my-projects.css">
+    <link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/side-main.css">
+	<link rel="stylesheet" href="css/side-contact.css">
+	<link rel="stylesheet" href="css/portfolio.css">
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
-	<!--[if IE]>
-		<script type="text/javascript" src="css/pie/PIE.js"></script>
-	<![endif]-->
 
 </head>
 <body>
     
     <div class="bg"></div>
-	<!-- Ваша верстак тут-->
+    <!-- Ваша верстак тут-->
+    
     <div class="wrapper">
-		<!-- HEADER -->
+      
+        <!-- HEADER -->
         <header class="header">
             <div class="header-inner clr">
-				<!-- LOGO -->
-				<a href="#" class="header-logo">
+                
+                <a href="#" class="header-logo">
                     <img src="css/img/logo.png" alt="Логотип сайта портфoлио">
                 </a>
-				<!-- SOCIAL TOP NAVIGATION -->
-				<ul class="header-social">
+                
+                <ul class="header-social">
                     <li><a href="https://www.facebook.com/baglaridis" class="sprite sprite-facebook text-hide">facebook</a></li>
                     <li><a href="http://vk.com/s.baglaridis" class="sprite sprite-vk  text-hide">vkontakte</a></li>
                     <li><a href="#u_menya_net_tw" class="sprite sprite-twitter  text-hide">twitter</a></li>
                     <li><a href="https://github.com/steliosbox" class="sprite sprite-github  text-hide">github</a></li>
                 </ul>
+                
             </div>
         </header>
-		<!-- CONTAINER -->
-		<div class="container">
-			
-		</div>
-	<div class="empty-bottom"></div>
+        
+        <!-- MAIN BLOG -->
+        <div class="container">
+            <div class="content clearfix">
+                
+                <aside class="aside">
+                    
+                    <nav class="aside-navigation">
+                        
+                        <ul class="aside-navigation-ul">
+                            <li class="aside-navigation-ul-li-first"><a href="/index.html" id="aside-navigation-active">Обо мне</a></li>
+                            <li><a href="/my-projects.html">Мой Работы</a></li>
+                            <li class="aside-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
+                        </ul>
+                        
+                    </nav>
+                    
+                    <nav class="aside-contact">
+                        
+                        <ul class="aside-contact-ul">
+                            <li class="aside-contact-ul-title">Контакты</li>
+                            <li class="contact-email">
+                                <a href="mailto:s.baglaridis@gmail.com">
+                                    <i class="sprite sprite-email-gold"></i>
+                                    <i class="sprite sprite-arrow"></i>
+                                    <span class="sprite-contact">s.baglaridis@gmail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+306984102514">
+                                    <i class="sprite sprite-telephone"></i>
+                                    <i class="sprite sprite-arrow"></i>
+                                    <span class="sprite-contact">+30 6984102514</span>
+                                </a>
+                            </li>
+                            <li class="aside-contact-ul-skype">
+                                <a href="skype:amb.crete?chat">
+                                    <i class="sprite sprite-skype"></i>
+                                    <i class="sprite sprite-arrow"></i>
+                                    <span class="sprite-contact">amb.crete</span>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+                 
+                </aside>
+                
+                <div class="main-section">
+                    
+                    <section class="my-portfolio">
+                        
+                        <h3 class="my-portfolio-title">Мои работы</h3>
+                        
+                        <div class="my-portfolio-content clearfix">
+                            <div class="" style="width: 30%; display: inline-block; height: 50px;">
+                                test
+                            </div>
+                        </div>
+                       
+                    </section>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="empty-bottom"></div>
     </div>
-<!-- FOOTER -->
+    
+    <!-- FOOTER -->
     <footer class="footer">
-		© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+        <div class="footer-inner">
+            <ul class="footer-inner-ul">
+                <li class="sprite-footer-locker"><a href="login.html">ВХОД</a></li>
+                <li>© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</li>
+            </ul>
+
+        </div>
     </footer>
     
-<!-- JS -->
+    <!-- JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
-<!-- другие подключаемые JS файлы -->
+    <!-- другие подключаемые JS файлы -->
     
 </body>
 </html>
