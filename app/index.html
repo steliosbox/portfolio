@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     
     <!--    Просим IE переключить в последний режим -->
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!--  Корректное масштабирование на разных устройствах  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
+        <script src="bower/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
 
 </head>
@@ -57,7 +57,7 @@
                     <nav class="aside-navigation">
                         
                         <ul class="aside-navigation-ul">
-                            <li><a href="/about-me.html" id="aside-navigations-active">Обо мне</a></li>
+                            <li><a href="/index.html" id="aside-navigation-active">Обо мне</a></li>
                             <li><a href="/my-works.html">Мой Работы</a></li>
                             <li><a href="/contact-me.html">Обратная связь</a></li>
                         </ul>
@@ -68,18 +68,36 @@
                         
                         <ul class="aside-contact-ul">
                             <li id="contact-title">Контакты</li>
-                            <li><a href="mailto:s.baglaridis@gmail.com">s.baglaridis@gmail.com</a></li>
-                            <li><a href="tel:+306984102514">+30 6984102514</a></li>
-                            <li><a href="skype:amb.crete?chat">amb.crete</a></li>
+                            <li class="contact-email">
+                                <a href="mailto:s.baglaridis@gmail.com">
+                                    <i class="sprite sprite-email-gold"></i>
+                                    <i class="sprite sprite-arrow"></i>
+                                    <span class="sprite-contact">s.baglaridis@gmail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+306984102514">
+                                    <i class="sprite sprite-telephone"></i>
+                                    <i class="sprite sprite-arrow"></i>
+                                    <span class="sprite-contact">+30 6984102514</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="skype:amb.crete?chat">
+                                    <i class="sprite sprite-skype"></i>
+                                    <i class="sprite sprite-arrow"></i>
+                                    <span class="sprite-contact">amb.crete</span>
+                                </a>
+                            </li>
                         </ul>
                         
                     </nav>
                  
                 </aside>
                 
-                <section class="section">
+                <div class="main-section">
                     
-                    <article class="about-me">
+                    <section class="about-me">
                         
                         <h3 class="about-me-title">Основная информация</h3>
                         
@@ -113,10 +131,10 @@
                                 
                         </div>
                         
-                    </article>
+                    </section>
                     
                     
-                    <article class="my-work-experience">
+                    <section class="my-work-experience">
                         
                         <h3 class="my-work-experience-title">Опыт работы</h3>
                         
@@ -148,9 +166,9 @@
 
                         </div>
                         
-                    </article>
+                    </section>
                     
-                    <article class="my-education">
+                    <section class="my-education">
                         
                         <h3 class="my-education-title">Образование</h3>
                         
@@ -166,7 +184,7 @@
                         <div class="my-education-content ico-graguete">
                             
                             <ul class="my-education-ul">
-                                <li>Школа туризма и гостичечного бизнес, Греция - о.Крит</li>
+                                <li>Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
                                 <li>2005 - 2007</li>
                             </ul>
                             
@@ -181,9 +199,9 @@
                             
                         </div>
                        
-                    </article>
+                    </section>
                     
-                </section>
+                </div>
                 
             </div>
         </div>
@@ -194,7 +212,11 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
-            © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            <ul class="footer-inner-ul">
+                <li class="sprite-footer-locker"><a href="login.html">ВХОД</a></li>
+                <li>© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</li>
+            </ul>
+
         </div>
     </footer>
     
@@ -202,7 +224,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <!-- другие подключаемые JS файлы -->
-    <script src="bower/html5shiv/dist/html5shiv.js"></script>
     
 </body>
 </html>

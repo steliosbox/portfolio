@@ -6,6 +6,14 @@
     font-family: OpenSans-Regular; /* Имя шрифта */
     src: url(fonts/OpenSans/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: OpenSans-Bold; /* Имя шрифта */
+    src: url(fonts/OpenSans/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Light; /* Имя шрифта */
+    src: url(fonts/OpenSans/OpenSans-Light.ttf);
+}
 html, body {
     height: 100%;
     font-family: OpenSans-Semibold;
@@ -43,6 +51,13 @@ html, body {
 }
 
 
+.transparent_class  {  
+    filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5;  
+}
+
 .screenreader {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -60,7 +75,7 @@ html, body {
 .bg {
 	/* Устанавливаем правила для фона */
 	min-height: 100%;
-	min-width: 1024px;
+/*	min-width: 1024px;*/
 	/* Устанавливаем пропорциональное масштабирование */
 	width: 100%;
 	height: auto;
@@ -120,8 +135,6 @@ html, body {
                 background-position: -5px -76px;
             }
             .sprite-facebook:hover {
-                width: 42px;
-                height: 44px;
                 background-position: -197px -76px;
             }
             .sprite-github {
@@ -130,8 +143,6 @@ html, body {
                 background-position: -5px -130px;
             }
             .sprite-github:hover {
-                width: 42px;
-                height: 44px;
                 background-position: -57px -130px;
             }
             .sprite-twitter {
@@ -140,8 +151,6 @@ html, body {
                 background-position: -276px -75px;
             }
             .sprite-twitter:hover {
-                width: 42px;
-                height: 44px;
                 background-position: -271px -129px;
             }
             .sprite-vk {
@@ -150,8 +159,6 @@ html, body {
                 background-position: -258px -183px;
             }
             .sprite-vk:hover {
-                width: 42px;
-                height: 44px;
                 background-position: -310px -183px;
             }
 
@@ -171,7 +178,7 @@ html, body {
         margin-right: 59px;
     }
 
-    /********** ASIDE NAVIGATION **********/
+    /********** ASIDE divIGATION **********/
     .aside-navigation-ul {
         margin: 0 0 30px 0;
         padding: 0;
@@ -194,15 +201,15 @@ html, body {
         padding: 17px 0 0 27px;
         font-size: 20px;
         line-height: 1.1;
-        
+
         text-shadow: 1px 1px rgba(255,255,255,.75);
 
+        background: #faf9f9;
         -webkit-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
         -moz-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
         box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
         border: solid 1px #c1c1c1;
 
-        background-color: #faf9f9;
         background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
         background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
         background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
@@ -217,7 +224,7 @@ html, body {
 
         text-shadow: 1px 1px rgba(255,255,255,.75);
         
-        background-color: #faf9f9;
+        background: #c0bebe;
         background-image: -webkit-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
         background-image: -moz-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
         background-image: -o-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
@@ -225,7 +232,7 @@ html, body {
         background-image: linear-gradient(to top, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
     }
 
-    #aside-navigations-active {
+    #aside-navigation-active {
     	color: #467366;
     	text-shadow: 1px 1px rgba(255,255,255,.75);
 
@@ -233,7 +240,7 @@ html, body {
         -moz-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
         box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
         
-        background-color: #faf9f9;
+        background: #74b696;
         background-image: -webkit-linear-gradient(bottom, #74b696, #a5e8cb);
         background-image: -moz-linear-gradient(bottom, #74b696, #a5e8cb);
         background-image: -o-linear-gradient(bottom, #74b696, #a5e8cb);
@@ -270,12 +277,46 @@ html, body {
         -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
         -moz-box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
         box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
-        background-color: #fffbf9;
+        background: #dcb15d;
         background-image: -webkit-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
         background-image: -moz-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
         background-image: -o-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
         background-image: -ms-linear-gradient(bottom, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);
         background-image: linear-gradient(to top, #dcb15d, #f4cc7e 89%, #f4cc7e 90%);    
+    }
+    
+    .sprite-email-gold {
+        width: 17px;
+        height: 13px;
+        background-position: -220px -53px;
+        margin: 12px 0 0 18px;
+        float: left;
+    }
+    .sprite-telephone {
+        width: 17px;
+        height: 22px;
+        background-position: -249px -75px;
+        margin: 8px 0 0 18px;
+        float: left;
+    }
+    .sprite-skype {
+        width: 20px;
+        height: 20px;
+        background-position: -241px -130px;
+        margin: 12px -3px 0 18px;
+        float: left;
+    }
+    .sprite-arrow {
+        width: 10px;
+        height: 38px;
+        background-position: -179px -5px;
+        margin: 0px 0 0 13px;
+        float: left;
+    }
+
+    .sprite-contact {
+        display: inline-block;
+        margin: 10px 0 0 10px;
     }
     .aside-contact-ul li a {
         height: 38px;
@@ -283,12 +324,12 @@ html, body {
         font-family: OpenSans-Regular;
         color: #727070;
         text-decoration: none;
-        padding: 17px 0 0 27px;        
+/*        padding: 10px 0 0 7px;        */
         border: solid 1px #d4d3d2;
         -webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(113,111,111,.1);
         -moz-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(113,111,111,.1);
         box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(113,111,111,.1);
-        background-color: #fff;
+        background: #fff;
         background-image: -webkit-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
         background-image: -moz-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
         background-image: -o-linear-gradient(bottom, rgba(232,231,230,.45), rgba(250,249,249,0));
@@ -300,7 +341,7 @@ html, body {
         -webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(113,111,111,.1);
         -moz-box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(113,111,111,.1);
         box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(113,111,111,.1);
-        background-color: #fff;
+        background: #fff;
         background-image: -webkit-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
         background-image: -moz-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
         background-image: -o-linear-gradient(bottom, rgba(216,196,146,.45), rgba(250,249,249,0));
@@ -308,7 +349,7 @@ html, body {
         background-image: linear-gradient(to top, rgba(216,196,146,.45), rgba(250,249,249,0));
     }
 /************** MAIN SITE CONTENT **************/
-.section {
+.main-section {
     width: 650px;
     float: left;
 }
@@ -328,6 +369,7 @@ html, body {
 
     .about-me-title {
         height: 55px;
+        background: rgb(123,120,120);
         background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
         background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
         background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -435,6 +477,7 @@ html, body {
 
     .my-work-experience-title {
         height: 55px;
+        background: rgb(123,120,120);
         background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
         background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
         background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -475,6 +518,7 @@ html, body {
     
     .my-education-title {
         height: 55px;
+        background: rgb(123,120,120);
         background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
         background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
         background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -502,19 +546,18 @@ html, body {
     
     /********** ICONS  **********/
     .ico-case {
-        background: url(_ico/case.png) no-repeat 4px center;
+        background: url(ico/case.png) no-repeat 4px center;
     }
     .ico-graguete {
-        background: url(_ico/Graguete.png) no-repeat 4px center;
+        background: url(ico/Graguete.png) no-repeat 4px center;
 
     }
     .ico-diploma {
-        background: url(_ico/diploma.png) no-repeat 4px center;
+        background: url(ico/diploma.png) no-repeat 4px center;
 
     }
     .ico-school {
-        background: url(_ico/school.png) no-repeat 4px center;
-
+        background: url(ico/school.png)no-repeat 4px center;
     }
 
     .no-borders {
@@ -537,3 +580,38 @@ html, body {
     width: 960px;
     margin: 0 auto;
 }
+
+.footer-inner-ul {
+    margin: 20px 0 0 158px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+ul.footer-inner-ul li {
+    display: inline-block;
+    font-family: OpenSans-Light;
+    font-size: 12px;
+}
+
+li.sprite-footer-locker {
+    background-image: url(img/locker.png);
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
+    width: 24px;
+    height: 22px;
+    padding-left: 28px;
+    margin-right: 92px;
+}
+
+li.sprite-footer-locker:hover {
+    background-position: -34px -5px;
+}
+
+li.sprite-footer-locker a {
+    text-decoration: none;
+    font-family: OpenSans-Bold;
+    color: #727070;
+}
+
+
