@@ -1,0 +1,57 @@
+/* line 1, C:/portfolio/app/css/contact.sass */
+.contact-form {
+  width: 500px;
+  margin: 0 auto;
+  background: grey; }
+
+/* line 7, C:/portfolio/app/css/contact.sass */
+.contact-form-name {
+  float: left;
+  width: 240px; }
+
+/* line 11, C:/portfolio/app/css/contact.sass */
+.contact-form-name input {
+  width: 240px;
+  height: 40px; }
+
+/* line 14, C:/portfolio/app/css/contact.sass */
+.contact-form-name label {
+  display: block; }
+
+/* line 17, C:/portfolio/app/css/contact.sass */
+.contact-form-email {
+  float: right;
+  width: 240px; }
+
+/* line 21, C:/portfolio/app/css/contact.sass */
+.contact-form-email label {
+  display: block; }
+
+/* line 23, C:/portfolio/app/css/contact.sass */
+.contact-form-email input {
+  width: 240px;
+  height: 40px; }
+
+/* line 26, C:/portfolio/app/css/contact.sass */
+.contact-form-msg label {
+  display: block; }
+
+/* line 28, C:/portfolio/app/css/contact.sass */
+.contact-form-msg textarea {
+  width: 100%;
+  min-height: 150px; }
+
+/* line 31, C:/portfolio/app/css/contact.sass */
+.contact-form-input-send {
+  float: left; }
+
+/* line 33, C:/portfolio/app/css/contact.sass */
+.contact-form-input-reset {
+  float: right; }
+
+/* line 35, C:/portfolio/app/css/contact.sass */
+.contact-form-input-reset input {
+  width: 100px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=contact.css.map */

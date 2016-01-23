@@ -22,3 +22,13 @@ gulp.task('watch', function () {
 
 // Задача по-умолчанию
 gulp.task('default', ['server', 'watch']);
+
+gulp.task('sass', function () {
+
+  gulp.src('app/assets/sass/styles.sass')
+    .pipe(sass({
+        errLogToConsole: true,
+        sourceComments : 'normal'
+    }))
+    .pipe(gulp.dest('public_html/assets/css'))
+});

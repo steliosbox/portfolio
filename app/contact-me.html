@@ -8,7 +8,7 @@
 
         <!--  Корректное масштабирование на разных устройствах  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Мои работы</title>
+    <title>Обратная связь</title>
 
     <!-- SEO -->
     <meta name="discription" content=" ">
@@ -18,6 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
     
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
@@ -59,8 +60,8 @@
                         
                         <ul class="side-navigation-ul">
                             <li class="side-navigation-ul-li-first"><a href="/index.html">Обо мне</a></li>
-                            <li><a href="/my-projects.html" id="active">Мой Работы</a></li>
-                            <li class="side-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
+                            <li><a href="/my-projects.html">Мой Работы</a></li>
+                            <li class="side-navigation-ul-li-last"><a href="/contact-me.html" id="active">Обратная связь</a></li>
                         </ul>
                         
                     </nav>
@@ -98,11 +99,46 @@
                 
                 <div class="content">
                     <section class="section">
-                        <h3 class="section-title">Мои работы</h3>
-                        <div class="section-content clearfix">                
-                        
-                        
-                        
+                        <h3 class="section-title">У вас интересный проект? Напишите мне</h3>
+                        <div class="section-content">                
+                          
+                            <form action="">
+                                
+                                <div class="contact-form">
+                                    
+                                    <div class="conatct-form-top clearfix">
+                                        
+                                        <div class="contact-form-name">
+                                            <label>Имя</label>
+                                            <input type="text" name="name" placeholder="Как к Вам оброщаться"> 
+                                        </div>
+
+                                        <div class="contact-form-email">
+                                            <label>Email</label>
+                                            <input type="text" name="email" placeholder="Куда мне писать">    
+                                        </div>
+                                
+                                    </div>
+                                       
+                                    <div class="contact-form-msg">
+                                        <label>Сообщение</label>
+                                        <textarea placeholder="Кратко в чем суть"></textarea>    
+                                    </div>
+                                    
+                                    <div class="contact-form-input clearfix">
+                                        <div class="contact-form-input-send">
+                                            <input type="submit" name="send" value="Отправить">
+                                        </div>
+                                        
+                                        <div class="contact-form-input-reset">
+                                            <input type="reset" name="reset" value="Очистить">
+                                        </div>                                    
+                                    </div>                                    
+                                    
+                                </div>
+                                
+                            </form>                          
+                            
                         </div>
                     </section>
                 </div>            

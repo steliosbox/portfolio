@@ -8,7 +8,7 @@
 
         <!--  Корректное масштабирование на разных устройствах  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Мои работы</title>
+    <title>Обратная связь</title>
 
     <!-- SEO -->
     <meta name="discription" content=" ">
@@ -25,7 +25,7 @@
 
 </head>
 <body>
-
+    
     <div class="bg"></div>
     <!-- Ваша верстак тут-->
     
@@ -51,24 +51,24 @@
         
         <!-- MAIN BLOG -->
         <div class="container">
-            <div class="container-inner clearfix">
-               
-                <aside class="side-bar">
+            <div class="content clearfix">
+                
+                <aside class="aside">
                     
-                    <nav class="side-navigation">
+                    <nav class="aside-navigation">
                         
-                        <ul class="side-navigation-ul">
-                            <li class="side-navigation-ul-li-first"><a href="/index.html">Обо мне</a></li>
-                            <li><a href="/my-projects.html" id="active">Мой Работы</a></li>
-                            <li class="side-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
+                        <ul class="aside-navigation-ul">
+                            <li class="aside-navigation-ul-li-first"><a href="/index.html" >Обо мне</a></li>
+                            <li><a href="/my-projects.html">Мой Работы</a></li>
+                            <li class="aside-navigation-ul-li-last"><a href="/contact-me.html" id="aside-navigation-active">Обратная связь</a></li>
                         </ul>
                         
                     </nav>
                     
-                    <nav class="side-bar-contact">
+                    <nav class="aside-contact">
                         
-                        <ul class="side-contact-ul">
-                            <li class="side-contact-ul-title">Контакты</li>
+                        <ul class="aside-contact-ul">
+                            <li class="aside-contact-ul-title">Контакты</li>
                             <li class="contact-email">
                                 <a href="mailto:s.baglaridis@gmail.com">
                                     <i class="sprite sprite-email-gold"></i>
@@ -94,18 +94,55 @@
                         
                     </nav>
                     
+                    
                 </aside>
                 
-                <div class="content">
-                    <section class="section">
-                        <h3 class="section-title">Мои работы</h3>
-                        <div class="section-content clearfix">                
+                <div class="main-section">
+                    
+                    <section class="contact-form">
                         
+                        <h3 class="contact-form-title">У вас интересный проект? Напишите мне</h3>
                         
-                        
+                        <div class="contact-form-content clearfix">
+                           
+                            <form action="">
+                                
+                                <div class="contact-form-top">
+                                    
+                                    <div class="contact-form-name">
+                                        <label>Имя</label>
+                                        <input type="text" name="name" placeholder="Как к Вам оброщаться"> 
+                                    </div>
+                                    
+                                    <div class="contact-form-email">
+                                        <label>Email</label>
+                                        <input type="text" name="email" placeholder="Куда мне писать">    
+                                    </div>
+                                    
+                                    <div class="contact-form-msg">
+                                        <label>Сообщение</label>
+                                        <textarea placeholder="Кратко в чем суть"></textarea>    
+                                    </div>
+                                    
+                                    <div class="contact-form-input-send">
+                                        <input type="submit" name="send" value="Отправить">
+                                    </div>
+                                    
+                                    <div class="contact-form-input-reset">
+                                        <input type="reset" name="reset" value="Очистить">
+                                    </div>                                    
+                                    
+                                    
+                                </div>
+                                
+                            </form>
+                            
                         </div>
+                        
                     </section>
-                </div>            
+                    
+                </div>
+                
             </div>
         </div>
         
@@ -115,7 +152,11 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
-            © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            <ul class="footer-inner-ul">
+                <li class="sprite-footer-locker"><a href="login.html">ВХОД</a></li>
+                <li>© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</li>
+            </ul>
+
         </div>
     </footer>
     

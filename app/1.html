@@ -18,14 +18,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
-    
+	<link rel="stylesheet" href="css/side-main.css">
+	<link rel="stylesheet" href="css/side-contact.css">
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
 
 </head>
 <body>
-
+    
     <div class="bg"></div>
     <!-- Ваша верстак тут-->
     
@@ -51,24 +52,24 @@
         
         <!-- MAIN BLOG -->
         <div class="container">
-            <div class="container-inner clearfix">
-               
-                <aside class="side-bar">
+            <div class="content clearfix">
+                
+                <aside class="aside">
                     
-                    <nav class="side-navigation">
+                    <nav class="aside-navigation">
                         
-                        <ul class="side-navigation-ul">
-                            <li class="side-navigation-ul-li-first"><a href="/index.html" id="active">Обо мне</a></li>
+                        <ul class="aside-navigation-ul">
+                            <li class="aside-navigation-ul-li-first"><a href="/index.html" id="aside-navigation-active">Обо мне</a></li>
                             <li><a href="/my-projects.html">Мой Работы</a></li>
-                            <li class="side-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
+                            <li class="aside-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
                         </ul>
                         
                     </nav>
                     
-                    <nav class="side-bar-contact">
+                    <nav class="aside-contact">
                         
-                        <ul class="side-contact-ul">
-                            <li class="side-contact-ul-title">Контакты</li>
+                        <ul class="aside-contact-ul">
+                            <li class="aside-contact-ul-title">Контакты</li>
                             <li class="contact-email">
                                 <a href="mailto:s.baglaridis@gmail.com">
                                     <i class="sprite sprite-email-gold"></i>
@@ -94,14 +95,18 @@
                         
                     </nav>
                     
+                    
                 </aside>
                 
-                <div class="content">
-                    <section class="section">
-                        <h3 class="section-title">Основная информация</h3>
-                        <div class="section-content clearfix">                
-                          
-                            <div class="about-me-left">
+                <div class="main-section">
+                    
+                    <section class="main-section-inner">
+                        
+                        <h3 class="main-section-title">Основная информация</h3>
+                        
+                        <div class="main-section-content clearfix">
+                            
+                            <div class="about-me-content-left">
                                 <img src="css/img/me.png" alt="my photo" class="about-me-photo">
                             </div>
                             
@@ -125,71 +130,80 @@
                                     </li>
                                 </ul>
                                 
-                            </div>                            
-                            
+                            </div>
+                          
                         </div>
+                        
                     </section>
                     
-                    <section class="section">
-                        <h3 class="section-title">Основная информация</h3>
-                        <div class="section-content clearfix">                
-                          
-                            <div class="section-content-blog ico-case">
+                    
+                    <section class="main-section-inner">
+                        
+                        <h3 class="main-section-title">Опыт работы</h3>
+                        
+                        <div class="main-section-inner-content">
+                           
+                            <div class="my-work-experience-content ico-case">
                                
-                                <ul class="section-content-ul">
+                                <ul class="my-work-experience-ul">
                                     <li>Туристическая компания "Ambotis Holidays" - Кординатор</li>
                                     <li>2014 - По сей день</li>
                                 </ul>
                                 
                             </div>                        
                             
-                            <div class="section-content-blog ico-case no-borders">
+                            <div class="my-work-experience-content ico-case no-borders">
                                
-                                <ul class="section-content-ul">
+                                <ul class="my-work-experience-ul">
                                     <li>Туристическая компания "Beleon Tours" - Главный представитель региона</li>
                                     <li>2011 - 2013</li>
                                 </ul>
                                 
-                            </div>                         
+                            </div>
                             
                         </div>
+                        
                     </section>
                     
-                    <section class="section" style="margin:0;">
-                        <h3 class="section-title">Образование</h3>
-                        <div class="section-content clearfix">                
-                          
-                            <div class="section-content-blog ico-case">
+                    <section class="main-section-inner">
+                        
+                        <h3 class="main-section-title">Образование</h3>
+                        
+                        <div class="main-section-inner-content">
+                           
+                            <div class="my-education-content ico-school">
                                
-                                <ul class="section-content-ul">
+                                <ul class="my-education-ul">
                                     <li>Школа № 99, Tbilisi</li>
                                     <li>1990 - 2000</li>
                                 </ul>
                                 
-                            </div>                        
+                            </div>
                             
-                            <div class="section-content-blog ico-case">
+                            <div class="my-education-content ico-graguete">
                                
-                                <ul class="section-content-ul">
+                                <ul class="my-education-ul">
                                     <li>Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
                                     <li>2005 - 2007</li>
                                 </ul>
                                 
-                            </div>                              
+                            </div>
                             
-                            <div class="section-content-blog ico-case no-borders">
+                            <div class="my-education-content ico-diploma no-borders">
                                
-                                <ul class="section-content-ul">
+                                <ul class="my-education-ul">
                                     <li>Курсы LoftSchool.ru - Онлайн</li>
                                     <li>Январь 2016 по сей день</li>
                                 </ul>
                                 
-                            </div>                         
+                            </div>
                             
                         </div>
+                       
                     </section>
                     
-                </div>            
+                </div>
+                
             </div>
         </div>
         
@@ -199,7 +213,11 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
-            © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            <ul class="footer-inner-ul">
+                <li class="sprite-footer-locker"><a href="login.html">ВХОД</a></li>
+                <li>© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</li>
+            </ul>
+
         </div>
     </footer>
     
