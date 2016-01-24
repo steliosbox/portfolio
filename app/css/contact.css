@@ -1,57 +1,109 @@
-/* line 1, C:/portfolio/app/css/contact.sass */
+/********************************************/
+/********************************************/
+/* line 25, C:/portfolio/app/css/contact.scss */
 .contact-form {
-  width: 500px;
+  width: 404px;
   margin: 0 auto;
-  background: grey; }
+  font-family: OpenSans-Regular; }
 
-/* line 7, C:/portfolio/app/css/contact.sass */
+/* line 33, C:/portfolio/app/css/contact.scss */
+.contact-form-top {
+  margin: 12px 0 14px; }
+
+/* line 36, C:/portfolio/app/css/contact.scss */
 .contact-form-name {
   float: left;
-  width: 240px; }
+  margin-right: 18px; }
 
-/* line 11, C:/portfolio/app/css/contact.sass */
-.contact-form-name input {
-  width: 240px;
-  height: 40px; }
-
-/* line 14, C:/portfolio/app/css/contact.sass */
-.contact-form-name label {
-  display: block; }
-
-/* line 17, C:/portfolio/app/css/contact.sass */
+/* line 40, C:/portfolio/app/css/contact.scss */
 .contact-form-email {
-  float: right;
-  width: 240px; }
-
-/* line 21, C:/portfolio/app/css/contact.sass */
-.contact-form-email label {
-  display: block; }
-
-/* line 23, C:/portfolio/app/css/contact.sass */
-.contact-form-email input {
-  width: 240px;
-  height: 40px; }
-
-/* line 26, C:/portfolio/app/css/contact.sass */
-.contact-form-msg label {
-  display: block; }
-
-/* line 28, C:/portfolio/app/css/contact.sass */
-.contact-form-msg textarea {
-  width: 100%;
-  min-height: 150px; }
-
-/* line 31, C:/portfolio/app/css/contact.sass */
-.contact-form-input-send {
   float: left; }
 
-/* line 33, C:/portfolio/app/css/contact.sass */
-.contact-form-input-reset {
-  float: right; }
+/* line 43, C:/portfolio/app/css/contact.scss */
+.contact-form-top label {
+  display: block;
+  padding-bottom: 8px; }
 
-/* line 35, C:/portfolio/app/css/contact.sass */
-.contact-form-input-reset input {
-  width: 100px;
-  margin: 0 auto; }
+/* line 47, C:/portfolio/app/css/contact.scss */
+.contact-form-top input {
+  width: 193px;
+  font-size: 12px;
+  font-family: OpenSans-Light;
+  padding: 9px 9px;
+  height: 40px;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url(/css/pie/PIE.htc); }
+
+/* line 58, C:/portfolio/app/css/contact.scss */
+.contact-form-msg label {
+  display: block;
+  margin-bottom: 7px; }
+
+/* line 62, C:/portfolio/app/css/contact.scss */
+.contact-form-msg textarea {
+  width: 100%;
+  min-height: 185px;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-family: OpenSans-Light;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url(/css/pie/PIE.htc); }
+
+/* line 73, C:/portfolio/app/css/contact.scss */
+.contact-form-input {
+  margin: 140px 0 10px; }
+
+/* line 76, C:/portfolio/app/css/contact.scss */
+.contact-form-input input {
+  width: 125px;
+  height: 40px;
+  padding-bottom: 7px;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/css/pie/PIE.htc);
+  background-color: #e9e6e4;
+  background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  background-image: linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  position: relative;
+  -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
+  behavior: url(/css/pie/PIE.htc); }
+
+/* line 83, C:/portfolio/app/css/contact.scss */
+.contact-form-input input:hover {
+  background-color: #3aa087;
+  background-image: -webkit-linear-gradient(bottom, #3aa087, #5fdcbd);
+  background-image: -moz-linear-gradient(bottom, #3aa087, #5fdcbd);
+  background-image: -o-linear-gradient(bottom, #3aa087, #5fdcbd);
+  background-image: linear-gradient(bottom, #3aa087, #5fdcbd);
+  position: relative;
+  -pie-background: linear-gradient(#3aa087, #5fdcbd);
+  behavior: url(/css/pie/PIE.htc);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75); }
+
+/* line 87, C:/portfolio/app/css/contact.scss */
+.contact-form-input-send {
+  float: left;
+  margin-left: 30px; }
+
+/* line 91, C:/portfolio/app/css/contact.scss */
+.contact-form-input-reset {
+  float: right;
+  margin-right: 30px; }
 
 /*# sourceMappingURL=contact.css.map */

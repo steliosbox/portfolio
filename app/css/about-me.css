@@ -1,24 +1,18 @@
 /********************************************/
-/********************************************/
-/********************************************/
-/********************************************/
 /************** MAIN SITE CONTENT **************/
-/* line 27, C:/portfolio/app/css/about-me.scss */
+/* line 23, C:/portfolio/app/css/about-me.scss */
 .about-me-left {
   float: left;
   padding: 14px 0px 0px 10px; }
 
-/* line 31, C:/portfolio/app/css/about-me.scss */
+/* line 27, C:/portfolio/app/css/about-me.scss */
 .about-me-photo {
   padding: 8px;
   position: relative;
   width: 151px;
   height: 151px;
   background-color: #f7f6f5;
-  -webkit-box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75), inset 0 2px 24px rgba(121, 121, 121, 0.23);
-  -moz-box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75), inset 0 2px 24px rgba(121, 121, 121, 0.23);
-  box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75), inset 0 2px 24px rgba(121, 121, 121, 0.23);
-  border: solid 1px rgba(195, 194, 194, 0.67);
+  border: solid 1px #c3c2c2;
   position: relative;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -26,27 +20,27 @@
   border-radius: 50%;
   behavior: url(/css/pie/PIE.htc); }
 
-/* line 43, C:/portfolio/app/css/about-me.scss */
+/* line 36, C:/portfolio/app/css/about-me.scss */
 .about-me-content-right {
   float: left;
   margin-left: 20px; }
 
-/* line 47, C:/portfolio/app/css/about-me.scss */
+/* line 40, C:/portfolio/app/css/about-me.scss */
 .about-me-ul {
   margin: 0;
   padding: 0 0 0 16px;
   list-style: none; }
 
-/* line 52, C:/portfolio/app/css/about-me.scss */
+/* line 45, C:/portfolio/app/css/about-me.scss */
 .about-me-ul li {
   padding: 0 0 6px 0; }
 
-/* line 55, C:/portfolio/app/css/about-me.scss */
+/* line 48, C:/portfolio/app/css/about-me.scss */
 .my-skills {
   float: left;
   margin: 11px 0 0 0; }
 
-/* line 59, C:/portfolio/app/css/about-me.scss */
+/* line 52, C:/portfolio/app/css/about-me.scss */
 .my-skills-ul {
   float: left;
   width: 235px;
@@ -54,13 +48,13 @@
   padding: 0;
   list-style: none; }
 
-/* line 66, C:/portfolio/app/css/about-me.scss */
+/* line 59, C:/portfolio/app/css/about-me.scss */
 .my-skills-ul li {
   display: inline-block;
   margin: 0;
   padding: 0; }
 
-/* line 71, C:/portfolio/app/css/about-me.scss */
+/* line 64, C:/portfolio/app/css/about-me.scss */
 .tag li {
   list-style: none;
   display: inline-block;
@@ -85,7 +79,7 @@
   -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
   behavior: url(/css/pie/PIE.htc); }
 
-/* line 83, C:/portfolio/app/css/about-me.scss */
+/* line 76, C:/portfolio/app/css/about-me.scss */
 .tag li:before {
   content: ' ';
   position: absolute;
@@ -94,49 +88,49 @@
   margin: -5px 0 0 -15px;
   background-image: url("img/arrow-tag.png"); }
 
-/* line 91, C:/portfolio/app/css/about-me.scss */
+/* line 84, C:/portfolio/app/css/about-me.scss */
 .section-content-blog {
   padding: 20px 0 20px 90px;
   margin: 1px 20px 0 20px;
   border-bottom: 1px solid #666; }
 
-/* line 96, C:/portfolio/app/css/about-me.scss */
+/* line 89, C:/portfolio/app/css/about-me.scss */
 .section-content-ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
 /************** MAIN SITE CONTENT - my-education **************/
-/* line 102, C:/portfolio/app/css/about-me.scss */
+/* line 95, C:/portfolio/app/css/about-me.scss */
 .my-education-content {
   padding: 35px 0 35px 100px;
   margin: 0 36px 0 36px;
   border-bottom: 1px solid #666; }
 
-/* line 108, C:/portfolio/app/css/about-me.scss */
+/* line 101, C:/portfolio/app/css/about-me.scss */
 .my-education-ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
 /********** ICONS  **********/
-/* line 114, C:/portfolio/app/css/about-me.scss */
+/* line 107, C:/portfolio/app/css/about-me.scss */
 .ico-case {
   background: url(ico/case.png) no-repeat 4px center; }
 
-/* line 117, C:/portfolio/app/css/about-me.scss */
+/* line 110, C:/portfolio/app/css/about-me.scss */
 .ico-graguete {
   background: url(ico/Graguete.png) no-repeat 4px center; }
 
-/* line 120, C:/portfolio/app/css/about-me.scss */
+/* line 113, C:/portfolio/app/css/about-me.scss */
 .ico-diploma {
   background: url(ico/diploma.png) no-repeat 4px center; }
 
-/* line 123, C:/portfolio/app/css/about-me.scss */
+/* line 116, C:/portfolio/app/css/about-me.scss */
 .ico-school {
   background: url(ico/school.png) no-repeat 4px center; }
 
-/* line 126, C:/portfolio/app/css/about-me.scss */
+/* line 119, C:/portfolio/app/css/about-me.scss */
 .no-borders {
   border: none; }
 

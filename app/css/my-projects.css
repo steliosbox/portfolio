@@ -1,0 +1,52 @@
+/********************************************/
+/********************************************/
+/* line 28, C:/portfolio/app/css/my-projects.scss */
+.my-projects {
+  border: 1px solid #e7e7e7;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/css/pie/PIE.htc);
+  width: 160px;
+  font-size: 12px;
+  text-align: center; }
+  /* line 35, C:/portfolio/app/css/my-projects.scss */
+  .my-projects img {
+    width: 158px;
+    position: relative;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    behavior: url(/css/pie/PIE.htc); }
+  /* line 40, C:/portfolio/app/css/my-projects.scss */
+  .my-projects .project-url {
+    background: #e7e7e7;
+    padding: 3px 10px;
+    font-family: OpenSans-Regular; }
+  /* line 46, C:/portfolio/app/css/my-projects.scss */
+  .my-projects .project-discription {
+    padding: 5px 10px;
+    font-family: OpenSans-Light; }
+  /* line 51, C:/portfolio/app/css/my-projects.scss */
+  .my-projects a:hover {
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    -msie-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE8 */
+    filter: alpha(opacity=50); }
+
+/* line 61, C:/portfolio/app/css/my-projects.scss */
+div {
+  /* standards-compliant browsers */
+  opacity: 0.7;
+  /* The following is ignored by standards-based browsers */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  /* IE8 */
+  filter: alpha(opacity=70);
+  /* IE 5-7  */ }
+
+/*# sourceMappingURL=my-projects.css.map */
