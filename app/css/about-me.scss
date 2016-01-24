@@ -1,0 +1,128 @@
+/********************************************/
+/********************************************/
+@mixin bg-gradient-t2b($position, $start-colour, $end-colour) {
+    background-color: $start-colour;
+    background-image: -webkit-linear-gradient($position, $start-colour, $end-colour);
+    background-image: -moz-linear-gradient($position, $start-colour, $end-colour);
+    background-image: -o-linear-gradient($position, $start-colour, $end-colour);
+    background-image: linear-gradient($position, $start-colour, $end-colour);
+
+    position:relative;
+  -pie-background: linear-gradient($start-colour, $end-colour);
+    behavior: url(/css/pie/PIE.htc);
+}
+
+@mixin border-radius($radius){
+	position: relative;
+    -webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	-ms-border-radius:     $radius;
+  border-radius:         $radius;
+  behavior: url(/css/pie/PIE.htc);
+}
+/********************************************/
+/********************************************/
+
+/************** MAIN SITE CONTENT **************/
+.about-me-left {
+    float: left;
+    padding: 14px 0px 0px 10px;
+}
+.about-me-photo {
+	padding: 8px;
+	position: relative;
+	width: 151px;
+	height: 151px;
+	background-color: #f7f6f5;
+	-webkit-box-shadow: 3px 2px 27px 5px rgba(236,232,227,.75), inset 0 2px 24px rgba(121,121,121,.23);
+	-moz-box-shadow: 3px 2px 27px 5px rgba(236,232,227,.75), inset 0 2px 24px rgba(121,121,121,.23);
+	box-shadow: 3px 2px 27px 5px rgba(236,232,227,.75), inset 0 2px 24px rgba(121,121,121,.23);
+	border: solid 1px rgba(195,194,194,.67);
+    @include border-radius(50%);
+}
+.about-me-content-right {
+    float:left;
+    margin-left: 20px;
+}
+.about-me-ul {
+    margin: 0;
+    padding: 0 0 0 16px;
+    list-style: none;
+}
+.about-me-ul li{
+    padding: 0 0 6px 0;
+}
+.my-skills {
+    float: left;
+    margin: 11px 0 0 0;
+}
+.my-skills-ul {
+    float: left;
+    width: 235px;
+    margin: 12px 0 0 12px;
+    padding: 0;
+    list-style: none;
+}
+.my-skills-ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.tag li{
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1e7465;
+    padding: 0 5px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #c5c5c5;
+    @include border-radius(5px);
+    @include bg-gradient-t2b(90deg, rgb(233,230,228), rgb(251,249,249));
+}
+.tag li:before {
+    content: ' ';
+    position: absolute;
+    width: 14px;
+    height: 25px;
+    margin: -5px 0 0 -15px;
+    background-image: url('img/arrow-tag.png');
+}
+.section-content-blog {
+    padding: 20px 0 20px 90px;
+    margin: 1px 20px 0 20px;
+    border-bottom: 1px solid #666;
+}
+.section-content-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/************** MAIN SITE CONTENT - my-education **************/
+.my-education-content {
+    padding: 35px 0 35px 100px;
+    margin: 0 36px 0 36px ;
+    border-bottom: 1px solid #666;
+}
+    
+.my-education-ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}    
+/********** ICONS  **********/
+.ico-case {
+    background: url(ico/case.png) no-repeat 4px center;
+}
+.ico-graguete {
+    background: url(ico/Graguete.png) no-repeat 4px center;
+}
+.ico-diploma {
+    background: url(ico/diploma.png) no-repeat 4px center;
+}
+.ico-school {
+    background: url(ico/school.png) no-repeat 4px center;
+}
+.no-borders {
+    border: none;
+}

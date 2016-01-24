@@ -1,0 +1,143 @@
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/************** MAIN SITE CONTENT **************/
+/* line 27, C:/portfolio/app/css/about-me.scss */
+.about-me-left {
+  float: left;
+  padding: 14px 0px 0px 10px; }
+
+/* line 31, C:/portfolio/app/css/about-me.scss */
+.about-me-photo {
+  padding: 8px;
+  position: relative;
+  width: 151px;
+  height: 151px;
+  background-color: #f7f6f5;
+  -webkit-box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75), inset 0 2px 24px rgba(121, 121, 121, 0.23);
+  -moz-box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75), inset 0 2px 24px rgba(121, 121, 121, 0.23);
+  box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75), inset 0 2px 24px rgba(121, 121, 121, 0.23);
+  border: solid 1px rgba(195, 194, 194, 0.67);
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  behavior: url(/css/pie/PIE.htc); }
+
+/* line 43, C:/portfolio/app/css/about-me.scss */
+.about-me-content-right {
+  float: left;
+  margin-left: 20px; }
+
+/* line 47, C:/portfolio/app/css/about-me.scss */
+.about-me-ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+  list-style: none; }
+
+/* line 52, C:/portfolio/app/css/about-me.scss */
+.about-me-ul li {
+  padding: 0 0 6px 0; }
+
+/* line 55, C:/portfolio/app/css/about-me.scss */
+.my-skills {
+  float: left;
+  margin: 11px 0 0 0; }
+
+/* line 59, C:/portfolio/app/css/about-me.scss */
+.my-skills-ul {
+  float: left;
+  width: 235px;
+  margin: 12px 0 0 12px;
+  padding: 0;
+  list-style: none; }
+
+/* line 66, C:/portfolio/app/css/about-me.scss */
+.my-skills-ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+/* line 71, C:/portfolio/app/css/about-me.scss */
+.tag li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1e7465;
+  padding: 0 5px;
+  margin: 0 10px 10px 0;
+  border: 1px solid #c5c5c5;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/css/pie/PIE.htc);
+  background-color: #e9e6e4;
+  background-image: -webkit-linear-gradient(90deg, #e9e6e4, #fbf9f9);
+  background-image: -moz-linear-gradient(90deg, #e9e6e4, #fbf9f9);
+  background-image: -o-linear-gradient(90deg, #e9e6e4, #fbf9f9);
+  background-image: linear-gradient(90deg, #e9e6e4, #fbf9f9);
+  position: relative;
+  -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
+  behavior: url(/css/pie/PIE.htc); }
+
+/* line 83, C:/portfolio/app/css/about-me.scss */
+.tag li:before {
+  content: ' ';
+  position: absolute;
+  width: 14px;
+  height: 25px;
+  margin: -5px 0 0 -15px;
+  background-image: url("img/arrow-tag.png"); }
+
+/* line 91, C:/portfolio/app/css/about-me.scss */
+.section-content-blog {
+  padding: 20px 0 20px 90px;
+  margin: 1px 20px 0 20px;
+  border-bottom: 1px solid #666; }
+
+/* line 96, C:/portfolio/app/css/about-me.scss */
+.section-content-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/************** MAIN SITE CONTENT - my-education **************/
+/* line 102, C:/portfolio/app/css/about-me.scss */
+.my-education-content {
+  padding: 35px 0 35px 100px;
+  margin: 0 36px 0 36px;
+  border-bottom: 1px solid #666; }
+
+/* line 108, C:/portfolio/app/css/about-me.scss */
+.my-education-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/********** ICONS  **********/
+/* line 114, C:/portfolio/app/css/about-me.scss */
+.ico-case {
+  background: url(ico/case.png) no-repeat 4px center; }
+
+/* line 117, C:/portfolio/app/css/about-me.scss */
+.ico-graguete {
+  background: url(ico/Graguete.png) no-repeat 4px center; }
+
+/* line 120, C:/portfolio/app/css/about-me.scss */
+.ico-diploma {
+  background: url(ico/diploma.png) no-repeat 4px center; }
+
+/* line 123, C:/portfolio/app/css/about-me.scss */
+.ico-school {
+  background: url(ico/school.png) no-repeat 4px center; }
+
+/* line 126, C:/portfolio/app/css/about-me.scss */
+.no-borders {
+  border: none; }
+
+/*# sourceMappingURL=about-me.css.map */

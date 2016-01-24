@@ -201,12 +201,11 @@ html, body {
 	position:relative;
 	border-bottom: 1px solid #c3c2c2;
 	text-shadow: 1px 1px rgba(255,255,255,.75);
+    
 	background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
 	background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-	background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
 	background-image: -ms-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-	background-image: linear-gradient(to top, #e7e5e4, #faf9f9 94%, #fff);
-	-pie-background: linear-gradient(#e7e5e4, #faf9f9);
+	background-image: linear-gradient(to top, #e7e5e4, #faf9f9 94%, #fff);	
 	behavior: url(/css/pie/PIE.htc);
 }
 .side-navigation-ul li a:hover {

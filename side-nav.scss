@@ -1,0 +1,122 @@
+@import "sass_plagins";
+
+/********** ASIDE NAVIGATION **********/
+.side-navigation-ul {
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0;
+    border: 1px solid #c3c2c2;
+    @include border-radius(5px);
+}
+.side-navigation-ul li a {
+    display: block;
+    height: 56px;
+	padding: 17px 0 0 28px;
+	border-bottom: 1px solid #c3c2c2;
+	font-size: 20px;
+    line-height: 1.1;
+    text-decoration: none;
+    color: #727070;
+	text-decoration: none;
+    text-shadow: 1px 1px rgba(255,255,255,.75);   
+    @include bg-gradient-t2b(bottom, #e7e5e4, #faf9f9);
+}
+.side-navigation-ul li a:hover {
+	text-shadow: 1px 1px rgba(255,255,255,.75);
+    @include bg-gradient-t2b(bottom, #e8e7e7, #c4c2c2);
+}
+#active{
+	text-shadow: 1px 1px #666565;
+    @include bg-gradient-t2b(top, #7ce6cc, #42ba9c);
+}
+li.side-navigation-ul-li-first a {
+    @include border-radius(5px 5px 0 0);
+}
+li.side-navigation-ul-li-last a {
+	border: none;
+    @include border-radius(0 0 5px 5px);
+}
+
+/********** ASIDE CONTACT **********/
+.side-bar-contact {
+	margin: 0;
+	padding: 0;		
+}
+.side-contact-ul {
+    list-style: none;
+	margin: 0;
+    padding: 0;
+    font-size: 14px;
+    
+    border: 1px solid #c3c2c2;
+    @include border-radius(5px);
+}
+.side-contact-ul li a {
+    display: block;
+	height: 38px;
+    font-family: OpenSans-Regular;
+	font-size: 14px;
+    color: #727070;
+    text-decoration: none;
+    border-bottom: 1px solid #d4d3d2;
+
+    @include bg-gradient-t2b(bottom, rgb(232,231,230), rgb(250,249,249));
+
+}  
+.side-contact-ul li a:hover {
+    position: relative;
+    background: #fff;
+    background-image: -webkit-linear-gradient(bottom, rgba(224,197,145,.45), rgba(251,249,249,0));
+    background-image: -o-linear-gradient(bottom, rgba(224,197,145,.45), rgba(251,249,249,0));
+    background-image: linear-gradient(to top, rgba(224,197,145,.45), rgba(251,249,249,0));
+    -pie-background: linear-gradient(#e8e7e7, #c4c2c2);
+    behavior: url(/css/pie/PIE.htc);
+}
+li.side-contact-ul-title {
+    font-size: 20px;
+    line-height: 22px;
+    height: 45px;
+    padding: 13px 0 0 27px;
+    color: #d0982c;
+    text-shadow: 0 1px rgb(255,255,255), inset 0 1px rgb(173,135,56);
+    @include border-radius(5px 5px 0 0);
+    @include bg-gradient-t2b(bottom, #dcb15d, #f4cc7e);
+}
+li.side-contact-ul-skype a{
+	border-bottom: none;
+    @include border-radius(0 0 5px 5px);
+}
+/********** ICONS **********/
+.sprite-email-gold {
+	width: 17px;
+	height: 13px;
+	background-position: -220px -53px;
+	margin: 12px 0 0 18px;
+	float: left;
+}
+.sprite-telephone {
+	width: 17px;
+	height: 22px;
+	background-position: -249px -75px;
+	margin: 8px 0 0 18px;
+	float: left;
+}
+.sprite-skype {
+	width: 20px;
+	height: 20px;
+	background-position: -241px -130px;
+	margin: 12px -3px 0 18px;
+	float: left;
+}
+.sprite-arrow {
+	width: 10px;
+	height: 38px;
+	background-position: -179px -5px;
+	margin: 0px 0 0 13px;
+	float: left;
+}
+
+.sprite-contact {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
