@@ -1,52 +1,95 @@
-/********************************************/
-/********************************************/
-/* line 28, C:/portfolio/app/css/my-projects.scss */
-.my-projects {
-  border: 1px solid #e7e7e7;
+.projects-item {
+    float: left;
+    width: 164px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+.project-img-container {
   position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(/css/pie/PIE.htc);
-  width: 160px;
-  font-size: 12px;
-  text-align: center; }
-  /* line 35, C:/portfolio/app/css/my-projects.scss */
-  .my-projects img {
-    width: 158px;
+}
+.project-img {
+    box-sizing: border-box;
+    border-radius: 5px  5px 0 0;
+    width: 100%;
+    height: 100%;
+}
+.hidden-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    display: none;
+}
+.projects-item:hover .hidden-text {
+  display: block;
+}
+.projects-item .hidden-text-link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.projects-item:hover .project-img {
+  -moz-opacity: 0.20;
+  opacity:0.20;
+  filter: alpha(opacity=20);
+}
+.projects-item:hover .project-img-container {
+    background-color: #000;
+    border-radius: 5px  5px 0 0;
+}
+.project-url {
+  background: #e7e7e7;
+  padding: 8px 0;
+  text-align: center;
+}
+.project-discription {
+    padding: 10px;
+}
+
+.add-project-container {
+    float: left;
+    border: 1px solid #666;
+    width: 164px;
+    border-radius: 5px;
+    background: #edebea;
+    background: -moz-linear-gradient(bottom, #edebea, #fbf9f9);
+    background: -webkit-linear-gradient(bottom, #edebea, #fbf9f9);
+    background: -o-linear-gradient(bottom, #edebea, #fbf9f9);
+    background: -ms-linear-gradient(bottom, #edebea, #fbf9f9);
+    background: linear-gradient(bottom, #edebea, #fbf9f9);    
+}
+.add-project-img-container {
+    margin: 20px 0 20px 55px;
+}
+.add-project-img {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    box-shadow: -1px -1px grey;
     position: relative;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -ms-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    behavior: url(/css/pie/PIE.htc); }
-  /* line 40, C:/portfolio/app/css/my-projects.scss */
-  .my-projects .project-url {
-    background: #e7e7e7;
-    padding: 3px 10px;
-    font-family: OpenSans-Regular; }
-  /* line 46, C:/portfolio/app/css/my-projects.scss */
-  .my-projects .project-discription {
-    padding: 5px 10px;
-    font-family: OpenSans-Light; }
-  /* line 51, C:/portfolio/app/css/my-projects.scss */
-  .my-projects a:hover {
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
-    -msie-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    /* IE8 */
-    filter: alpha(opacity=50); }
+    box-sizing: border-box;
+}
+.polaroid {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url('img/spritesheet.png') no-repeat -170px -67px;
+    top: 16px;
+    left: 16px;
+}
+.add-project-text {
+    text-align: center;
+    padding: 10px 0;
+}
+.projectMargin {
+    margin-left: 10px;
+}
+.projectMargin:first-child {
+    margin: 0;
+}
 
-/* line 61, C:/portfolio/app/css/my-projects.scss */
-div {
-  /* standards-compliant browsers */
-  opacity: 0.7;
-  /* The following is ignored by standards-based browsers */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  /* IE8 */
-  filter: alpha(opacity=70);
-  /* IE 5-7  */ }
-
-/*# sourceMappingURL=my-projects.css.map */
+background

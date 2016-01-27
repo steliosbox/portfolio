@@ -1,18 +1,13 @@
 /********************************************/
 /************** MAIN SITE CONTENT **************/
 /* line 23, C:/portfolio/app/css/about-me.scss */
-.about-me-left {
+.my-photo-container {
   float: left;
-  padding: 14px 0px 0px 10px; }
+  padding: 20px 0px 0px 10px; }
 
 /* line 27, C:/portfolio/app/css/about-me.scss */
-.about-me-photo {
-  padding: 8px;
-  position: relative;
-  width: 151px;
-  height: 151px;
-  background-color: #f7f6f5;
-  border: solid 1px #c3c2c2;
+.me-photo {
+  width: 100%;
   position: relative;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -20,49 +15,62 @@
   border-radius: 50%;
   behavior: url(/css/pie/PIE.htc); }
 
-/* line 36, C:/portfolio/app/css/about-me.scss */
+/* line 31, C:/portfolio/app/css/about-me.scss */
+.my-photo-inner {
+  padding: 8px;
+  width: 151px;
+  height: 151px;
+  background: #f7f6f5;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  behavior: url(/css/pie/PIE.htc);
+  text-align: center; }
+
+/* line 41, C:/portfolio/app/css/about-me.scss */
 .about-me-content-right {
   float: left;
   margin-left: 20px; }
 
-/* line 40, C:/portfolio/app/css/about-me.scss */
-.about-me-ul {
+/* line 45, C:/portfolio/app/css/about-me.scss */
+.about-me-list {
   margin: 0;
-  padding: 0 0 0 16px;
+  padding: 15px 0 0 15px;
+  font-size: 14px;
   list-style: none; }
 
-/* line 45, C:/portfolio/app/css/about-me.scss */
-.about-me-ul li {
-  padding: 0 0 6px 0; }
-
-/* line 48, C:/portfolio/app/css/about-me.scss */
+/* line 50, C:/portfolio/app/css/about-me.scss */
+.about-me-item {
+  padding: 0 0 5px 0; }
+.about-me-item-a {
+  font-family: OpenSans-Semibold;  
+}
+/* line 53, C:/portfolio/app/css/about-me.scss */
 .my-skills {
   float: left;
   margin: 11px 0 0 0; }
 
-/* line 52, C:/portfolio/app/css/about-me.scss */
-.my-skills-ul {
+/* line 57, C:/portfolio/app/css/about-me.scss */
+.tag-list {
   float: left;
   width: 235px;
-  margin: 12px 0 0 12px;
+  margin: 13px 0 0 14px;
   padding: 0;
   list-style: none; }
 
-/* line 59, C:/portfolio/app/css/about-me.scss */
-.my-skills-ul li {
-  display: inline-block;
-  margin: 0;
-  padding: 0; }
-
-/* line 64, C:/portfolio/app/css/about-me.scss */
-.tag li {
+/* line 69, C:/portfolio/app/css/about-me.scss */
+.tag-item {
   list-style: none;
   display: inline-block;
-  font-size: 14px;
+  font-family: OpenSans-Semibold;
+  font-size: 9px;
   line-height: 16px;
   color: #1e7465;
-  padding: 0 5px;
-  margin: 0 10px 10px 0;
+  padding: 0 8px 0 6px;
+  margin: 0 13px 6px 0;
   border: 1px solid #c5c5c5;
   position: relative;
   -webkit-border-radius: 5px;
@@ -71,66 +79,70 @@
   border-radius: 5px;
   behavior: url(/css/pie/PIE.htc);
   background-color: #e9e6e4;
-  background-image: -webkit-linear-gradient(90deg, #e9e6e4, #fbf9f9);
-  background-image: -moz-linear-gradient(90deg, #e9e6e4, #fbf9f9);
-  background-image: -o-linear-gradient(90deg, #e9e6e4, #fbf9f9);
-  background-image: linear-gradient(90deg, #e9e6e4, #fbf9f9);
+  background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+  background-image: linear-gradient(bottom, #e9e6e4, #fbf9f9);
   position: relative;
   -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
   behavior: url(/css/pie/PIE.htc); }
 
-/* line 76, C:/portfolio/app/css/about-me.scss */
-.tag li:before {
+/* line 81, C:/portfolio/app/css/about-me.scss */
+.tag-item:before {
   content: ' ';
   position: absolute;
   width: 14px;
   height: 25px;
   margin: -5px 0 0 -15px;
   background-image: url("img/arrow-tag.png"); }
-
-/* line 84, C:/portfolio/app/css/about-me.scss */
-.section-content-blog {
-  padding: 20px 0 20px 90px;
-  margin: 1px 20px 0 20px;
-  border-bottom: 1px solid #666; }
-
+/************** MAIN SITE CONTENT - work-experience **************/
 /* line 89, C:/portfolio/app/css/about-me.scss */
-.section-content-ul {
+.work-experience {
+  padding: 25px 0 25px 80px;
   margin: 0;
-  padding: 0;
-  list-style: none; }
-
-/************** MAIN SITE CONTENT - my-education **************/
-/* line 95, C:/portfolio/app/css/about-me.scss */
-.my-education-content {
-  padding: 35px 0 35px 100px;
-  margin: 0 36px 0 36px;
   border-bottom: 1px solid #666; }
 
-/* line 101, C:/portfolio/app/css/about-me.scss */
-.my-education-ul {
+/* line 106, C:/portfolio/app/css/about-me.scss */
+.work-experience-list {
   margin: 0;
   padding: 0;
   list-style: none; }
+.work-experience-title {
+  font-family: OpenSans-Semibold;
+  padding-bottom: 6px; }
+/************** MAIN SITE CONTENT - my-education **************/
+/* line 100, C:/portfolio/app/css/about-me.scss */
+.work-education {
+  padding: 25px 0 25px 80px;
+  margin: 0;
+  border-bottom: 1px solid #666; }
 
+/* line 106, C:/portfolio/app/css/about-me.scss */
+.work-education-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.work-education-title{
+  font-family: OpenSans-Semibold;
+  padding-bottom: 6px; }
 /********** ICONS  **********/
-/* line 107, C:/portfolio/app/css/about-me.scss */
+/* line 112, C:/portfolio/app/css/about-me.scss */
 .ico-case {
-  background: url(ico/case.png) no-repeat 4px center; }
+  background: url(img/case.png) no-repeat 4px center; }
 
-/* line 110, C:/portfolio/app/css/about-me.scss */
+/* line 115, C:/portfolio/app/css/about-me.scss */
 .ico-graguete {
-  background: url(ico/Graguete.png) no-repeat 4px center; }
+  background: url(img/Graguete.png) no-repeat 4px center; }
 
-/* line 113, C:/portfolio/app/css/about-me.scss */
+/* line 118, C:/portfolio/app/css/about-me.scss */
 .ico-diploma {
-  background: url(ico/diploma.png) no-repeat 4px center; }
+  background: url(img/diploma.png) no-repeat 4px center; }
 
-/* line 116, C:/portfolio/app/css/about-me.scss */
+/* line 121, C:/portfolio/app/css/about-me.scss */
 .ico-school {
-  background: url(ico/school.png) no-repeat 4px center; }
+  background: url(img/school.png) no-repeat 4px center; }
 
-/* line 119, C:/portfolio/app/css/about-me.scss */
+/* line 124, C:/portfolio/app/css/about-me.scss */
 .no-borders {
   border: none; }
 

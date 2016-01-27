@@ -17,7 +17,8 @@
    
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="css/global2.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/about-me.css">
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
@@ -25,25 +26,38 @@
 
 </head>
 <body>
-
-    <div class="bg"></div>
     <!-- Ваша верстак тут-->
-    
     <div class="wrapper">
       
         <!-- HEADER -->
         <header class="header">
-            <div class="header-inner clr">
+            <div class="header-inner clearfix">
                 
-                <a href="#" class="header-logo">
+                <a href="/" class="header-logo">
                     <img src="css/img/logo.png" alt="Логотип сайта портфoлио">
                 </a>
                 
-                <ul class="header-social">
-                    <li><a href="https://www.facebook.com/baglaridis" class="sprite sprite-facebook text-hide">facebook</a></li>
-                    <li><a href="http://vk.com/s.baglaridis" class="sprite sprite-vk  text-hide">vkontakte</a></li>
-                    <li><a href="#u_menya_net_tw" class="sprite sprite-twitter  text-hide">twitter</a></li>
-                    <li><a href="https://github.com/steliosbox" class="sprite sprite-github  text-hide">github</a></li>
+                <ul class="social">
+                  <li class="social-item">
+                    <a href="https://www.facebook.com/baglaridis" tartget="_blank" class="social-link-fb">
+                      <span class="social-sprite social-sprite-fb text-hide">facebook</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="http://vk.com/s.baglaridis" tartget="_blank" class="social-link-vk">
+                      <span class="social-sprite social-sprite-vk text-hide">vkontakte</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#u_menya_net_tw" tartget="_blank" class="social-link-tw">
+                      <span class="social-sprite social-sprite-tw text-hide">twitter</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="https://github.com/steliosbox" tartget="_blank" class="social-link-github">
+                      <span class="social-sprite social-sprite-github text-hide">github</span>
+                    </a>
+                  </li>
                 </ul>
                 
             </div>
@@ -55,44 +69,49 @@
                
                 <aside class="side-bar">
                     
-                    <nav class="side-navigation">
+                    <nav class="navigation">
                         
-                        <ul class="side-navigation-ul">
-                            <li class="side-navigation-ul-li-first"><a href="/index.html" id="active">Обо мне</a></li>
-                            <li><a href="/my-projects.html">Мой Работы</a></li>
-                            <li class="side-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
+                        <ul class="navigation-list">
+                            <li class="navigation-about-me"><a href="/index.html" class="navigation-link corrent-nav">Обо мне</a></li>
+                            <li><a href="/my-projects.html" class="navigation-link">Мой Работы</a></li>
+                            <li class="navigation-contact-me"><a href="/contact-me.html" class="navigation-link">Обратная связь</a></li>
                         </ul>
                         
                     </nav>
                     
-                    <nav class="side-bar-contact">
+                    <div class="contact">
                         
-                        <ul class="side-contact-ul">
-                            <li class="side-contact-ul-title">Контакты</li>
-                            <li class="contact-email">
-                                <a href="mailto:s.baglaridis@gmail.com">
-                                    <i class="sprite sprite-email-gold"></i>
-                                    <i class="sprite sprite-arrow"></i>
+                        <ul class="contact-list">
+                            
+                            <li class="contact-title">Контакты</li>
+                            
+                            <li>
+                                <a href="mailto:s.baglaridis@gmail.com" class="contact-links">
+                                    <i class="contact-sprite sprite-email-gold"></i>
+                                    <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">s.baglaridis@gmail.com</span>
                                 </a>
                             </li>
+                            
                             <li>
-                                <a href="tel:+306984102514">
-                                    <i class="sprite sprite-telephone"></i>
-                                    <i class="sprite sprite-arrow"></i>
+                                <a href="tel:+306984102514" class="contact-links">
+                                    <i class="contact-sprite sprite-telephone"></i>
+                                    <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">+30 6984102514</span>
                                 </a>
                             </li>
-                            <li class="aside-contact-ul-skype">
-                                <a href="skype:amb.crete?chat">
-                                    <i class="sprite sprite-skype"></i>
-                                    <i class="sprite sprite-arrow"></i>
+                            
+                            <li>
+                                <a href="skype:amb.crete?chat" class="contact-links contact-skype">
+                                    <i class="contact-sprite sprite-skype"></i>
+                                    <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">amb.crete</span>
                                 </a>
                             </li>
+                            
                         </ul>
                         
-                    </nav>
+                    </div>
                     
                 </aside>
                 
@@ -101,26 +120,40 @@
                         <h3 class="section-title">Основная информация</h3>
                         <div class="section-content clearfix">                
                           
-                            <div class="about-me-left">
-                                <img src="css/img/me.png" alt="my photo" class="about-me-photo">
+                            <div class="my-photo-container">
+                                <div class="my-photo-inner">
+                                    <img src="css/img/me.png" alt="my photo" class="me-photo">
+                                </div>
                             </div>
                             
                             <div class="about-me-content-right">
                               
-                                <ul class="about-me-ul">
-                                    <li>Меня зовут: Baglaridis Stelios</li>
-                                    <li>Мой возраст: 31 год</li>
-                                    <li>Мой город: Ираклион, Греция - о.Крит</li>
-                                    <li>Моя спецализация: FRONDEND разрабодчик</li>
-                                    <li class="clearfix">
+                                <ul class="about-me-list">
+                                    <li class="about-me-item">
+                                        <spna class="about-me-item-a">Меня зовут:</spna>
+                                        <spna>Baglaridis Stelios</spna>
+                                    </li>
+                                    <li class="about-me-item">
+                                        <spna class="about-me-item-a">Мой возраст:</spna>
+                                        <spna>31 год</spna>
+                                    </li>
+                                    <li class="about-me-item">
+                                        <spna class="about-me-item-a">Мой город:</spna>
+                                        <spna>Ираклион, Греция - о.Крит</spna>
+                                    </li>
+                                    <li class="about-me-item">
+                                        <spna class="about-me-item-a">Моя спецализация:</spna>
+                                        <spna>FRONDEND разрабодчик</spna>
+                                    </li>
+                                    <li class="about-me-item clearfix">
                                         <div class="my-skills">Ключевые навыки:</div>
-                                            <ul class="my-skills-ul tag">
-                                                <li>html</li>
-                                                <li>css</li>
-                                                <li>javascript</li>
-                                                <li>gulp</li>
-                                                <li>bower</li>
-                                                <li>php</li>
+                                            <ul class="tag-list">
+                                                <li class="tag-item">HTML</li>
+                                                <li class="tag-item">CSS</li>
+                                                <li class="tag-item">JAVASCRIPT</li>
+                                                <li class="tag-item">GULP</li>
+                                                <li class="tag-item">BOWER</li>
+                                                <li class="tag-item">PHP</li>
                                             </ul>
                                     </li>
                                 </ul>
@@ -131,22 +164,22 @@
                     </section>
                     
                     <section class="section">
-                        <h3 class="section-title">Основная информация</h3>
+                        <h3 class="section-title">Обыт работы</h3>
                         <div class="section-content clearfix">                
                           
-                            <div class="section-content-blog ico-case">
-                               
-                                <ul class="section-content-ul">
-                                    <li>Туристическая компания "Ambotis Holidays" - Кординатор</li>
+                            <div class="work-experience ico-case">
+                                
+                                <ul class="work-experience-list">
+                                    <li class="work-experience-title">Туристическая компания "Ambotis Holidays" - Кординатор</li>
                                     <li>2014 - По сей день</li>
                                 </ul>
                                 
                             </div>                        
                             
-                            <div class="section-content-blog ico-case no-borders">
+                            <div class="work-experience ico-case no-borders">
                                
-                                <ul class="section-content-ul">
-                                    <li>Туристическая компания "Beleon Tours" - Главный представитель региона</li>
+                                <ul class="work-experience-list">
+                                    <li class="work-experience-title">Туристическая компания "Beleon Tours" - Главный представитель региона</li>
                                     <li>2011 - 2013</li>
                                 </ul>
                                 
@@ -159,28 +192,71 @@
                         <h3 class="section-title">Образование</h3>
                         <div class="section-content clearfix">                
                           
-                            <div class="section-content-blog ico-school">
+                            <div class="work-education ico-school">
                                
-                                <ul class="section-content-ul">
-                                    <li>Школа № 99, Tbilisi</li>
+                                <ul class="work-education-list">
+                                    <li class="work-education-title">Школа № 99, Tbilisi</li>
                                     <li>1990 - 2000</li>
                                 </ul>
                                 
                             </div>                        
                             
-                            <div class="section-content-blog ico-graguete">
+                            <div class="work-education ico-graguete">
                                
-                                <ul class="section-content-ul">
-                                    <li>Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
+                                <ul class="work-education-list">
+                                    <li class="work-education-title">Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
                                     <li>2005 - 2007</li>
                                 </ul>
                                 
                             </div>                              
                             
-                            <div class="section-content-blog ico-diploma no-borders">
+                            <div class="work-education ico-diploma no-borders">
                                
-                                <ul class="section-content-ul">
-                                    <li>Курсы LoftSchool.ru - Онлайн</li>
+                                <ul class="work-education-list">
+                                    <li class="work-education-title">Курсы LoftSchool.ru - Онлайн</li>
+                                    <li>Январь 2016 по сей день</li>
+                                </ul>
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            <div class="work-education ico-diploma no-borders">
+                              
+                            <style>
+                                .add-project-img-container {
+                                    margin: 20px 0 20px 55px;
+                                }
+                                .add-project-img {
+                                    width: 54px;
+                                    height: 54px;
+                                    border: 1px solid #e7e7e7;
+                                    border-radius: 50%;
+                                    box-shadow: -1px -1px #e9e9e9;
+                                    position: relative;
+                                    box-sizing: border-box;
+                                }
+                                .polaroid {
+                                    position: absolute;
+                                    width: 22px;
+                                    height: 22px;
+                                    display: block;
+                                    background: url('css/img/spritesheet.png') no-repeat -170px -67px;
+                                    top: 16px;
+                                    left: 16px;
+                                }
+                                </style>
+                            
+                                <div class="add-project-container" style="foat:left">
+                                    <div class="add-project-img">
+                                       <div class="polaroid"></div>
+                                    </div>
+                                </div>
+                                
+                                <ul class="work-education-list" style="foat:left">
+                                    <li class="work-education-title">Курсы LoftSchool.ru - Онлайн</li>
                                     <li>Январь 2016 по сей день</li>
                                 </ul>
                                 
@@ -198,8 +274,13 @@
     
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-inner">
-            © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+        <div class="footer-inner clearfix">
+            <div class="locker">
+                <a href="login.html" class="locker-link">ВХОД</a>
+            </div>
+            <div class="copyright">
+                © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            </div>
         </div>
     </footer>
     
@@ -207,6 +288,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <!-- другие подключаемые JS файлы -->
-    
+    <script src="js/jquery.placeholder.min.js"></script>
 </body>
 </html>

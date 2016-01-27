@@ -8,7 +8,7 @@
 
         <!--  Корректное масштабирование на разных устройствах  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Мои работы</title>
+    <title>Сайт портфолио</title>
 
     <!-- SEO -->
     <meta name="discription" content=" ">
@@ -17,34 +17,47 @@
    
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="css/global2.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/my-projects.css">
-    
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
 
 </head>
 <body>
-
-    <div class="bg"></div>
     <!-- Ваша верстак тут-->
-    
     <div class="wrapper">
       
         <!-- HEADER -->
         <header class="header">
-            <div class="header-inner clr">
+            <div class="header-inner clearfix">
                 
-                <a href="#" class="header-logo">
+                <a href="/" class="header-logo">
                     <img src="css/img/logo.png" alt="Логотип сайта портфoлио">
                 </a>
                 
-                <ul class="header-social">
-                    <li><a href="https://www.facebook.com/baglaridis" class="sprite sprite-facebook text-hide">facebook</a></li>
-                    <li><a href="http://vk.com/s.baglaridis" class="sprite sprite-vk  text-hide">vkontakte</a></li>
-                    <li><a href="#u_menya_net_tw" class="sprite sprite-twitter  text-hide">twitter</a></li>
-                    <li><a href="https://github.com/steliosbox" class="sprite sprite-github  text-hide">github</a></li>
+                <ul class="social">
+                  <li class="social-item">
+                    <a href="https://www.facebook.com/baglaridis" tartget="_blank" class="social-link-fb">
+                      <span class="social-sprite social-sprite-fb text-hide">facebook</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="http://vk.com/s.baglaridis" tartget="_blank" class="social-link-vk">
+                      <span class="social-sprite social-sprite-vk text-hide">vkontakte</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#u_menya_net_tw" tartget="_blank" class="social-link-tw">
+                      <span class="social-sprite social-sprite-tw text-hide">twitter</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="https://github.com/steliosbox" tartget="_blank" class="social-link-github">
+                      <span class="social-sprite social-sprite-github text-hide">github</span>
+                    </a>
+                  </li>
                 </ul>
                 
             </div>
@@ -56,75 +69,114 @@
                
                 <aside class="side-bar">
                     
-                    <nav class="side-navigation">
+                    <nav class="navigation">
                         
-                        <ul class="side-navigation-ul">
-                            <li class="side-navigation-ul-li-first"><a href="/index.html">Обо мне</a></li>
-                            <li><a href="/my-projects.html" id="active">Мой Работы</a></li>
-                            <li class="side-navigation-ul-li-last"><a href="/contact-me.html">Обратная связь</a></li>
+                        <ul class="navigation-list">
+                            <li class="navigation-about-me"><a href="/index.html" class="navigation-link">Обо мне</a></li>
+                            <li><a href="/my-projects.html" class="navigation-link corrent-nav">Мой Работы</a></li>
+                            <li class="navigation-contact-me"><a href="/contact-me.html" class="navigation-link">Обратная связь</a></li>
                         </ul>
                         
                     </nav>
                     
-                    <nav class="side-bar-contact">
+                    <div class="contact">
                         
-                        <ul class="side-contact-ul">
-                            <li class="side-contact-ul-title">Контакты</li>
-                            <li class="contact-email">
-                                <a href="mailto:s.baglaridis@gmail.com">
-                                    <i class="sprite sprite-email-gold"></i>
-                                    <i class="sprite sprite-arrow"></i>
+                        <ul class="contact-list">
+                            
+                            <li class="contact-title">Контакты</li>
+                            
+                            <li>
+                                <a href="mailto:s.baglaridis@gmail.com" class="contact-links">
+                                    <i class="contact-sprite sprite-email-gold"></i>
+                                    <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">s.baglaridis@gmail.com</span>
                                 </a>
                             </li>
+                            
                             <li>
-                                <a href="tel:+306984102514">
-                                    <i class="sprite sprite-telephone"></i>
-                                    <i class="sprite sprite-arrow"></i>
+                                <a href="tel:+306984102514" class="contact-links">
+                                    <i class="contact-sprite sprite-telephone"></i>
+                                    <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">+30 6984102514</span>
                                 </a>
                             </li>
-                            <li class="aside-contact-ul-skype">
-                                <a href="skype:amb.crete?chat">
-                                    <i class="sprite sprite-skype"></i>
-                                    <i class="sprite sprite-arrow"></i>
+                            
+                            <li>
+                                <a href="skype:amb.crete?chat" class="contact-links contact-skype">
+                                    <i class="contact-sprite sprite-skype"></i>
+                                    <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">amb.crete</span>
                                 </a>
                             </li>
                         </ul>
-                        
-                    </nav>
-                    
+                    </div>
                 </aside>
-                
+        
                 <div class="content">
                     <section class="section">
-                        <h3 class="section-title">Мои работы</h3>
-                        <div class="section-content clearfix">                
+                        <h3 class="section-title">Основная информация</h3>
+                        <div class="section-content clearfix projectMargin">
+
+                            <div class="projects-item">
                             
-                            <div class="my-projects">
-                                <a href="ls1.technofreedom.ru">
-                                    <img src="css/img/my-project-1.jpg" alt="моя работа по HTML и CSS верстке"/>
-                                </a>
-                                <div class="project-url">ls1.technofreedom.ru</div>
+                                <div class="project-img-container">
+                                    <img src="http://loftshool.mcdir.ru/img/my-project-1.jpg" alt="http://ls1.technofreedom.ru/" class="project-img">
+                                    <div class="hidden-text">
+                                        <a href="http://ls1.technofreedom.ru/" target="_blank" class="hidden-text-link">
+                                            technofreedom.ru
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-url">
+                                    ls1.technofreedom.ru
+                                </div>
                                 <div class="project-discription">
                                     Первое домашнее задание LoftSchool
+                                </div>  
+                            
+                            </div>
+
+                            <div class="add-project-container projectMargin">
+                                
+                                <div class="add-project-img-container">
+                                   
+                                    <div class="add-project-img">
+                                        <div class="polaroid">
+                                           
+                                        </div>
+<!--                                        <img src="css/img/pic.png" alt="add project">-->
+                                    </div>
+                                    
                                 </div>
+                                   
+                                   
+                                    <div class="add-project-text">
+                                        Добавить проект
+                                    </div>
+                                    
+                                
+                                                                
                             </div>
                             
+                            
                         </div>
-                    </section>
+                    </section>                    
                 </div>            
             </div>
         </div>
-        
         <div class="empty-bottom"></div>
     </div>
     
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-inner">
-            © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+        <div class="footer-inner clearfix">
+            <div class="locker">
+                <a href="login.html" class="locker-link">ВХОД</a>
+            </div>
+            <div class="copyright">
+                © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            </div>
         </div>
     </footer>
     
@@ -132,6 +184,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <!-- другие подключаемые JS файлы -->
-    
+    <script src="js/jquery.placeholder.min.js"></script>
 </body>
 </html>

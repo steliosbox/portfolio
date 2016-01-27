@@ -46,8 +46,10 @@
 
 /* line 62, C:/portfolio/app/css/contact.scss */
 .contact-form-msg textarea {
-  width: 100%;
+  
   min-height: 185px;
+  width:404px;
+  max-width: 404px;
   padding: 10px 10px;
   font-size: 12px;
   font-family: OpenSans-Light;
