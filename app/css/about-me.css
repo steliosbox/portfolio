@@ -112,17 +112,17 @@
   padding-bottom: 6px; }
 /************** MAIN SITE CONTENT - my-education **************/
 /* line 100, C:/portfolio/app/css/about-me.scss */
-.work-education {
+.education {
   padding: 25px 0 25px 80px;
   margin: 0;
   border-bottom: 1px solid #666; }
 
 /* line 106, C:/portfolio/app/css/about-me.scss */
-.work-education-list {
+.education-list {
   margin: 0;
   padding: 0;
   list-style: none; }
-.work-education-title{
+.education-title{
   font-family: OpenSans-Semibold;
   padding-bottom: 6px; }
 /********** ICONS  **********/
