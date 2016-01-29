@@ -1,510 +1,477 @@
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url("css/fonts/OpenSans-Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-
+    font-family: 'OpenSans-Regular';
+    src: url("fonts/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
-  font-family: 'OpenSans-Semibold';
-  src: url("fonts/OpenSans-Semibold.ttf");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'OpenSans-Semibold';
+    src: url("fonts/OpenSans-Semibold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
-  font-family: 'OpenSans-Light';
-  src: url("fonts/OpenSans-Light.ttf");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'OpenSans-Light';
+    src: url("fonts/OpenSans-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url("fonts/OpenSans-Bold.ttf");
-  font-weight: normal;
-  font-style: normal; }
-/* line 15, C:/portfolio/app/css/global.scss */
+    font-family: 'OpenSans-Bold';
+    src: url("fonts/OpenSans-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 * {
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
-
-/* line 20, C:/portfolio/app/css/global.scss */
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  color: #727070; }
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #727070;
+}
+html {
+    background: url('img/2048x1152.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 /**************** CSS TRICKS ****************/
-/* line 31, C:/portfolio/app/css/global.scss */
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table; }
 
-/* line 34, C:/portfolio/app/css/global.scss */
+.clearfix:before,
 .clearfix:after {
-  clear: both; }
-
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
 /** for IE 6/7 only **/
-/* line 37, C:/portfolio/app/css/global.scss */
+
 .cf {
-  *zoom: 1; }
-
-/* line 39, C:/portfolio/app/css/global.scss */
+    *zoom: 1;
+}
 .text-hide {
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent; }
-
-/********************************************/
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+}
 /****************** WRAPPER *****************/
-/* line 62, C:/portfolio/app/css/global.scss */
 
 .wrapper {
-  height: auto; 
-  min-height: 100%;
-  min-width: 100px;
-  position: relative;
-  background: url('img/2048x1152.jpg') no-repeat center center;
-  background-size: cover;
-  }
-
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+}
 /****************** HEADER ******************/
-/* line 69, C:/portfolio/app/css/global.scss */
+
 .header {
-  background: url(img/header_bg.png) repeat-x top left;
-  border-bottom: 7px solid white;
-  height: 96px;
-  min-width: 1200px;
-  width: 100%; }
-
-/* line 76, C:/portfolio/app/css/global.scss */
+    background: url(img/header_bg.png) repeat-x top left;
+    border-bottom: 7px solid white;
+    height: 96px;
+    min-width: 1200px;
+    width: 100%;
+}
 .header-inner {
-  width: 1200px;
-  margin: 0 auto; }
-
+    width: 1200px;
+    margin: 0 auto;
+}
 /********** LOGO **********/
-/* line 81, C:/portfolio/app/css/global.scss */
+
 .header-logo {
-  float: left;
-  margin-top: 10px; }
-
+    float: left;
+    margin-top: 10px;
+}
 /********** SOCIAL MENU **********/
-/* line 86, C:/portfolio/app/css/global.scss */
+
 .social {
-  margin: 25px 5px 0 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-  float: right; }
-
-/* line 93, C:/portfolio/app/css/global.scss */
+    margin: 25px 5px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    float: right;
+}
 .social-item {
-  display: inline-block;
-  margin-left: 12px; }
-
-/* line 113, C:/portfolio/app/css/global.scss */
+    display: inline-block;
+    margin-left: 12px;
+}
 .social-link-fb {
-  padding-top: 10px;
-  padding-left: 14.5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #E7E7E7; }
-
-/* line 116, C:/portfolio/app/css/global.scss */
+    padding-top: 10px;
+    padding-left: 14.5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #E7E7E7;
+}
 .social-link-vk {
-  padding-top: 10px;
-  padding-left: 12px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #E7E7E7; }
-
-/* line 119, C:/portfolio/app/css/global.scss */
+    padding-top: 10px;
+    padding-left: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #E7E7E7;
+}
 .social-link-tw {
-  padding-top: 10px;
-  padding-left: 7.5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #E7E7E7; }
-
-/* line 122, C:/portfolio/app/css/global.scss */
+    padding-top: 10px;
+    padding-left: 7.5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #E7E7E7;
+}
 .social-link-github {
-  padding-top: 10px;
-  padding-left: 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #E7E7E7;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.75); }
-
-/* line 126, C:/portfolio/app/css/global.scss */
+    padding-top: 10px;
+    padding-left: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #E7E7E7;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.75);
+}
 .social-sprite {
-  background: url(img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block; }
-
-/* line 131, C:/portfolio/app/css/global.scss */
+    background: url(img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 .social-sprite-fb {
-  width: 11px;
-  height: 22px;
-  background-position: -139px -55px; }
-
-/* line 136, C:/portfolio/app/css/global.scss */
+    width: 11px;
+    height: 22px;
+    background-position: -139px -55px;
+}
 .social-sprite-fb:hover {
-  background-position: -5px -87px; }
-
-/* line 139, C:/portfolio/app/css/global.scss */
+    background-position: -5px -87px;
+}
 .social-sprite-vk {
-  width: 16px;
-  height: 19px;
-  background-position: -5px -162px; }
-
-/* line 144, C:/portfolio/app/css/global.scss */
+    width: 16px;
+    height: 19px;
+    background-position: -5px -162px;
+}
 .social-sprite-vk:hover {
-  background-position: -31px -162px; }
-
-/* line 147, C:/portfolio/app/css/global.scss */
+    background-position: -31px -162px;
+}
 .social-sprite-tw {
-  width: 25px;
-  height: 18px;
-  background-position: -62px -144px; }
-
-/* line 152, C:/portfolio/app/css/global.scss */
+    width: 25px;
+    height: 18px;
+    background-position: -62px -144px;
+}
 .social-sprite-tw:hover {
-  background-position: -97px -144px; }
-
-/* line 155, C:/portfolio/app/css/global.scss */
+    background-position: -97px -144px;
+}
 .social-sprite-github {
-  width: 30px;
-  height: 23px;
-  background-position: -52px -87px; }
-
-/* line 160, C:/portfolio/app/css/global.scss */
+    width: 30px;
+    height: 23px;
+    background-position: -52px -87px;
+}
 .social-sprite-github:hover {
-  background-position: -92px -87px; }
-
+    background-position: -92px -87px;
+}
 /********** CONTAINER **********/
-/* line 164, C:/portfolio/app/css/global.scss */
+
 .container {
-  width: 100%; }
-
-/* line 167, C:/portfolio/app/css/global.scss */
+    width: 100%;
+}
 .container-inner {
-  width: 980px;
-  margin: 35px auto; }
-
+    width: 980px;
+    margin: 35px auto;
+}
 /********** SIDE-BAR **********/
-/* line 172, C:/portfolio/app/css/global.scss */
+
 .side-bar {
-  float: left;
-  width: 252px; }
-
+    float: left;
+    width: 252px;
+}
 /********** ASIDE NAVIGATION **********/
-/* line 177, C:/portfolio/app/css/global.scss */
+
 .navigation-list {
-  list-style: none;
-  margin: 0 0 30px 0;
-  padding: 0;
-  border: 1px solid #c3c2c2;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 184, C:/portfolio/app/css/global.scss */
+    list-style: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+    border: 1px solid #c3c2c2;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(/css/pie/PIE.htc);
+}
 .navigation-link {
-  display: block;
-  height: 56px;
-  padding: 17px 0 0 28px;
-  border-bottom: 1px solid #c3c2c2;
-  font-family: OpenSans-Semibold;
-  font-size: 20px;
-  line-height: 22px;
-  color: #727070;
-  text-decoration: none;
-  background-color: #e7e5e4;
-  background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9);
-  background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9);
-  background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9);
-  background-image: linear-gradient(bottom, #e7e5e4, #faf9f9);
-  position: relative;
-  -pie-background: linear-gradient(#e7e5e4, #faf9f9);
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 196, C:/portfolio/app/css/global.scss */
+    display: block;
+    height: 56px;
+    padding: 17px 0 0 28px;
+    border-bottom: 1px solid #c3c2c2;
+    font-family: OpenSans-Semibold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #727070;
+    text-decoration: none;
+    position: relative;
+    background-color: #e7e5e4;
+    background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9);
+    background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9);
+    background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9);
+    background-image: linear-gradient(bottom, #e7e5e4, #faf9f9);
+    -pie-background: linear-gradient(#e7e5e4, #faf9f9);
+    behavior: url(/css/pie/PIE.htc);
+}
 .navigation-link:hover {
-  background-color: #e8e7e7;
-  background-image: -webkit-linear-gradient(bottom, #e8e7e7, #c4c2c2);
-  background-image: -moz-linear-gradient(bottom, #e8e7e7, #c4c2c2);
-  background-image: -o-linear-gradient(bottom, #e8e7e7, #c4c2c2);
-  background-image: linear-gradient(bottom, #e8e7e7, #c4c2c2);
-  position: relative;
-  -pie-background: linear-gradient(#e8e7e7, #c4c2c2);
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 199, C:/portfolio/app/css/global.scss */
+    position: relative;
+    background-color: #e8e7e7;
+    background-image: -webkit-linear-gradient(bottom, #e8e7e7, #c4c2c2);
+    background-image: -moz-linear-gradient(bottom, #e8e7e7, #c4c2c2);
+    background-image: -o-linear-gradient(bottom, #e8e7e7, #c4c2c2);
+    background-image: linear-gradient(bottom, #e8e7e7, #c4c2c2);
+    -pie-background: linear-gradient(#e8e7e7, #c4c2c2);
+    behavior: url(/css/pie/PIE.htc);
+}
 .corrent-nav {
-  background-color: #7ce6cc;
-  background-image: -webkit-linear-gradient(top, #7ce6cc, #42ba9c);
-  background-image: -moz-linear-gradient(top, #7ce6cc, #42ba9c);
-  background-image: -o-linear-gradient(top, #7ce6cc, #42ba9c);
-  background-image: linear-gradient(top, #7ce6cc, #42ba9c);
-  position: relative;
-  -pie-background: linear-gradient(#7ce6cc, #42ba9c);
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 202, C:/portfolio/app/css/global.scss */
-.navigation-about-me {
-  position: relative;
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  -ms-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 205, C:/portfolio/app/css/global.scss */
+    position: relative;
+    background-color: #7ce6cc;
+    background-image: -webkit-linear-gradient(top, #7ce6cc, #42ba9c);
+    background-image: -moz-linear-gradient(top, #7ce6cc, #42ba9c);
+    background-image: -o-linear-gradient(top, #7ce6cc, #42ba9c);
+    background-image: linear-gradient(top, #7ce6cc, #42ba9c);
+    -pie-background: linear-gradient(#7ce6cc, #42ba9c);
+    behavior: url(/css/pie/PIE.htc);
+}
+.navigation-about-me a {
+    position: relative;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    behavior: url(/css/pie/PIE.htc);
+}
 .navigation-contact-me a {
-  border: none;
-  position: relative;
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  -ms-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-  behavior: url(/css/pie/PIE.htc); }
-
+    border: none;
+    position: relative;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    behavior: url(/css/pie/PIE.htc);
+}
 /********** CONTACT **********/
-/* line 211, C:/portfolio/app/css/global.scss */
+
 .contact {
-  margin: 0;
-  padding: 0; }
-
-/* line 214, C:/portfolio/app/css/global.scss */
+    margin: 0;
+    padding: 0;
+}
 .contact-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 1px solid #c3c2c2;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 220, C:/portfolio/app/css/global.scss */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    border: 1px solid #c3c2c2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(/css/pie/PIE.htc);
+}
 .contact-links {
-  display: block;
-  height: 38px;
-  color: #727070;
-  font-size: 14px;
-  text-decoration: none;
-  border-bottom: 1px solid #d4d3d2;
-  background-color: #e8e7e6;
-  background-image: -webkit-linear-gradient(bottom, #e8e7e6, #faf9f9);
-  background-image: -moz-linear-gradient(bottom, #e8e7e6, #faf9f9);
-  background-image: -o-linear-gradient(bottom, #e8e7e6, #faf9f9);
-  background-image: linear-gradient(bottom, #e8e7e6, #faf9f9);
-  position: relative;
-  -pie-background: linear-gradient(#e8e7e6, #faf9f9);
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 228, C:/portfolio/app/css/global.scss */
+    display: block;
+    height: 38px;
+    color: #727070;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #d4d3d2;
+    position: relative;
+    background-color: #e8e7e6;
+    background-image: -webkit-linear-gradient(bottom, #e8e7e6, #faf9f9);
+    background-image: -moz-linear-gradient(bottom, #e8e7e6, #faf9f9);
+    background-image: -o-linear-gradient(bottom, #e8e7e6, #faf9f9);
+    background-image: linear-gradient(bottom, #e8e7e6, #faf9f9);
+    -pie-background: linear-gradient(#e8e7e6, #faf9f9);
+    behavior: url(/css/pie/PIE.htc);
+}
 .contact-links:hover {
-  text-decoration: underline;
-  background-color: #e0c591;
-  background-image: -webkit-linear-gradient(bottom, #e0c591, #fbf9f9);
-  background-image: -moz-linear-gradient(bottom, #e0c591, #fbf9f9);
-  background-image: -o-linear-gradient(bottom, #e0c591, #fbf9f9);
-  background-image: linear-gradient(bottom, #e0c591, #fbf9f9);
-  position: relative;
-  -pie-background: linear-gradient(#e0c591, #fbf9f9);
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 231, C:/portfolio/app/css/global.scss */
+    text-decoration: underline;
+    position: relative;
+    background-color: #e0c591;
+    background-image: -webkit-linear-gradient(bottom, #e0c591, #fbf9f9);
+    background-image: -moz-linear-gradient(bottom, #e0c591, #fbf9f9);
+    background-image: -o-linear-gradient(bottom, #e0c591, #fbf9f9);
+    background-image: linear-gradient(bottom, #e0c591, #fbf9f9);
+    -pie-background: linear-gradient(#e0c591, #fbf9f9);
+    behavior: url(/css/pie/PIE.htc);
+}
 .contact-title {
-  font-family: OpenSans-Semibold;
-  font-size: 20px;
-  line-height: 22px;
-  min-height: 45px;
-  padding: 13px 0 0 27px;
-  color: #d0982c;
-  position: relative;
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  -ms-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  behavior: url(/css/pie/PIE.htc);
-  background-color: #dcb15d;
-  background-image: -webkit-linear-gradient(bottom, #dcb15d, #f4cc7e);
-  background-image: -moz-linear-gradient(bottom, #dcb15d, #f4cc7e);
-  background-image: -o-linear-gradient(bottom, #dcb15d, #f4cc7e);
-  background-image: linear-gradient(bottom, #dcb15d, #f4cc7e);
-  position: relative;
-  -pie-background: linear-gradient(#dcb15d, #f4cc7e);
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 240, C:/portfolio/app/css/global.scss */
+    font-family: OpenSans-Semibold;
+    font-size: 20px;
+    line-height: 22px;
+    min-height: 45px;
+    padding: 13px 0 0 27px;
+    color: #d0982c;
+    position: relative;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #dcb15d;
+    background-image: -webkit-linear-gradient(bottom, #dcb15d, #f4cc7e);
+    background-image: -moz-linear-gradient(bottom, #dcb15d, #f4cc7e);
+    background-image: -o-linear-gradient(bottom, #dcb15d, #f4cc7e);
+    background-image: linear-gradient(bottom, #dcb15d, #f4cc7e);
+    -pie-background: linear-gradient(#dcb15d, #f4cc7e);
+    behavior: url(/css/pie/PIE.htc);
+}
 .contact-skype {
-  border-bottom: none;
-  position: relative;
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  -ms-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-  behavior: url(/css/pie/PIE.htc); }
-
+    border-bottom: none;
+    position: relative;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    behavior: url(/css/pie/PIE.htc);
+}
 /********** SPRITE **********/
-/* line 244, C:/portfolio/app/css/global.scss */
+
 .contact-sprite {
-  background: url(img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block; }
-
-/* line 249, C:/portfolio/app/css/global.scss */
+    background: url(img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 .sprite-email-gold {
-  width: 17px;
-  height: 13px;
-  background-position: -112px -55px;
-  margin: 12px 0 0 18px;
-  float: left; }
-
-/* line 256, C:/portfolio/app/css/global.scss */
+    width: 17px;
+    height: 13px;
+    background-position: -112px -55px;
+    margin: 12px 0 0 18px;
+    float: left;
+}
 .sprite-telephone {
-  width: 17px;
-  height: 22px;
-  background-position: -35px -130px;
-  margin: 8px 0 0 18px;
-  float: left; }
-
-/* line 263, C:/portfolio/app/css/global.scss */
+    width: 17px;
+    height: 22px;
+    background-position: -35px -130px;
+    margin: 8px 0 0 18px;
+    float: left;
+}
 .sprite-skype {
-  width: 20px;
-  height: 20px;
-  background-position: -5px -130px;
-  margin: 12px -3px 0 18px;
-  float: left; }
-
-/* line 270, C:/portfolio/app/css/global.scss */
+    width: 20px;
+    height: 20px;
+    background-position: -5px -130px;
+    margin: 12px -3px 0 18px;
+    float: left;
+}
 .sprite-arrow {
-  width: 10px;
-  height: 38px;
-  background-position: -115px -5px;
-  margin: 0px 0 0 13px;
-  float: left; }
-
-/* line 278, C:/portfolio/app/css/global.scss */
+    width: 10px;
+    height: 38px;
+    background-position: -115px -5px;
+    margin: 0px 0 0 13px;
+    float: left;
+}
 .sprite-contact {
-  display: inline-block;
-  margin: 10px 0 0 10px; }
-
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
 /************** MAIN SITE CONTENT **************/
-/* line 283, C:/portfolio/app/css/global.scss */
+
 .content {
-  width: 650px;
-  float: left;
-  margin-left: 58px; }
-
-/* line 287, C:/portfolio/app/css/global.scss */
+    width: 650px;
+    float: left;
+    margin-left: 58px;
+}
 .section {
-  margin-bottom: 36px;
-  background: #f5f4f3;
-  box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75), inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
-  border: 1px solid #c3c2c2;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 294, C:/portfolio/app/css/global.scss */
+    margin-top: 36px;
+    background: #f5f4f3;
+    box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75), inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
+    border: 1px solid #c3c2c2;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(/css/pie/PIE.htc);
+}
+.section:first-child {
+    margin-top: 0;
+}
 .section-title {
-  font-family: OpenSans-Semibold;
-  font-size: 24px;
-  color: #EEEDEC;
-  line-height: 0.917;
-  text-shadow: 0px 1px 0px #666565;
-  height: 55px;
-  background-color: #7b7878;
-  background-image: -webkit-linear-gradient(bottom, #7b7878, #a9a8a8);
-  background-image: -moz-linear-gradient(bottom, #7b7878, #a9a8a8);
-  background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
-  background-image: linear-gradient(bottom, #7b7878, #a9a8a8);
-  position: relative;
-  -pie-background: linear-gradient(#7b7878, #a9a8a8);
-  behavior: url(/css/pie/PIE.htc);
-  padding: 14px 0 0 42px;
-  margin: 0;
-  position: relative;
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  -ms-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  behavior: url(/css/pie/PIE.htc); }
-
-/* line 306, C:/portfolio/app/css/global.scss */
+    font-family: OpenSans-Semibold;
+    font-size: 24px;
+    color: #EEEDEC;
+    line-height: 0.917;
+    text-shadow: 0px 1px 0px #666565;
+    height: 55px;
+    padding: 14px 0 0 42px;
+    margin: 0;
+    position: relative;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #7b7878;
+    background-image: -webkit-linear-gradient(bottom, #7b7878, #a9a8a8);
+    background-image: -moz-linear-gradient(bottom, #7b7878, #a9a8a8);
+    background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
+    background-image: linear-gradient(bottom, #7b7878, #a9a8a8);
+    -pie-background: linear-gradient(#7b7878, #a9a8a8);
+    behavior: url(/css/pie/PIE.htc);
+}
 .section-content {
-  padding: 10px;
-  margin: 10px 23px 10px 23px; }
-
+    padding: 10px;
+    margin: 10px 23px 10px 23px;
+}
 /********** FOOTER **********/
-/* line 311, C:/portfolio/app/css/global.scss */
+
 .empty-bottom {
-  height: 61px; }
-
-/* line 315, C:/portfolio/app/css/global.scss */
+    height: 61px;
+}
 .footer {
-  position: absolute;
-  min-width: 1200px;
-  width: 100%;
-  height: 61px;
-  margin-top: -61px;
-  background: url(img/footer_bg.png) repeat-x top left; }
-
-/* line 323, C:/portfolio/app/css/global.scss */
+    position: absolute;
+    min-width: 1200px;
+    width: 100%;
+    height: 61px;
+    margin-top: -61px;
+    background: url(img/footer_bg.png) repeat-x top left;
+}
 .footer-inner {
-  width: 980px;
-  margin: 17px auto 0;}
-
-/*# sourceMappingURL=global.css.map */
+    width: 980px;
+    margin: 17px auto 0;
+}
 .locker {
     width: 250px;
-    float: left; }
+    float: left;
+}
 .locker-link {
     display: block;
     width: 19px;
@@ -514,18 +481,18 @@ html, body {
     background-repeat: no-repeat;
     background-position: -5px -5px;
     font-family: OpenSans-Bold;
-    font-size:12px;
+    font-size: 12px;
     text-decoration: none;
     color: #727070;
 }
 .locker-link:hover {
-  background-position: -5px -37px;
+    background-position: -5px -37px;
 }
 .copyright {
-  float: left;
-  padding:5px 0 0 0;
-  margin-left: 60px;
-  font-family:OpenSans-Light;
-  font-size: 12px;
-  width: 670px;
+    float: left;
+    padding: 5px 0 0 0;
+    margin-left: 60px;
+    font-family: OpenSans-Light;
+    font-size: 12px;
+    width: 670px;
 }
