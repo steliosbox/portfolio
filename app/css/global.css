@@ -1,24 +1,44 @@
 @font-face {
     font-family: 'OpenSans-Regular';
-    src: url("fonts/OpenSans-Regular.ttf");
+    src: url('/font/opensans-regular-webfont.eot');
+    src: url('/font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/opensans-regular-webfont.woff2') format('woff2'),
+         url('/font/opensans-regular-webfont.woff') format('woff'),
+         url('/font/opensans-regular-webfont.ttf') format('truetype'),
+         url('/font/opensans-regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-Semibold';
-    src: url("fonts/OpenSans-Semibold.ttf");
+    src: url('/font/opensans-semibold-webfont.eot');
+    src: url('/font/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/opensans-semibold-webfont.woff2') format('woff2'),
+         url('/font/opensans-semibold-webfont.woff') format('woff'),
+         url('/font/opensans-semibold-webfont.ttf') format('truetype'),
+         url('/font/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-Light';
-    src: url("fonts/OpenSans-Light.ttf");
+    src: url('/font/opensans-light-webfont.eot');
+    src: url('/font/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/opensans-light-webfont.woff2') format('woff2'),
+         url('/font/opensans-light-webfont.woff') format('woff'),
+         url('/font/opensans-light-webfont.ttf') format('truetype'),
+         url('/font/opensans-light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans-Bold';
-    src: url("fonts/OpenSans-Bold.ttf");
+    src: url('/font/opensans-bold-webfont.eot');
+    src: url('/font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/opensans-bold-webfont.woff2') format('woff2'),
+         url('/font/opensans-bold-webfont.woff') format('woff'),
+         url('/font/opensans-bold-webfont.ttf') format('truetype'),
+         url('/font/opensans-bold-webfont.svg#open_sansbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,12 +52,11 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-family: OpenSans-Regular;
-    font-size: 14px;
+    font: 14px OpenSans-Regular;
     color: #727070;
 }
 html {
-    background: url('img/2048x1152.jpg') no-repeat center center fixed;
+    background: url('/img/2048x1152.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -74,7 +93,7 @@ html {
 /****************** HEADER ******************/
 
 .header {
-    background: url(img/header_bg.png) repeat-x top left;
+    background: url(/img/header_bg.png) repeat-x top left;
     border-bottom: 7px solid white;
     height: 96px;
     min-width: 1200px;
@@ -169,7 +188,7 @@ html {
     text-shadow: 1px 1px rgba(255, 255, 255, 0.75);
 }
 .social-sprite {
-    background: url(img/spritesheet.png);
+    background: url(/img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -221,10 +240,12 @@ html {
     width: 252px;
 }
 /********** ASIDE NAVIGATION **********/
-
+.navigation {
+    margin-bottom: 33px;
+}
 .navigation-list {
     list-style: none;
-    margin: 0 0 30px 0;
+    margin: 0;
     padding: 0;
     border: 1px solid #c3c2c2;
     position: relative;
@@ -232,13 +253,19 @@ html {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
+    overflow: hidden;
+}
+.navigation-item {
+    border-top: 1px solid #c3c2c2;
+}
+.navigation-item:first-child {
+    border-top: none;
 }
 .navigation-link {
     display: block;
-    height: 56px;
-    padding: 17px 0 0 28px;
-    border-bottom: 1px solid #c3c2c2;
+/*    min-height: 55px;*/
+    padding: 17px 28px 17px 28px;
     font-family: OpenSans-Semibold;
     font-size: 20px;
     line-height: 22px;
@@ -251,7 +278,7 @@ html {
     background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9);
     background-image: linear-gradient(bottom, #e7e5e4, #faf9f9);
     -pie-background: linear-gradient(#e7e5e4, #faf9f9);
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 .navigation-link:hover {
     position: relative;
@@ -261,9 +288,9 @@ html {
     background-image: -o-linear-gradient(bottom, #e8e7e7, #c4c2c2);
     background-image: linear-gradient(bottom, #e8e7e7, #c4c2c2);
     -pie-background: linear-gradient(#e8e7e7, #c4c2c2);
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
-.corrent-nav {
+#corrent-nav {
     position: relative;
     background-color: #7ce6cc;
     background-image: -webkit-linear-gradient(top, #7ce6cc, #42ba9c);
@@ -271,50 +298,40 @@ html {
     background-image: -o-linear-gradient(top, #7ce6cc, #42ba9c);
     background-image: linear-gradient(top, #7ce6cc, #42ba9c);
     -pie-background: linear-gradient(#7ce6cc, #42ba9c);
-    behavior: url(/css/pie/PIE.htc);
-}
-.navigation-about-me a {
-    position: relative;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -ms-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    behavior: url(/css/pie/PIE.htc);
-}
-.navigation-contact-me a {
-    border: none;
-    position: relative;
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    -ms-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 /********** CONTACT **********/
 
 .contact {
     margin: 0;
     padding: 0;
-}
-.contact-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     position: relative;
     border: 1px solid #c3c2c2;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
+    overflow: hidden;
+}
+.contact-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;}
+.contact-item {
+    border-top: 1px solid #d4d3d2;
+}
+.contact-item:first-child {
+    border-top: none;
 }
 .contact-links {
     display: block;
-    height: 38px;
+    height: 37px;
+    float: left;
+    width: 100%;
     color: #727070;
-    font-size: 14px;
+    font: 14px OpenSans-Regular;
     text-decoration: none;
-    border-bottom: 1px solid #d4d3d2;
     position: relative;
     background-color: #e8e7e6;
     background-image: -webkit-linear-gradient(bottom, #e8e7e6, #faf9f9);
@@ -322,7 +339,7 @@ html {
     background-image: -o-linear-gradient(bottom, #e8e7e6, #faf9f9);
     background-image: linear-gradient(bottom, #e8e7e6, #faf9f9);
     -pie-background: linear-gradient(#e8e7e6, #faf9f9);
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 .contact-links:hover {
     text-decoration: underline;
@@ -333,41 +350,28 @@ html {
     background-image: -o-linear-gradient(bottom, #e0c591, #fbf9f9);
     background-image: linear-gradient(bottom, #e0c591, #fbf9f9);
     -pie-background: linear-gradient(#e0c591, #fbf9f9);
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 .contact-title {
     font-family: OpenSans-Semibold;
     font-size: 20px;
     line-height: 22px;
-    min-height: 45px;
-    padding: 13px 0 0 27px;
+/*    min-height: 41px;*/
+    padding: 10px 27px 10px 27px;
     color: #d0982c;
     position: relative;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -ms-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
     background-color: #dcb15d;
     background-image: -webkit-linear-gradient(bottom, #dcb15d, #f4cc7e);
     background-image: -moz-linear-gradient(bottom, #dcb15d, #f4cc7e);
     background-image: -o-linear-gradient(bottom, #dcb15d, #f4cc7e);
     background-image: linear-gradient(bottom, #dcb15d, #f4cc7e);
     -pie-background: linear-gradient(#dcb15d, #f4cc7e);
-    behavior: url(/css/pie/PIE.htc);
-}
-.contact-skype {
-    border-bottom: none;
-    position: relative;
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    -ms-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 /********** SPRITE **********/
 
 .contact-sprite {
-    background: url(img/spritesheet.png);
+    background: url(/img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -420,19 +424,21 @@ html {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 .section:first-child {
     margin-top: 0;
 }
+/* for fucking ie8 */
+.top-margin-none {
+    margin-top: 0;
+}
 .section-title {
-    font-family: OpenSans-Semibold;
-    font-size: 24px;
+    font: 24px/0.917 OpenSans-Semibold;
     color: #EEEDEC;
-    line-height: 0.917;
+    line-height: ;
     text-shadow: 0px 1px 0px #666565;
-    height: 55px;
-    padding: 14px 0 0 42px;
+    padding: 14px 42px 18px 42px;
     margin: 0;
     position: relative;
     -webkit-border-radius: 5px 5px 0 0;
@@ -445,10 +451,10 @@ html {
     background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
     background-image: linear-gradient(bottom, #7b7878, #a9a8a8);
     -pie-background: linear-gradient(#7b7878, #a9a8a8);
-    behavior: url(/css/pie/PIE.htc);
+    behavior: url(/pie/PIE.htc);
 }
 .section-content {
-    padding: 10px;
+    padding: 10px 10px;
     margin: 10px 23px 10px 23px;
 }
 /********** FOOTER **********/
@@ -462,7 +468,7 @@ html {
     width: 100%;
     height: 61px;
     margin-top: -61px;
-    background: url(img/footer_bg.png) repeat-x top left;
+    background: url(/img/footer_bg.png) repeat-x top left;
 }
 .footer-inner {
     width: 980px;
@@ -477,7 +483,7 @@ html {
     width: 19px;
     height: 22px;
     padding: 2px 2px 0 30px;
-    background: url(img/locker.png);
+    background: url(/img/locker.png);
     background-repeat: no-repeat;
     background-position: -5px -5px;
     font-family: OpenSans-Bold;

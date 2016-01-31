@@ -5,5 +5,9 @@
     "normalize-css": "normalize.css#~3.0.3",
     "html5shiv": "~3.7.3",
     "pie": "~1.0.0"
+  },
+  "devDependencies": {
+    "bPopup": "bpopup#~0.11.0",
+    "jquery-placeholder": "^2.3.1"
   }
 }
