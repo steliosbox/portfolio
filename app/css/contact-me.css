@@ -4,7 +4,7 @@ button:focus {
 .contact-form {
     width: 404px;
     margin: 0 auto;
-    font: 14px OpenSans-Regular;
+    font: 14px open_sansregular, Arial, sans-serif;
 }
 .contact-form-top {
     margin: 12px 0 14px;
@@ -22,7 +22,7 @@ button:focus {
 }
 .contact-form-top input {
     width: 193px;
-    font: 12px OpenSans-Light;
+    font: 12px open_sanslight, Arial, sans-serif;
     padding: 9px 9px;
     height: 40px;
     position: relative;
@@ -42,7 +42,7 @@ button:focus {
     width: 404px;
     max-width: 404px;
     padding: 10px;
-    font: 12px OpenSans-Light;
+    font: 12px open_sanslight, Arial, sans-serif;
     position: relative;
     border: 1px solid #e7e7e7;
     -webkit-border-radius: 3px;
@@ -57,7 +57,7 @@ button:focus {
 .contact-form-input button {
     width: 125px;
     height: 40px;
-    font: 14px OpenSans-Semibold;
+    font: 14px open_sanssemibold, Arial, sans-serif;
     padding-bottom: 7px;
     position: relative;
     border: 1px solid #e7e7e7;
@@ -118,7 +118,7 @@ button:focus {
 .captcha-input input {
     width: 193px;
     margin: 20px 0 0 8px;
-    font: 12px OpenSans-Light;
+    font: 12px open_sanslight, Arial, sans-serif;
     padding: 9px 9px;
     height: 40px;
     position: relative;
