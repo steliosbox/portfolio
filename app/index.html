@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-
 <head>
     <meta charset="UTF-8">
-
     <!-- Просим IE переключить в последний режим -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <!-- Корректное масштабирование на разных устройствах -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Сайт портфолио</title>
-
     <!-- SEO -->
     <meta name="discription" content=" ">
     <meta name="keywords" content=" ">
     <meta name="auther" content="Stelios Baglaridis">
-
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/about-me.css">
-
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
-        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <!-- Ваша верстак тут-->
     <div class="wrapper">
         <!-- HEADER -->
         <header class="header">
             <div class="header-inner clearfix">
-
                 <a href="/" class="header-logo">
-                    <img src="css/img/logo.png" alt="Логотип сайта портфoлио">
+                    <img src="/img/logo.png" alt="Логотип сайта портфoлио">
                 </a>
-
                 <ul class="social">
                     <li class="social-item">
                         <a href="https://www.facebook.com/baglaridis" target="_blank" class="social-link-fb">
@@ -61,94 +53,84 @@
                         </a>
                     </li>
                 </ul>
-
             </div>
         </header>
-
         <!-- MAIN BLOG -->
         <div class="container">
             <div class="container-inner clearfix">
-
                 <aside class="side-bar">
-
                     <nav class="navigation">
-
                         <ul class="navigation-list">
-                            <li class="navigation-about-me"><a href="/index.html" class="navigation-link corrent-nav">Обо мне</a>
+                            <li class="navigation-item">
+                                <a href="/index.html" class="navigation-link" id="corrent-nav">
+                                    Обо мне
+                                </a>
                             </li>
-                            <li><a href="/my-projects.html" class="navigation-link">Мой Работы</a>
+                            <li class="navigation-item">
+                                <a href="/my-projects.html" class="navigation-link">
+                                    Мои Работы
+                                </a>
                             </li>
-                            <li class="navigation-contact-me"><a href="/contact-me.html" class="navigation-link">Обратная связь</a>
+                            <li class="navigation-item">
+                                <a href="/contact-me.html" class="navigation-link">
+                                    Обратная связь
+                                </a>
                             </li>
                         </ul>
-
                     </nav>
-
                     <div class="contact">
-
+                        <div class="contact-title">Контакты</div>
                         <ul class="contact-list">
-
-                            <li class="contact-title">Контакты</li>
-
-                            <li>
+                            <li class="contact-item">
                                 <a href="mailto:s.baglaridis@gmail.com" class="contact-links">
                                     <i class="contact-sprite sprite-email-gold"></i>
                                     <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">s.baglaridis@gmail.com</span>
                                 </a>
                             </li>
-
-                            <li>
+                            <li class="contact-item">
                                 <a href="tel:+306984102514" class="contact-links">
                                     <i class="contact-sprite sprite-telephone"></i>
                                     <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">+30 6984102514</span>
                                 </a>
                             </li>
-
-                            <li>
-                                <a href="skype:amb.crete?chat" class="contact-links contact-skype">
+                            <li class="contact-item">
+                                <a href="skype:amb.crete?chat" class="contact-links">
                                     <i class="contact-sprite sprite-skype"></i>
                                     <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">amb.crete</span>
                                 </a>
                             </li>
-
                         </ul>
-
                     </div>
-
                 </aside>
-
                 <div class="content">
-                    <section class="section">
+                    <section class="section top-margin-none">
                         <h3 class="section-title">Основная информация</h3>
                         <div class="section-content clearfix">
-
-                            <div class="my-photo-container">
-                                <div class="my-photo-inner">
-                                    <img src="css/img/me.png" alt="my photo" class="me-photo">
+                            <div class="about-me-left">
+                                <div class="about-me-pic-container">
+                                    <img src="/img/me.png" alt="my photo" class="about-me-pic">
                                 </div>
                             </div>
-
-                            <div class="about-me-content-right">
-
+                            <div class="about-me-right">
                                 <ul class="about-me-list">
                                     <li class="about-me-item">
                                         <span class="about-me-item-a">Меня зовут:</span>
-                                        <span>Baglaridis Stelios</span>
+                                        <span class="about-me-item-b">Baglaridis Stelios</span>
                                     </li>
                                     <li class="about-me-item">
                                         <span class="about-me-item-a">Мой возраст:</span>
-                                        <span>31 год</span>
+                                        <span class="about-me-item-b">31 год</span>
                                     </li>
                                     <li class="about-me-item">
                                         <span class="about-me-item-a">Мой город:</span>
-                                        <span>Ираклион, Греция - о.Крит</span>
+                                        <span class="about-me-item-b">Ираклион, Греция - о.Крит</span>
                                     </li>
                                     <li class="about-me-item">
-                                        <span class="about-me-item-a">Моя спецализация:</span>
-                                        <span>FRONDEND разрабодчик</span>
+                                        <span class="about-me-item-a">Моя специализация:</span>
+                                        <span class="about-me-item-b">FRONTEND разрабодчик</span>
                                     </li>
                                     <li class="about-me-item clearfix">
                                         <div class="my-skills">Ключевые навыки:</div>
@@ -162,70 +144,49 @@
                                         </ul>
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
                     </section>
-
                     <section class="section">
-                        <h3 class="section-title">Обыт работы</h3>
+                        <h3 class="section-title">Опыт работы</h3>
                         <div class="section-content clearfix">
-
                             <div class="work-experience ico-case">
-
                                 <ul class="work-experience-list">
                                     <li class="work-experience-title">Туристическая компания "Ambotis Holidays" - Кординатор</li>
-                                    <li>2014 - По сей день</li>
+                                    <li class="work-experiance-period">2014 - По сей день</li>
                                 </ul>
-
                             </div>
-
                             <div class="work-experience ico-case no-borders">
-
                                 <ul class="work-experience-list">
                                     <li class="work-experience-title">Туристическая компания "Beleon Tours" - Главный представитель региона</li>
-                                    <li>2011 - 2013</li>
+                                    <li class="work-experiance-period">2011 - 2013</li>
                                 </ul>
-
                             </div>
-
                         </div>
                     </section>
-
                     <section class="section">
                         <h3 class="section-title">Образование</h3>
                         <div class="section-content clearfix">
-
                             <div class="education ico-school">
-
                                 <ul class="education-list">
                                     <li class="education-title">Школа № 99, Tbilisi</li>
-                                    <li>1990 - 2000</li>
+                                    <li class="education-period">1990 - 2000</li>
                                 </ul>
-
                             </div>
-
                             <div class="education ico-graguete">
-
                                 <ul class="education-list">
                                     <li class="education-title">Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
-                                    <li>2005 - 2007</li>
+                                    <li class="education-period">2005 - 2007</li>
                                 </ul>
-
                             </div>
-
                             <div class="education ico-diploma">
-
                                 <ul class="education-list">
                                     <li class="education-title">Курсы LoftSchool.ru - Онлайн</li>
-                                    <li>Январь 2016 по сей день</li>
+                                    <li class="education-period">Январь 2016 по сей день</li>
                                 </ul>
-
                             </div>
-
                         </div>
                     </section>
-
                 </div>
             </div>
         </div>
@@ -248,7 +209,5 @@
         window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')
     </script>
     <!-- другие подключаемые JS файлы -->
-
 </body>
-
 </html>

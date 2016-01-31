@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-
 <head>
     <meta charset="UTF-8">
-    
     <!-- Просим IE переключить в последний режим -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <!-- Корректное масштабирование на разных устройствах -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <title>Мои работы</title>
-    
     <!-- SEO -->
     <meta name="discription" content=" ">
     <meta name="keywords" content=" ">
     <meta name="auther" content="Stelios Baglaridis">
-    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/my-projects.css">
-    
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
-        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
     <![endif]-->
 </head>
 <body>
     <!-- Ваша верстак тут-->
     <div class="wrapper">
-      
         <!-- HEADER -->
         <header class="header">
             <div class="header-inner clearfix">
-                
                 <a href="/" class="header-logo">
-                    <img src="css/img/logo.png" alt="Логотип сайта портфoлио">
+                    <img src="/img/logo.png" alt="Логотип сайта портфoлио">
                 </a>
-                
                 <ul class="social">
                   <li class="social-item">
                     <a href="https://www.facebook.com/baglaridis" tartget="_blank" class="social-link-fb">
@@ -61,50 +53,50 @@
                     </a>
                   </li>
                 </ul>
-                
             </div>
         </header>
-        
         <!-- MAIN BLOG -->
         <div class="container">
             <div class="container-inner clearfix">
-               
                 <aside class="side-bar">
-                    
                     <nav class="navigation">
-                        
                         <ul class="navigation-list">
-                            <li class="navigation-about-me"><a href="/index.html" class="navigation-link">Обо мне</a></li>
-                            <li><a href="/my-projects.html" class="navigation-link corrent-nav">Мой Работы</a></li>
-                            <li class="navigation-contact-me"><a href="/contact-me.html" class="navigation-link">Обратная связь</a></li>
+                            <li class="navigation-item">
+                                <a href="/index.html" class="navigation-link">
+                                    Обо мне
+                                </a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="/my-projects.html" class="navigation-link" id="corrent-nav">
+                                    Мой Работы
+                                </a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="/contact-me.html" class="navigation-link">
+                                    Обратная связь
+                                </a>
+                            </li>
                         </ul>
-                        
                     </nav>
-                    
                     <div class="contact">
-                        
                         <ul class="contact-list">
-                            
                             <li class="contact-title">Контакты</li>
-                            
-                            <li>
+                            <li class="contact-item">
                                 <a href="mailto:s.baglaridis@gmail.com" class="contact-links">
                                     <i class="contact-sprite sprite-email-gold"></i>
                                     <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">s.baglaridis@gmail.com</span>
                                 </a>
                             </li>
-                            
-                            <li>
+                            <li class="contact-item">
                                 <a href="tel:+306984102514" class="contact-links">
                                     <i class="contact-sprite sprite-telephone"></i>
                                     <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">+30 6984102514</span>
                                 </a>
                             </li>
-                            
-                            <li>
-                                <a href="skype:amb.crete?chat" class="contact-links contact-skype">
+                            <li class="contact-item">
+                                <a href="skype:amb.crete?chat" class="contact-links">
                                     <i class="contact-sprite sprite-skype"></i>
                                     <i class="contact-sprite sprite-arrow"></i>
                                     <span class="sprite-contact">amb.crete</span>
@@ -113,43 +105,80 @@
                         </ul>
                     </div>
                 </aside>
-        
                 <div class="content">
-                    <section class="section">
-                        <h3 class="section-title">Мои проекты</h3>
-                        <div class="section-content clearfix projectMargin">
-
-                            <div class="projects-item">
-                            
-                                <div class="project-img-container">
-                                    <img src="http://loftshool.mcdir.ru/img/my-project-1.jpg" alt="http://ls1.technofreedom.ru/" class="project-img">
-                                    <div class="hidden-text">
-                                        <a href="http://ls1.technofreedom.ru/" target="_blank" class="hidden-text-link">
-                                            technofreedom.ru
-                                        </a>
+                    <section class="section top-margin-none">
+                        <h3 class="section-title">Мои работы</h3>
+                        
+                        <div class="my-projects clearfix">
+                           
+                            <ul class="projects-list">
+                                <li class="projects-item">
+                                    <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
+                                        <div class="projects-img-container">
+                                            <img src="/img/pic.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                                            <div class="projects-img-txt">a-industry.ru</div>
+                                        </div>
+                                    </a>
+                                    <div class="projects-txt">
+                                        <a href="ls1.technofreedom.ru" class="projects-links">a-industry.ru</a>
                                     </div>
-                                </div>
-                                
-                                <div class="project-url">
-                                    ls1.technofreedom.ru
-                                </div>
-                                <div class="project-discription">
-                                    Первое домашнее задание LoftSchool
-                                </div>  
-                            
-                            </div>
-                            
-                            <div class="add-project-container projectMargin">
-                                <div class="add-project-img-container">
-                                    <div class="add-project-img">
-                                        <div class="polaroid"></div>
+                                    <div class="projects-disc">
+                                        Корпоративный и в тоже время продающий сайт строительной компании a-industry.
                                     </div>
-                                </div>
-                                <div class="add-project-text">
-                                    Добавить проект
-                                </div>  
-                            </div>
-                            
+                                </li>
+                                <li class="projects-item">
+                                    <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
+                                        <div class="projects-img-container">
+                                            <img src="/img/pic-2.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                                            <div class="projects-img-txt">домгазобетон.рф</div>
+                                        </div>
+                                    </a>
+                                    <div class="projects-txt">
+                                        <a href="ls1.technofreedom.ru" class="projects-links">домгазобетон.рф</a>
+                                    </div>
+                                    <div class="projects-disc">
+                                        Продающая страница для компании ledenland.
+                                    </div>
+                                </li>
+                                <li class="projects-item">
+                                    <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
+                                        <div class="projects-img-container">
+                                            <img src="/img/my-project-1-full-size.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                                            <div class="projects-img-txt">technofreedom.ru</div>
+                                        </div>
+                                    </a>
+                                    <div class="projects-txt">
+                                        <a href="ls1.technofreedom.ru" class="projects-links">ls1.technofreedom.ru</a>
+                                    </div>
+                                    <div class="projects-disc">
+                                        Первое домашнее задание LoftSchool
+                                    </div> 
+                                </li>
+                                <li class="projects-item">
+                                    <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
+                                        <div class="projects-img-container">
+                                            <img src="http://loftshool.mcdir.ru/img/my-project-1.jpg" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                                            <div class="projects-img-txt">technofreedom.ru</div>
+                                        </div>
+                                    </a>
+                                    <div class="projects-txt">
+                                        <a href="ls1.technofreedom.ru" class="projects-links">ls1.technofreedom.ru</a>
+                                    </div>
+                                    <div class="projects-disc">
+                                        Первое домашнее задание LoftSchool
+                                    </div>
+                                </li>                                    
+                                <li class="projects-item add-project">
+                                    <a href="#" class="add-project-link">
+                                        <div class="add-project-container">
+                                            <div class="polaroid"></div>
+                                        </div>
+                                        <div class="add-project-txt">
+                                            Добавить проект
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </section>                    
                 </div>            
@@ -157,7 +186,6 @@
         </div>
         <div class="empty-bottom"></div>
     </div>
-    
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner clearfix">
@@ -169,11 +197,10 @@
             </div>
         </div>
     </footer>
-    
     <!-- JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <!-- другие подключаемые JS файлы -->
-    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="bower/bPopup/jquery.bpopup.js"></script>      
 </body>
 </html>
