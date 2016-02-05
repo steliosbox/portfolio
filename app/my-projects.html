@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/my-projects.css">
+    <link rel="stylesheet" href="css/bpopup.css">
     <!--[if lt IE 9]>
         <script src="bower/html5shiv/dist/html5shiv.js"></script>
         <script src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
@@ -109,15 +110,13 @@
                 <div class="content">
                     <section class="section top-margin-none">
                         <h3 class="section-title">Мои работы</h3>
-                        
                         <div class="my-projects clearfix">
-                           
                             <ul class="projects-list">
                                 <li class="projects-item">
                                     <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
                                         <div class="projects-img-container">
                                             <img src="/img/pic.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
-                                            <div class="projects-img-txt">a-industry.ru</div>
+                                            <div class="projects-img-txt">подробнее</div>
                                         </div>
                                     </a>
                                     <div class="projects-txt">
@@ -131,7 +130,7 @@
                                     <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
                                         <div class="projects-img-container">
                                             <img src="/img/pic-2.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
-                                            <div class="projects-img-txt">домгазобетон.рф</div>
+                                            <div class="projects-img-txt">подробнее</div>
                                         </div>
                                     </a>
                                     <div class="projects-txt">
@@ -145,7 +144,7 @@
                                     <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
                                         <div class="projects-img-container">
                                             <img src="/img/my-project-1-full-size.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
-                                            <div class="projects-img-txt">technofreedom.ru</div>
+                                            <div class="projects-img-txt">подробнее</div>
                                         </div>
                                     </a>
                                     <div class="projects-txt">
@@ -158,8 +157,8 @@
                                 <li class="projects-item">
                                     <a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
                                         <div class="projects-img-container">
-                                            <img src="http://loftshool.mcdir.ru/img/my-project-1.jpg" alt="http://ls1.technofreedom.ru/" class="projects-img">
-                                            <div class="projects-img-txt">technofreedom.ru</div>
+                                            <img src="/img/my-project-1-full-size.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                                            <div class="projects-img-txt">подробнее</div>
                                         </div>
                                     </a>
                                     <div class="projects-txt">
@@ -170,7 +169,7 @@
                                     </div>
                                 </li>                                    
                                 <li class="projects-item add-project">
-                                    <a href="#" class="add-project-link">
+                                    <a href="#" class="add-project-link" id="my-button">
                                         <div class="add-project-container">
                                             <div class="polaroid"></div>
                                         </div>
@@ -181,11 +180,42 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- ПОПАП ФОРМА - НАЧАЛО -->
+                        <div class="bpopup" id="bpopup">
+                            <a href="#" class="b-close"></a>
+                            <div class="popup-blocks">
+                                <label for="project-name">Название проекта</label>
+                                <input type="text" name="project-name" id="project-name" class="project-name" placeholder="Введите название">
+                            </div>
+                            <div class="popup-blocks">
+                                <label for="project-image">Картинка проекта</label>
+                                <label for="project-image" class="popup-label-img clearfix">
+                                    <span class="popup-label-img-txt">
+                                        Загрузите изображение
+                                    </span>
+                                    <span class="popup-label-img-ico"></span>
+                                    <input type="file" name="project-image" id="project-image" class="project-image">
+                                </label>
+                            </div>
+                            <div class="popup-blocks">
+                                <label for="project-url">URL проекта</label>
+                                <input type="text" name="project-url" placeholder="Добавьте ссылку">
+                            </div>
+                            <div class="popup-blocks">
+                                <label for="project-desc">Описание</label>
+                                <textarea type="textarea" name="project-desc" id="project-desc" class="project-desc" placeholder="Пара слов о Вашем проекте"></textarea>
+                            </div>
+                            <div class="popup-blocks popup-blocks-submit">
+                                <button type="submit" name="project-submit" id="project-submit" class="popup-submit">
+                                    Добавить
+                                </button>
+                            </div>
+                        </div>
+                        <!-- ПОПАП ФОРМА - КОНЕЦ -->
                     </section>                    
                 </div>            
             </div>
         </div>
-        <div class="empty-bottom"></div>
     </div>
     <!-- FOOTER -->
     <footer class="footer">
@@ -202,6 +232,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <!-- другие подключаемые JS файлы -->
-    <script src="bower/bPopup/jquery.bpopup.js"></script>      
+    <script src="bower/bPopup/jquery.bpopup.js"></script> 
+    <script src="js/main.js"></script>     
 </body>
 </html>

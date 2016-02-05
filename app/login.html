@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <!-- Просим IE переключить в последний режим -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Корректное масштабирование на разных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мои работы</title>
+    <!-- SEO -->
+    <meta name="discription" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="auther" content="Stelios Baglaridis">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!--[if lt IE 9]>
+        <script src="bower/html5shiv/dist/html5shiv.js"></script>
+        <script src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Ваша верстак тут-->
+    <div class="wrapper login-block">
+        <form action="" method="post">
+            <div class="login-form">
+                <span class="login-title">Авторизируйтесь</span>
+                <div class="login-form-inner">
+                    <div class="login-form-username">
+                        <input type="text" 
+                            name="login-input-username" 
+                            id="login-input-username" 
+                            class="login-input-username" 
+                            placeholder="Введите Email">
+                    </div>
+                    <div class="login-form-password">
+                        <input type="text" 
+                            name="login-input-password" 
+                            id="login-input-password" 
+                            class="login-input-password" 
+                            placeholder="Введите пароль">
+                    </div>
+                    <div class="login-input-checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Запомнить меня?</label>
+                    </div>
+                    <div class="login-input-submit">
+                        <button type="submit" name="login-submit" id="login-submit" class="login-submit">
+                            Войти
+                        </button>
+                    </div>                      
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner clearfix">
+            <div class="locker">
+                <a href="login.html" class="locker-link">ВХОД</a>
+            </div>
+            <div class="copyright">
+                © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
+    <!-- другие подключаемые JS файлы -->
+    <script src="bower/bPopup/jquery.bpopup.js"></script> 
+    <script src="js/main.js"></script>     
+</body>
+</html>

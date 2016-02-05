@@ -43,10 +43,10 @@
 }
 .about-me-item-a,
 .my-skills {
-    font-family: OpenSans-Semibold;
+    font-family: open_sanssemibold, Arial, sans-serif;
 }
 .about-me-item-b {
-    font: 14px OpenSans-Regular;
+    font: 14px OpenSans-Regular, Arial, sans-serif;
     padding: 0 0 0 4px;
 }
 .my-skills {
@@ -63,7 +63,7 @@
 .tag-item {
     list-style: none;
     display: inline-block;
-    font: 9px/16px OpenSans-Semibold;
+    font: 9px/16px open_sanssemibold, Arial, sans-serif;
     color: #1e7465;
     padding: 0 8px 0 6px;
     margin: 0 13px 6px 0;
@@ -106,12 +106,12 @@
     list-style: none;
 }
 .work-experience-title {
-    font-family: OpenSans-Semibold;
+    font-family: open_sanssemibold, Arial, sans-serif;
     padding-bottom: 6px;
 }
 .work-experiance-period,
 .education-period {
-    font: 14px OpenSans-Regular;
+    font: 14px open_sansregular, Arial, sans-serif;
 }
 /************** MAIN SITE CONTENT - my-education **************/
 
@@ -130,7 +130,7 @@
     list-style: none;
 }
 .education-title {
-    font-family: OpenSans-Semibold;
+    font-family: open_sansregular, Arial, sans-serif;
     padding-bottom: 6px;
 }
 /********** ICONS  **********/
