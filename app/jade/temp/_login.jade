@@ -1,0 +1,21 @@
+form(action="" method="post")
+    .login-form
+        span.login-title Авторизируйтесь
+        .login-form-inner
+            .login-form-username
+                input(type="text" 
+                    name="login-input-username" 
+                    id="login-input-username" 
+                    class="login-input-username" 
+                    placeholder="Введите Email")
+            .login-form-password
+                input(type="text" 
+                    name="login-input-password" 
+                    id="login-input-password" 
+                    class="login-input-password" 
+                    placeholder="Введите пароль")
+            .login-input-checkbox
+                input(type="checkbox")#checkbox
+                label(for="checkbox") Запомнить меня?
+            .login-input-submit
+                button(type="submit" name="login-submit").login-submit#login-submit Войти

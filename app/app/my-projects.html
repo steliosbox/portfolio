@@ -99,7 +99,8 @@
             </section><!-- ПОПАП ФОРМА - НАЧАЛО -->
             <div id="bpopup" class="bpopup">
               <form action="add_project.php" method="post" id="add-project-form"><a href="#" class="b-close"></a>
-                <div class="popup-msg">msg box</div>
+                <!--.popup-success-msg success-->
+                <!--.popup-error-msg error-->
                 <div class="popup-blocks">
                   <label for="project-name">Название проекта</label>
                   <input type="text" name="project-name" placeholder="Введите название" qtip-position="left" qtip-content="Введите название проекта" id="project-name" class="input">
@@ -107,16 +108,18 @@
                 <div class="popup-blocks">
                   <label for="project-image">Картинка проекта</label>
                   <label for="project-image" class="popup-label-img clearfix"><span class="popup-label-img-txt">Загрузите изображение</span><span class="popup-label-img-ico"></span>
-                    <input type="file" name="project-image" qtip-position="left" qtip-content="Изображение" id="project-image" class="project-image">
+                    <input type="file" name="project-image" qtip-position="left" qtip-content="Введите название проекта" id="project-image" class="project-image">
                   </label>
                 </div>
                 <div class="popup-blocks">
                   <label for="project-url">URL проекта</label>
-                  <input type="text" name="project-url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="Ссылка на проект" class="input">
+                  <input type="text" name="project-url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="Введите название проекта">
+                  <div class="tooltiptext">URL проекта</div>
                 </div>
                 <div class="popup-blocks">
                   <label for="project-desc">Описание</label>
-                  <textarea type="textarea" name="project-desc" placeholder="Пара слов о Вашем проекте" qtip-position="left" qtip-content="Описание проекта" class="textarea"></textarea>
+                  <textarea type="textarea" name="project-desc" placeholder="Пара слов о Вашем проекте" qtip-position="left" qtip-content="Введите название проекта" id="project-desc" class="project-desc"></textarea>
+                  <div class="tooltiptext">Описание</div>
                 </div>
                 <div class="popup-blocks popup-blocks-submit">
                   <button type="submit" name="project-submit" id="project-submit" class="popup-submit">Добавить</button>

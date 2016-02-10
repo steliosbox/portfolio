@@ -1,0 +1,180 @@
+/************** ABOUT ME **************/
+.about-me-left {
+    float: left;
+    padding: 20px 10px;
+}
+.about-me-pic-container {
+    display: inline-block;
+    padding: 8px;
+    width: 151px;
+    height: 151px;
+    background: #f7f6f5;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    behavior: url(/pie/PIE.htc);
+    text-align: center;
+}
+.about-me-pic {
+    width: 100%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    behavior: url(/pie/PIE.htc);
+}
+.about-me-right {
+    float: left;
+    margin-left: 20px;
+    padding: 14px 0 0 4px;
+}
+.about-me-list {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+}
+.about-me-item {
+    padding: 0 0 6px 0;
+}
+.about-me-item-a,
+.my-skills {
+    font-family: open_sanssemibold, Arial, sans-serif;
+}
+.about-me-item-b {
+    font: 14px OpenSans-Regular, Arial, sans-serif;
+    padding: 0 0 0 4px;
+}
+.my-skills {
+    float: left;
+    margin: 11px 0 0 0;
+}
+.tag-list {
+    float: left;
+    width: 215px;
+    margin: 13px 0 0 14px;
+    padding: 0;
+    list-style: none;
+}
+.tag-item {
+    list-style: none;
+    display: inline-block;
+    font: 9px/16px open_sanssemibold, Arial, sans-serif;
+    color: #1e7465;
+    padding: 0 8px 0 6px;
+    margin: 0 13px 6px 0;
+    border: 1px solid #c5c5c5;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #e9e6e4;
+    background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    background-image: linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
+    behavior: url(/pie/PIE.htc);
+}
+.tag-item:before {
+    content: ' ';
+    position: absolute;
+    width: 14px;
+    height: 25px;
+    margin: -5px 0 0 -15px;
+    background-image: url("/img/arrow-tag.png");
+}
+/************** MAIN SITE CONTENT - work-experience **************/
+
+.work-experience {
+    position: relative;
+    padding: 25px 0 25px 80px;
+    margin: 0;
+    border-top: 1px solid #666;
+}
+.work-experience:first-child {
+    border-top: none;
+}
+.work-experience-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.work-experience-title {
+    font-family: open_sanssemibold, Arial, sans-serif;
+    padding-bottom: 6px;
+}
+.work-experiance-period,
+.education-period {
+    font: 14px open_sansregular, Arial, sans-serif;
+}
+/************** MAIN SITE CONTENT - my-education **************/
+
+.education {
+    padding: 25px 0 25px 80px;
+    margin: 0;
+    border-top: 1px solid #666;
+    position: relative;
+}
+.education:first-child {
+    border-top: none;
+}
+.education-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.education-title {
+    font-family: open_sansregular, Arial, sans-serif;
+    padding-bottom: 6px;
+}
+/********** ICONS  **********/
+.sprite-box {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%,-50%);
+}
+.sprite-case {
+    width: 52px;
+    height: 53px;
+    display: block;
+    position: relative;
+    background: #f7f7f7;
+    box-shadow: -1px -1px 0 #c2c2c2, 1px 1px 0 #fff;
+    border-radius: 50%;
+}
+.sprite-case:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ico-case:before {
+	width: 21px;
+	height: 19px;
+    background: url('/img/spritesheet.png') no-repeat -5px -55px;
+}
+.ico-graguete:before {
+	background: url('/img/spritesheet.png') no-repeat -132px -87px;
+	width: 27px;
+	height: 18px;
+}
+.ico-diploma:before {	
+    background: url('/img/spritesheet.png') no-repeat -26px -87px;
+	width: 15px;
+	height: 20px;
+}
+.ico-school:before {
+    background: url('/img/spritesheet.png') no-repeat -170px -98px;
+	width: 21px;
+	height: 21px;
+}

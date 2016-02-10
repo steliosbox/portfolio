@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@import 'fonts';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font: 14px open_sansregular, Arial, sans-serif;
+    color: #727070;
+}
+html {
+    background: url('/img/2048x1152.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@import 'tricks';
+@import 'grid';
+/********** LOGO **********/
+.header-logo {
+    float: left;
+    margin-top: 10px;
+}
+@import 'social';
+@import 'navigation';
+@import 'contact-menu';
+@import 'section';
+@import 'footer';

@@ -1,0 +1,44 @@
+/************** SECTION **************/
+.section {
+    margin-top: 36px;
+    background: #f5f4f3;
+    box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75), 
+        inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
+    border: 1px solid #c3c2c2;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(/pie/PIE.htc);
+}
+.section:first-child {
+    margin-top: 0;
+}
+/* for fucking ie8 */
+.top-margin-none {
+    margin-top: 0;
+}
+.section-title {
+    font: 24px/0.917 open_sanssemibold, Arial, sans-serif;
+    color: #EEEDEC;
+    text-shadow: 0px 1px 0px #666565;
+    padding: 14px 42px 18px 42px;
+    margin: 0;
+    position: relative;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #7b7878;
+    background-image: -webkit-linear-gradient(bottom, #7b7878, #a9a8a8);
+    background-image: -moz-linear-gradient(bottom, #7b7878, #a9a8a8);
+    background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
+    background-image: linear-gradient(bottom, #7b7878, #a9a8a8);
+    -pie-background: linear-gradient(#7b7878, #a9a8a8);
+    behavior: url(/pie/PIE.htc);
+}
+.section-content {
+    padding: 10px 10px;
+    margin: 10px 23px 10px 23px;
+}

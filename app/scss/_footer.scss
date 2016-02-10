@@ -1,0 +1,29 @@
+/********** FOOTER **********/
+.locker {
+    width: 250px;
+    float: left;
+}
+.locker-link {
+    display: block;
+    width: 19px;
+    height: 22px;
+    padding: 2px 2px 0 30px;
+    background: url(/img/locker.png);
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
+    font-family: open_sansbold;
+    font-size: 12px;
+    text-decoration: none;
+    color: #727070;
+}
+.locker-link:hover {
+    background-position: -5px -37px;
+}
+.copyright {
+    float: left;
+    padding: 5px 0 0 0;
+    margin-left: 60px;
+    font-family: open_sanslight, Arial, sans-serif;
+    font-size: 12px;
+    width: 670px;
+}

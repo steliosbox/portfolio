@@ -1,0 +1,19 @@
+/**************** CSS TRICKS ****************/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/** for IE 6/7 only **/
+
+.cf {
+    *zoom: 1;
+}
+.text-hide {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+}

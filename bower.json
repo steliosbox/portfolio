@@ -1,13 +1,13 @@
 {
-  "name": "portfolio",
-  "dependencies": {
-    "jquery": "1.8",
-    "normalize-css": "normalize.css#~3.0.3",
-    "html5shiv": "~3.7.3",
-    "pie": "~1.0.0"
-  },
-  "devDependencies": {
-    "bPopup": "bpopup#~0.11.0",
-    "jquery-placeholder": "^2.3.1"
-  }
+    "name": "portfolio",
+    "dependencies": {
+        "jquery": "~3.0.0-beta1",
+        "normalize-css": "normalize.css#~3.0.3",
+        "html5shiv": "~3.7.3",
+    },
+    "devDependencies": {
+        "bPopup": "bpopup#~0.11.0",
+        "jquery-placeholder": "^2.3.1",
+        "qtip2": "^2.2.1",
+    }
 }
