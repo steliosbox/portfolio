@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="/css/my-projects.css">
     <link rel="stylesheet" href="/css/bpopup.css">
     <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
-    <!--if lt IE 9
-    script(src='bower/html5shiv/dist/html5shiv.js')
-    script(src='app/bower/jquery-placeholder/jquery.placeholder.js')
+    <script src="js/modernizr-custom.js"></script>
+    <!--if lt IE 9<script src='/bower/jquery-placeholder/jquery.placeholder.js'</script>
     -->
     <title>Мои работы</title>
   </head>
@@ -30,10 +29,10 @@
       <header class="header">
         <div class="header-inner clearfix"><a href="/" class="header-logo"><img src="/img/logo.png" alt="Логотип сайта портфoлио"></a>
           <ul class="social">
-            <li class="social-item"><a href="https://www.facebook.com/baglaridis" target="_blank" class="social-link-fb"><span class="social-sprite social-sprite-fb text-hide">facebook</span></a></li>
-            <li class="social-item"><a href="http://vk.com/s.baglaridis" target="_blank" class="social-link-vk"><span class="social-sprite social-sprite-vk text-hide">vkontakte</span></a></li>
-            <li class="social-item"><a href="#u_menya_net_tw" target="_blank" class="social-link-tw"><span class="social-sprite social-sprite-tw text-hide">twitter</span></a></li>
-            <li class="social-item"><a href="https://github.com/steliosbox" target="_blank" class="social-link-github"><span class="social-sprite social-sprite-github text-hide">github</span></a></li>
+            <li class="social-item social-item-fb"><a href="https://www.facebook.com/baglaridis" target="_blank" class="social-link social-link-fb text-hide">test</a></li>
+            <li class="social-item social-item-vk"><a href="http://vk.com/s.baglaridis" target="_blank" class="social-link social-link-vk text-hide">vkontakte</a></li>
+            <li class="social-item social-item-tw"><a href="#u_menya_net_tw" target="_blank" class="social-link social-link-tw text-hide">twitter</a></li>
+            <li class="social-item social-item-github"><a href="https://github.com/steliosbox" target="_blank" class="social-link social-link-github text-hide">github</a></li>
           </ul>
         </div>
       </header>
@@ -76,14 +75,14 @@
                     <div class="projects-disc">Продающая страница для компании ledenland.</div>
                   </li>
                   <li class="projects-item"><a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
-                      <div class="projects-img-container"><img src="/img/my-project-1-full-size.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                      <div class="projects-img-container"><img src="/img/pic-3.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
                         <div class="projects-img-txt">подробнее</div>
                       </div></a>
                     <div class="projects-txt"><a href="ls1.technofreedom.ru" class="projects-links">ls1.technofreedom.ru</a></div>
                     <div class="projects-disc">Первое домашнее задание LoftSchool</div>
                   </li>
                   <li class="projects-item"><a href="http://ls1.technofreedom.ru/" target="_blank" class="projects-hover">
-                      <div class="projects-img-container"><img src="/img/my-project-1-full-size.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
+                      <div class="projects-img-container"><img src="/img/pic-3.png" alt="http://ls1.technofreedom.ru/" class="projects-img">
                         <div class="projects-img-txt">подробнее</div>
                       </div></a>
                     <div class="projects-txt"><a href="ls1.technofreedom.ru" class="projects-links">ls1.technofreedom.ru</a></div>
@@ -98,7 +97,8 @@
               </div>
             </section><!-- ПОПАП ФОРМА - НАЧАЛО -->
             <div id="bpopup" class="bpopup">
-              <form action="add_project.php" method="post" id="add-project-form"><a href="#" class="b-close"></a>
+              <form action="add_project.php" method="post" id="add-project-form">
+                <div class="bpopup-title">Добавление проекта</div><a href="#" class="b-close"></a>
                 <div class="popup-msg">msg box</div>
                 <div class="popup-blocks">
                   <label for="project-name">Название проекта</label>
@@ -112,11 +112,11 @@
                 </div>
                 <div class="popup-blocks">
                   <label for="project-url">URL проекта</label>
-                  <input type="text" name="project-url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="Ссылка на проект" class="input">
+                  <input type="text" name="project-url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="Ссылка на проект" id="project-url" class="input">
                 </div>
                 <div class="popup-blocks">
                   <label for="project-desc">Описание</label>
-                  <textarea type="textarea" name="project-desc" placeholder="Пара слов о Вашем проекте" qtip-position="left" qtip-content="Описание проекта" class="textarea"></textarea>
+                  <textarea type="textarea" name="project-desc" placeholder="Пара слов о Вашем проекте" qtip-position="left" qtip-content="Описание проекта" id="project-desc" class="textarea"></textarea>
                 </div>
                 <div class="popup-blocks popup-blocks-submit">
                   <button type="submit" name="project-submit" id="project-submit" class="popup-submit">Добавить</button>

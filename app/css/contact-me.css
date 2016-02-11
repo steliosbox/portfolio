@@ -26,7 +26,6 @@ button:focus {
   padding: 9px 9px;
   height: 40px;
   position: relative;
-  border: 1px solid #e7e7e7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -44,7 +43,6 @@ button:focus {
   padding: 10px;
   font: 12px open_sanslight, Arial, sans-serif;
   position: relative;
-  border: 1px solid #e7e7e7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -122,9 +120,16 @@ button:focus {
   padding: 9px 9px;
   height: 40px;
   position: relative;
-  border: 1px solid #e7e7e7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
   behavior: url(/pie/PIE.htc); }
+
+input, textarea {
+  border: 1px solid #e7e7e7; }
+
+.error-field {
+  outline: none;
+  border: 1px solid #F00;
+  background: rgba(255, 0, 0, 0.25); }

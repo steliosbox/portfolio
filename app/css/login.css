@@ -38,7 +38,7 @@
   content: '';
   display: block;
   position: absolute;
-  background: url("/img/spritesheet2.png") no-repeat -5px -53px;
+  background: url("/img/spritesheet.png") no-repeat -25px -5px;
   width: 11px;
   height: 40px;
   left: 45px;
@@ -48,7 +48,7 @@
   content: '';
   display: block;
   position: absolute;
-  background: url("/img/spritesheet2.png") no-repeat -100px -53px;
+  background: url("/img/spritesheet.png") no-repeat -46px -47px;
   width: 22px;
   height: 16px;
   left: 16px;
@@ -68,7 +68,7 @@
   content: '';
   display: block;
   position: absolute;
-  background: url("/img/spritesheet2.png") no-repeat -5px -53px;
+  background: url("/img/spritesheet.png") no-repeat -25px -5px;
   width: 11px;
   height: 40px;
   left: 45px;
@@ -80,7 +80,7 @@
   position: absolute;
   left: 17px;
   top: 13px;
-  background: url("/img/spritesheet2.png") no-repeat -140px -107px;
+  background: url("/img/spritesheet.png") no-repeat -5px -136px;
   width: 21px;
   height: 19px; }
 

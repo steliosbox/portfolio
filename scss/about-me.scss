@@ -1,0 +1,240 @@
+/************** ABOUT ME **************/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+.about-me-left {
+    float: left;
+    padding: 20px 10px;
+}
+.about-me-pic-container {
+    display: inline-block;
+    padding: 8px;
+    width: 151px;
+    height: 151px;
+    background: #f7f6f5;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    behavior: url(/pie/PIE.htc);
+    text-align: center;
+}
+.about-me-pic {
+    width: 100%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    behavior: url(/pie/PIE.htc);
+}
+.about-me-right {
+    float: left;
+    margin-left: 20px;
+    padding: 14px 0 0 4px;
+}
+.about-me-list {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+}
+.about-me-item {
+    padding: 0 0 6px 0;
+}
+.about-me-item-a,
+.my-skills {
+    font-family: open_sanssemibold, Arial, sans-serif;
+}
+.about-me-item-b {
+    font: 14px OpenSans-Regular, Arial, sans-serif;
+    padding: 0 0 0 4px;
+}
+.my-skills {
+    float: left;
+    margin: 11px 0 0 0;
+}
+.tag-list {
+    float: left;
+    width: 215px;
+    margin: 13px 0 0 14px;
+    padding: 0;
+    list-style: none;
+}
+.tag-item {
+    list-style: none;
+    display: inline-block;
+    font: 9px/16px open_sanssemibold, Arial, sans-serif;
+    color: #1e7465;
+    padding: 0 8px 0 6px;
+    margin: 0 13px 6px 0;
+    border: 1px solid #c5c5c5;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #e9e6e4;
+    background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    background-image: linear-gradient(bottom, #e9e6e4, #fbf9f9);
+    -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
+    behavior: url(/pie/PIE.htc);
+}
+.tag-item:before {
+    content: ' ';
+    position: absolute;
+    width: 14px;
+    height: 25px;
+    margin: -5px 0 0 -15px;
+    background-image: url("/img/arrow-tag.png");
+}
+/************** MAIN SITE CONTENT - work-experience **************/
+$spriteIcoWidth: 52px;
+$spriteIcoHeight: 52px;
+
+.work-experience {
+    position: relative;
+    padding: 18px 0;
+    margin: 0;
+    border-top: 1px solid #c2c2c2;
+}
+.work-experience-icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -26px;
+    width: $spriteIcoWidth;
+    height: $spriteIcoHeight;
+    background: #f7f7f7;
+    @include border-radius(50%);
+    box-shadow: -1px -1px 0 #c2c2c2, 1px 1px 0 #fff;
+}
+.no-borderradius .work-experience-icon {
+    border-radius: 50%;
+    behavior: url(/pie/PIE.htc);
+}
+.work-experience-content {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 82px;
+}
+.work-experience-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.work-experience-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+	background-image: url('/img/spritesheet.png');
+    background-repeat: no-repeat;
+}
+.csstransforms .work-experience-icon:before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.no-csstransforms .work-experience-icon:before {
+    margin: (($spriteIcoHeight / 2) - (18px / 2)) 0 0 (($spriteIcoWidth / 2) - (27px / 2));
+}
+.ico-case:before {
+	width: 27px;
+	height: 18px;
+    background-position: -95px -5px;
+}
+/////////////////////
+.education {
+    position: relative;
+    padding: 18px 0;
+    margin: 0;
+    border-top: 1px solid #c2c2c2;
+}
+.education-icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -26px;
+    width: $spriteIcoWidth;
+    height: $spriteIcoHeight;
+    background: #f7f7f7;
+    @include border-radius(50%);
+    box-shadow: -1px -1px 0 #c2c2c2, 1px 1px 0 #fff;
+}
+.no-borderradius .education-icon {
+    border-radius: 50%;
+    behavior: url(/pie/PIE.htc);
+}
+.education-content {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 82px;
+}
+.education-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.education-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+	background-image: url('/img/spritesheet.png');
+    background-repeat: no-repeat;
+}
+.csstransforms .education-icon:before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.ico-graguete:before {
+	width: 27px;
+	height: 18px;
+    background-position: -111px -79px;
+}
+.no-csstransforms .ico-graguete:before {
+    margin: (($spriteIcoHeight / 2) - (18px / 2)) 0 0 (($spriteIcoWidth / 2) - (27px / 2));
+}
+.ico-diploma:before {
+	width: 15px;
+	height: 20px;
+    background-position: -5px -79px;
+}
+.no-csstransforms .ico-diploma:before {
+    margin: (($spriteIcoHeight / 2) - (20px / 2)) 0 0 (($spriteIcoWidth / 2) - (15px / 2));
+}
+.ico-school:before {
+	width: 21px;
+	height: 21px;
+    background-position: -149px -68px;
+}
+.no-csstransforms .ico-school:before {
+    margin: (($spriteIcoHeight / 2) - (21px / 2)) 0 0 (($spriteIcoWidth / 2) - (21px / 2));
+}
+////////////
+.no-borders{
+    border: none;
+}
+//.work-experience:first-child {
+//    border-top: none;
+//}
+//.work-experience-list {
+//    margin: 0;
+//    padding: 0;
+//    list-style: none;
+//}
+//.work-experience-title {
+//    font-family: open_sanssemibold, Arial, sans-serif;
+//    padding-bottom: 6px;
+//}
+//.work-experiance-period {
+//    font: 14px open_sansregular, Arial, sans-serif;
+//}
+/************** MAIN SITE CONTENT - my-education **************/

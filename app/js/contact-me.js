@@ -5,7 +5,7 @@ var contactModule = (function(){
 	};
 
 	var _setUpListeners = function () {
-		$('#contact-me').on('submit', _submitForm); // отправка формы "связаться со мной"
+		$('#contact-me').on('submit', _submitForm);
 	};
 
 	var _submitForm = function(event) {
@@ -13,7 +13,7 @@ var contactModule = (function(){
 		event.preventDefault();
 		
         var form = $(this),
-            url = 'php/send-mail.php';
+            url = 'php/contact-me.php';
 
         // проверить форму на валидность
         if (!validator.validationForm(form)) return false;

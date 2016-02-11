@@ -17,6 +17,11 @@
   border: 1px solid #c5c5c5;
   border-radius: 5px; }
 
+.no-borderradius .projects-item {
+  border-radius: 5px;
+  position: relative;
+  behavior: url(/pie/PIE.htc); }
+
 .projects-hover, .projects-links {
   text-decoration: none;
   color: #727070;
@@ -54,6 +59,11 @@
   padding: 3px 5px;
   border: 1px solid #727070;
   border-radius: 5px; }
+
+.no-borderradius .projects-img-txt {
+  border-radius: 5px;
+  position: relative;
+  behavior: url(/pie/PIE.htc); }
 
 .projects-img {
   width: 100%; }
@@ -107,9 +117,14 @@
   transform: translate(-50%, -50%);
   border-radius: 50%; }
 
+.no-borderradius .polaroid {
+  border-radius: 50%;
+  position: relative;
+  behavior: url(/pie/PIE.htc); }
+
 .polaroid:before {
   content: '';
-  background: url("/img/spritesheet.png") no-repeat -170px -67px;
+  background: url("/img/spritesheet.png") no-repeat -148px -37px;
   width: 20px;
   height: 20px;
   display: block;

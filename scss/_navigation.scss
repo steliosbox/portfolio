@@ -1,0 +1,59 @@
+/********** ASIDE NAVIGATION **********/
+@mixin bg-gradient-c2($p, $c1, $c2) {
+    background-color: $c1;
+    background-image: -webkit-linear-gradient($p, $c1, $c2);
+    background-image: -moz-linear-gradient($p, $c1, $c2);
+    background-image: -o-linear-gradient($p, $c1, $c2);
+    background-image: linear-gradient($p, $c1, $c2);
+}
+.navigation {
+    margin-bottom: 33px;
+}
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #c3c2c2;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+            border-radius: 5px;
+    overflow: hidden;
+}
+.navigation-item {
+    border-top: 1px solid #c3c2c2;
+}
+.navigation-item:first-child {
+    border-top: none;
+}
+.navigation-link {
+    display: block;
+    padding: 17px 28px 17px 28px;
+    font-family: open_sanssemibold, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: #727070;
+    text-decoration: none;
+    @include bg-gradient-c2(bottom, #e7e5e4, #faf9f9);
+}
+.navigation-link:hover {
+    @include bg-gradient-c2(bottom, #e8e7e7, #c4c2c2);
+}
+nav.navigation .corrent-nav {
+    @include bg-gradient-c2(bottom, #7ce6cc, #42ba9c);
+}
+.no-cssgradients .navigation-link {
+    position: relative;
+    behavior: url(/pie/PIE.htc);
+    -pie-background: linear-gradient(#e7e5e4, #faf9f9);
+}
+.no-cssgradients .navigation-link:hover {
+    position: relative;
+    behavior: url(/pie/PIE.htc);
+    -pie-background: linear-gradient(#e8e7e7, #c4c2c2);
+}
+.no-cssgradients nav.navigation .corrent-nav {
+    position: relative;
+    behavior: url(/pie/PIE.htc);
+    -pie-background: linear-gradient(#7ce6cc, #42ba9c);
+}

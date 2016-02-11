@@ -8,41 +8,28 @@
   display: none;
   position: relative; }
 
+.bpopup-title {
+  position: absolute;
+  font: 12px open_sansregular, Arial, sans-serif;
+  top: -22px;
+  left: 20px; }
+
 .b-close {
   display: block;
   position: absolute;
   width: 14px;
   height: 14px;
-  background: url("/img/spritesheet2.png") no-repeat -115px -5px;
+  background: url("/img/spritesheet.png") no-repeat -46px -5px;
   top: 7px;
   right: 7px; }
 
-.popup-msg {
-  display: none;
-  margin: 10px 0;
-  padding: 5px 10px;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px; }
-
-.success-msg {
-  color: green;
-  border-color: green; }
-
-.error-msg {
-  color: red;
-  border-color: red; }
-
-.popup-blocks label {
+label {
   display: block;
   margin-bottom: 8px;
   border-radius: 5px;
   font: 14px open_sansregular, Arial, sans-serif; }
 
-.popup-blocks .input {
+.input {
   border: 1px solid #D6D5D3;
   border-radius: 5px;
   -o-border-radius: 5px;
@@ -55,7 +42,7 @@
   color: #9A9898;
   font: 12px open_sanslight, Arial, sans-serif; }
 
-.popup-blocks .textarea {
+.textarea {
   border: 1px solid #D6D5D3;
   border-radius: 5px;
   -o-border-radius: 5px;
@@ -67,6 +54,11 @@
   color: #9A9898;
   font: 12px open_sanslight, Arial, sans-serif;
   resize: none; }
+
+.error-field {
+  outline: none;
+  border: 1px solid #F00;
+  background: rgba(255, 0, 0, 0.25); }
 
 .popup-label-img {
   border: 1px solid #D6D5D3;
@@ -95,7 +87,7 @@
   content: '';
   display: block;
   position: absolute;
-  background: url("/img/spritesheet2.png") no-repeat -43px -140px;
+  background: url("/img/spritesheet.png") no-repeat -111px -108px;
   width: 26px;
   height: 18px;
   left: 50%;

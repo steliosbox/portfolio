@@ -92,85 +92,129 @@
 /************** MAIN SITE CONTENT - work-experience **************/
 .work-experience {
   position: relative;
-  padding: 25px 0 25px 80px;
+  padding: 18px 0;
   margin: 0;
-  border-top: 1px solid #666; }
+  border-top: 1px solid #c2c2c2; }
 
-.work-experience:first-child {
-  border-top: none; }
+.work-experience-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  margin-top: -26px;
+  width: 52px;
+  height: 52px;
+  background: #f7f7f7;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: -1px -1px 0 #c2c2c2, 1px 1px 0 #fff; }
+
+.no-borderradius .work-experience-icon {
+  border-radius: 50%;
+  behavior: url(/pie/PIE.htc); }
+
+.work-experience-content {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 82px; }
 
 .work-experience-list {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.work-experience-title {
-  font-family: open_sanssemibold, Arial, sans-serif;
-  padding-bottom: 6px; }
+.work-experience-icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat; }
 
-.work-experiance-period,
-.education-period {
-  font: 14px open_sansregular, Arial, sans-serif; }
+.csstransforms .work-experience-icon:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-/************** MAIN SITE CONTENT - my-education **************/
+.no-csstransforms .work-experience-icon:before {
+  margin: 17px 0 0 12.5px; }
+
+.ico-case:before {
+  width: 27px;
+  height: 18px;
+  background-position: -95px -5px; }
+
 .education {
-  padding: 25px 0 25px 80px;
+  position: relative;
+  padding: 18px 0;
   margin: 0;
-  border-top: 1px solid #666;
-  position: relative; }
+  border-top: 1px solid #c2c2c2; }
 
-.education:first-child {
-  border-top: none; }
+.education-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  margin-top: -26px;
+  width: 52px;
+  height: 52px;
+  background: #f7f7f7;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: -1px -1px 0 #c2c2c2, 1px 1px 0 #fff; }
+
+.no-borderradius .education-icon {
+  border-radius: 50%;
+  behavior: url(/pie/PIE.htc); }
+
+.education-content {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 82px; }
 
 .education-list {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.education-title {
-  font-family: open_sansregular, Arial, sans-serif;
-  padding-bottom: 6px; }
-
-/********** ICONS  **********/
-.sprite-box {
-  position: absolute;
-  top: 50%;
-  left: 35px;
-  transform: translate(-50%, -50%); }
-
-.sprite-case {
-  width: 52px;
-  height: 53px;
-  display: block;
-  position: relative;
-  background: #f7f7f7;
-  box-shadow: -1px -1px 0 #c2c2c2, 1px 1px 0 #fff;
-  border-radius: 50%; }
-
-.sprite-case:before {
+.education-icon:before {
   content: '';
   display: block;
   position: absolute;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat; }
+
+.csstransforms .education-icon:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.ico-case:before {
-  width: 21px;
-  height: 19px;
-  background: url("/img/spritesheet.png") no-repeat -5px -55px; }
-
 .ico-graguete:before {
-  background: url("/img/spritesheet.png") no-repeat -132px -87px;
   width: 27px;
-  height: 18px; }
+  height: 18px;
+  background-position: -111px -79px; }
+
+.no-csstransforms .ico-graguete:before {
+  margin: 17px 0 0 12.5px; }
 
 .ico-diploma:before {
-  background: url("/img/spritesheet.png") no-repeat -26px -87px;
   width: 15px;
-  height: 20px; }
+  height: 20px;
+  background-position: -5px -79px; }
+
+.no-csstransforms .ico-diploma:before {
+  margin: 16px 0 0 18.5px; }
 
 .ico-school:before {
-  background: url("/img/spritesheet.png") no-repeat -170px -98px;
   width: 21px;
-  height: 21px; }
+  height: 21px;
+  background-position: -149px -68px; }
+
+.no-csstransforms .ico-school:before {
+  margin: 15.5px 0 0 15.5px; }
+
+.no-borders {
+  border: none; }
+
+/************** MAIN SITE CONTENT - my-education **************/

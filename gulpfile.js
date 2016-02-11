@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
+var jade        = require('gulp-jade');
 
 // Static Server + watching scss/html files
 gulp.task('server', ['sass'], function() {
@@ -9,16 +10,27 @@ gulp.task('server', ['sass'], function() {
         server: "app"
     });
 
-    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("jade/**/*.jade", ['jade']);
+    gulp.watch("scss/*.scss", ['sass']);
     gulp.watch(["app/css/*.css","app/*.html"]).on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("app/scss/*.scss")
+    return gulp.src("scss/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['server', 'sass']);
+
+gulp.task('jade', function() {
+  gulp.src('jade/**/*.jade')
+    .pipe(jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest('app/'))
+});
+
+
+gulp.task('default', ['server', 'sass', 'jade']);

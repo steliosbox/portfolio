@@ -1,5 +1,5 @@
 var myModule = (function() {
-        
+
     var init = function() {
         _setUpListners();
     };
@@ -15,51 +15,46 @@ var myModule = (function() {
 
         var form = $(this),
             url = 'php/add-project.php';
-        
+
         // проверить форму на валидность
         if (!validator.validationForm(form)) return false;
-        
+
         // передаем данные формы PHP обработчику
         var ajaxAnswer = _ajaxRequest(form, url);
-        
-        // Выводим сообщение о полученные данных с PHP обработчика
-        ajaxAnswer.done(function(answer) {
-            
-            if(answer.status === 'success') {
-                
-                form.trigger('reset');
-                
-                $('.popup-msg').text(answer.message).addClass('success-msg').show();
-            } else {
-                $('.popup-msg').text(answer.message).addClass('error-msg').show();
-            }            
-        }).fail(function() {
-            
-            console.log('Произошла ошибка при передаче данных PHP');
-            
-            $('.popup-error-msg').text('Произошла ошибка при передаче данных PHP').addClass('error').show();
-        });        
+
+        if(ajaxAnswer) {
+            // Выводим сообщение о полученные данных с PHP обработчика
+            ajaxAnswer.done(function(answer) {
+
+                if (answer.status === 'success') {
+
+                    form.trigger('reset');
+
+                    $('.popup-msg').text(answer.message).addClass('success-msg').show();
+                } else {
+                    $('.popup-msg').text(answer.message).addClass('error-msg').show();
+                }
+            }).fail(function() {
+
+                console.log('Произошла ошибка при передаче данных PHP');
+
+                $('.popup-error-msg').text('Произошла ошибка при передаче данных PHP').addClass('error').show();
+            });
+        }
     };
-    
+
     var _ajaxRequest = function(form, url) {
-        
+
         var data = form.serialize();
-        
+
         return $.ajax({
             url: url,
             type: 'POST',
             dataType: 'json',
             data: data
         });
-     
-//        .fail(function() {
-//          console.log('error');  
-//        })
-//        .always(function() {
-//            console.log('complete');  
-//        });
     };
-    
+
     return {
         init: init
     };

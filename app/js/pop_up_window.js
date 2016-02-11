@@ -18,6 +18,9 @@ var myModule = (function() {
             escClose: true,
             onClose: function() {
                 $('.popup-info-msg').text('').hide();
+                this.find('.error-field').removeClass('error-field');
+                document.getElementById('add-project-form').reset();
+//                this.find('.input, .textarea').trigger('hideToolTip');
             }
         });
     };

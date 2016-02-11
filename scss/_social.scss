@@ -1,0 +1,98 @@
+/********** SOCIAL MENU **********/
+$socialWidth: 40px;
+$socialHeight: 40px;
+
+.social {
+    margin: 25px 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    line-height: 0;
+    float: right;
+}
+.social-item {
+    display: inline-block;
+    margin-left: 12px;
+}
+.social-item-fb {
+    margin-left: 0;
+}
+.social-link {
+    width: $socialWidth;
+    height: $socialHeight;
+    display: block;
+    position: relative;
+    background: #E7E7E7;
+    @include border-radius(50%);
+}
+.no-borderradius .social-link {
+    border-radius: 50%;
+    position: relative;
+    behavior: url(/pie/PIE.htc);
+}
+.csstransforms .social-link:before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.social-link-fb:before {
+    content: '';
+    display: block;
+    position: absolute;
+	width: 11px;
+	height: 22px;
+	background: url('/img/spritesheet.png') no-repeat -106px -47px;
+}
+.no-csstransforms .social-link-fb:before{
+    top: (($socialHeight / 2) - (22px / 2));
+    left: (($socialWidth / 2) - (11px / 2));
+}
+.social-item-fb:hover .social-link-fb:before {
+    background-position: -127px -47px;
+}
+
+.social-link-vk:before {
+    content: '';
+    display: block;
+    position: absolute;
+	width: 16px;
+	height: 19px;
+	background: url('/img/spritesheet.png') no-repeat -179px -37px;
+}
+.no-csstransforms .social-link-vk:before{
+    top: (($socialHeight / 2) - (19px / 2));
+    left: (($socialWidth / 2) - (16px / 2));
+}
+.social-item-vk:hover .social-link-vk:before {
+    background-position: -181px -66px;
+}
+.social-link-tw:before {
+    content: '';
+    display: block;
+    position: absolute;
+	width: 25px;
+	height: 18px;
+	background: url('/img/spritesheet.png') no-repeat -99px -162px;
+}
+.no-csstransforms .social-link-tw:before{
+    top: (($socialHeight / 2) - (18px / 2));
+    left: (($socialWidth / 2) - (25px / 2));
+}
+.social-item-tw:hover .social-link-tw:before {
+    background-position: -134px -162px;
+}
+.social-link-github:before {
+    content: '';
+    display: block;
+    position: absolute;
+	width: 30px;
+	height: 23px;
+	background: url('/img/spritesheet.png') no-repeat -31px -79px;
+}
+.no-csstransforms .social-link-github:before{
+    top: (($socialHeight / 2) - (23px / 2));
+    left: (($socialWidth / 2) - (30px / 2));
+}
+.social-item-github:hover .social-link-github:before {
+    background-position: -71px -79px;
+}

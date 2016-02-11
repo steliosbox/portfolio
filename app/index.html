@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="/bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/about-me.css">
-    <!--if lt IE 9
-    <script src='bower/html5shiv/dist/html5shiv.js'></script>
-    <script src='app/bower/jquery-placeholder/jquery.placeholder.js'</script>
+    <script src="js/modernizr-custom.js"></script>
+    <!--if lt IE 9<script src='/bower/jquery-placeholder/jquery.placeholder.js'</script>
     -->
     <title>Моё портфолио</title>
   </head>
@@ -28,10 +27,10 @@
       <header class="header">
         <div class="header-inner clearfix"><a href="/" class="header-logo"><img src="/img/logo.png" alt="Логотип сайта портфoлио"></a>
           <ul class="social">
-            <li class="social-item"><a href="https://www.facebook.com/baglaridis" target="_blank" class="social-link-fb"><span class="social-sprite social-sprite-fb text-hide">facebook</span></a></li>
-            <li class="social-item"><a href="http://vk.com/s.baglaridis" target="_blank" class="social-link-vk"><span class="social-sprite social-sprite-vk text-hide">vkontakte</span></a></li>
-            <li class="social-item"><a href="#u_menya_net_tw" target="_blank" class="social-link-tw"><span class="social-sprite social-sprite-tw text-hide">twitter</span></a></li>
-            <li class="social-item"><a href="https://github.com/steliosbox" target="_blank" class="social-link-github"><span class="social-sprite social-sprite-github text-hide">github</span></a></li>
+            <li class="social-item social-item-fb"><a href="https://www.facebook.com/baglaridis" target="_blank" class="social-link social-link-fb text-hide">test</a></li>
+            <li class="social-item social-item-vk"><a href="http://vk.com/s.baglaridis" target="_blank" class="social-link social-link-vk text-hide">vkontakte</a></li>
+            <li class="social-item social-item-tw"><a href="#u_menya_net_tw" target="_blank" class="social-link social-link-tw text-hide">twitter</a></li>
+            <li class="social-item social-item-github"><a href="https://github.com/steliosbox" target="_blank" class="social-link social-link-github text-hide">github</a></li>
           </ul>
         </div>
       </header>
@@ -85,45 +84,55 @@
             <section class="section">
               <h3 class="section-title">Опыт работы</h3>
               <div class="section-content clearfix">
-                <div class="work-experience">
-                  <div class="sprite-box"><i class="sprite-case ico-case"></i></div>
-                  <ul class="work-experience-list">
-                    <li class="work-experience-title">Туристическая компания "Ambotis Holidays" - Кординатор</li>
-                    <li class="work-experiance-period">2014 - По сей день</li>
-                  </ul>
+                <div class="work-experience clearfix no-borders">
+                  <div class="work-experience-icon ico-case"></div>
+                  <div class="work-experience-content">
+                    <ul class="work-experience-list">
+                      <li class="work-experience-item-title">Туристическая компания "Ambotis Holidays" - Кординатор</li>
+                      <li class="work-experiance-item-period">2014 - По сей день</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="work-experience no-borders">
-                  <div class="sprite-box"><i class="sprite-case ico-case"></i></div>
-                  <ul class="work-experience-list">
-                    <li class="work-experience-title">Туристическая компания "Beleon Tours" - Главный представитель региона</li>
-                    <li class="work-experiance-period">2011 - 2013</li>
-                  </ul>
+                <div class="work-experience clearfix">
+                  <div class="work-experience-icon ico-case"></div>
+                  <div class="work-experience-content">
+                    <ul class="work-experience-list">
+                      <li class="work-experience-item-title">Туристическая компания "Beleon Tours" - Главный представитель региона</li>
+                      <li class="work-experiance-item-period">2011 - 2013</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </section>
             <section class="section">
               <h3 class="section-title">Образование</h3>
               <div class="section-content clearfix">
-                <div class="education">
-                  <div class="sprite-box"><i class="sprite-case ico-school"></i></div>
-                  <ul class="education-list">
-                    <li class="education-title">Школа № 99, Tbilisi</li>
-                    <li class="education-period">1990 - 2000</li>
-                  </ul>
+                <div class="education clearfix no-borders">
+                  <div class="education-icon ico-school"></div>
+                  <div class="education-content">
+                    <ul class="education-list">
+                      <li class="education-item-title">Школа № 99, Tbilisi</li>
+                      <li class="education-item-period">1990 - 2000</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="education">
-                  <div class="sprite-box"><i class="sprite-case ico-graguete"></i></div>
-                  <ul class="education-list">
-                    <li class="education-title">Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
-                    <li class="education-period">2005 - 2007</li>
-                  </ul>
+                <div class="education clearfix">
+                  <div class="education-icon ico-graguete"></div>
+                  <div class="education-content">
+                    <ul class="education-list">
+                      <li class="education-item-title">Школа туризма и гостичечного бизнеса, Греция - о.Крит</li>
+                      <li class="education-item-period">2005 - 2007        </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="education">
-                  <div class="sprite-box"><i class="sprite-case ico-diploma"></i></div>
-                  <ul class="education-list">
-                    <li class="education-title">Курсы LoftSchool.ru - Онлайн</li>
-                    <li class="education-period">Январь 2016 по сей день</li>
-                  </ul>
+                <div class="education clearfix">
+                  <div class="education-icon ico-diploma"></div>
+                  <div class="education-content">
+                    <ul class="education-list">
+                      <li class="education-item-title">Курсы LoftSchool.ru - Онлайн</li>
+                      <li class="education-item-period">Январь 2016 по сей день</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </section>
