@@ -49,19 +49,14 @@ button:focus {
     border-radius: 3px;
     behavior: url(/pie/PIE.htc);
 }
-.contact-form-input {
-    margin: 10px 0 10px;
-}
-.contact-form-input button {
+.button {
     width: 125px;
     height: 40px;
+    margin: 10px 0 10px;
     font: 14px open_sanssemibold, Arial, sans-serif;
     padding-bottom: 7px;
     position: relative;
     border: 1px solid #e7e7e7;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
     border-radius: 5px;
     background-color: #e9e6e4;
     background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9);
@@ -71,8 +66,7 @@ button:focus {
     -pie-background: linear-gradient(#e9e6e4, #fbf9f9);
     behavior: url(/pie/PIE.htc);
 }
-.contact-form-input button:hover {
-    position: relative;
+.button-send {
     text-shadow: 0 1px rgba(255, 255, 255, 0.75);
     background-color: #3aa087;
     background-image: -webkit-linear-gradient(bottom, #3aa087, #5fdcbd);
@@ -82,10 +76,10 @@ button:focus {
     -pie-background: linear-gradient(#3aa087, #5fdcbd);
     behavior: url(/pie/PIE.htc);
 }
-.contact-form-input button:active {
+.button:hover {
     position: relative;
     color: #eeedec;
-    text-shadow: 0 1px rgba(102, 101, 101, 0.75);
+//    text-shadow: 0 1px rgba(102, 101, 101, 0.75);
     background-color: #497563;
     background-image: -webkit-linear-gradient(bottom, #497563, #79bba0);
     background-image: -moz-linear-gradient(bottom, #497563, #79bba0);

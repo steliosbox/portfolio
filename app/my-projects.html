@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="/css/bpopup.css">
     <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
     <script src="js/modernizr-custom.js"></script>
-    <!--if lt IE 9<script src='/bower/jquery-placeholder/jquery.placeholder.js'</script>
-    -->
+    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
     <title>Мои работы</title>
   </head>
   <body>
@@ -55,7 +54,7 @@
               </ul>
             </div>
           </aside>
-          <div class="content"> 
+          <div class="content">
             <section class="section top-margin-none">
               <h3 class="section-title">Мои работы</h3>
               <div class="my-projects clearfix">
@@ -96,10 +95,10 @@
                 </ul>
               </div>
             </section><!-- ПОПАП ФОРМА - НАЧАЛО -->
-            <div id="bpopup" class="bpopup">
-              <form action="add_project.php" method="post" id="add-project-form">
+            <div class="bpopup">
+              <form action="add_project.php" method="post" class="add-project-form">
                 <div class="bpopup-title">Добавление проекта</div><a href="#" class="b-close"></a>
-                <div class="popup-msg">msg box</div>
+                <div class="status-msg">msg box</div>
                 <div class="popup-blocks">
                   <label for="project-name">Название проекта</label>
                   <input type="text" name="project-name" placeholder="Введите название" qtip-position="left" qtip-content="Введите название проекта" id="project-name" class="input">
@@ -107,7 +106,7 @@
                 <div class="popup-blocks">
                   <label for="project-image">Картинка проекта</label>
                   <label for="project-image" class="popup-label-img clearfix"><span class="popup-label-img-txt">Загрузите изображение</span><span class="popup-label-img-ico"></span>
-                    <input type="file" name="project-image" qtip-position="left" qtip-content="Изображение" id="project-image" class="project-image">
+                    <input type="file" name="project-file" qtip-position="left" qtip-content="Изображение" id="project-file" class="project-file">
                   </label>
                 </div>
                 <div class="popup-blocks">
@@ -138,8 +137,7 @@
   <script src="/bower/jquery/dist/jquery.js"></script>
   <script src="/bower/bPopup/jquery.bpopup.js"></script>
   <script src="/bower/qtip2/jquery.qtip.js"></script>
-  <!-- script(src="/bower/qtip2/imagesloaded.pkg.min.js")-->
   <script src="/js/pop_up_window.js"></script>
-  <script src="/js/add-project.js"></script>
+  <script src="/js/ajax-requests.js"></script>
   <script src="/js/validator.js"></script>
 </html>

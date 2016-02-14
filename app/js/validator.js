@@ -2,14 +2,14 @@ var validator = (function() {
 
     var initial = function() {
         _setUpListeners();
-    }
-
+    }    
+    
     var _setUpListeners = function() {
         $('form').on('keydown', '.error-field', _removeErr);
         $('form').on('reset', _clearForm);
         $('.b-close').on('click', _clearForm);
-    }
-
+    };
+    
     var _removeErr = function() {
         $(this).removeClass('error-field');
     }
@@ -18,6 +18,7 @@ var validator = (function() {
         var form = $(this);
         form.find('.error-field').removeClass('error-field');
         form.find('.input, .textarea').trigger('hideToolTip');
+        $('.status-msg').text("").removeClass('success-msg').removeClass('error-msg').hide();
     }
 
     var _viewTooltip = function(input, location) {
@@ -38,7 +39,6 @@ var validator = (function() {
                     at: 'center right'
                 }
                 break;
-
         }
 
         // инициализируем тултип

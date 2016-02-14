@@ -1,9 +1,9 @@
 section.section.top-margin-none
     h3.section-title У вас интересный проект? Напишите мне
     .section-content
-        form(action="/contact.php" method="post")#contact-me
-            .contact-form#contact-form
-                .popup-msg msg box
+        form(action="/contact.php" method="post").contact-me
+            .contact-form
+                .status-msg msg box
                 .contact-form-top.clearfix
                     .contact-form-name
                         label(for="name") Имя
@@ -13,7 +13,7 @@ section.section.top-margin-none
                         input(type="text" name="email" placeholder="Куда мне писать" qtip-position='right' qtip-content='Введите email').input#email
                 .contact-form-msg
                     label(for="message") Сообщение
-                    textarea(name="textarea" placeholder="Кратко в чем суть" qtip-position='left' qtip-content='Введите вопрос').textarea#message
+                    textarea(name="message" placeholder="Кратко в чем суть" qtip-position='left' qtip-content='Введите вопрос').textarea#message
                 .captcha.clearfix
                     .captcha-img
                         label(for="captch-contact-me")
@@ -22,6 +22,6 @@ section.section.top-margin-none
                         input(type="text" name="captcha" placeholder="Введите код с картинки" qtip-position='right' qtip-content='код капчи').input#captch-contact-me
                 .contact-form-input.clearfix
                     .contact-form-input-send
-                        button(type="submit" name="send")#contact-submit Отправить
+                        button(type="submit" name="send").button.button-send Отправить
                     .contact-form-input-reset
-                        button(type="reset" name="reset") Очистить
+                        button(type="reset" name="reset").button.button-reset Очистить

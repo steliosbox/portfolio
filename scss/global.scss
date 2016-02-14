@@ -23,34 +23,35 @@ body {
 }
 html {
     background: url('/img/2048x1152.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
-// стили - попап мессаг
-.popup-msg {
+// стили - Message боксы
+.status-msg {
     display: none;
     margin: 10px 0;
     padding: 5px 10px;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 .success-msg {
     color: green;
-    border-color: green;
-//    background: rgba(0,128,0,15);
+    border-color: green;   
 }
 .error-msg {
     color: red;
     border-color: red;
-//    background: rgba(0,225,0,15);
 }
+.rgba{
+    .error-msg {
+        background: rgba(185,0,0,.15);
+    }
+    .success-msg {
+        background: rgba(0,185,0,.15);
+    }
+} 
+        
 
 @import 'tricks';
 @import 'grid';

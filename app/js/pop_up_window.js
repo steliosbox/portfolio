@@ -7,20 +7,22 @@ var myModule = (function() {
     var _setUpListners = function() {
 
         // прослушка событий...
-        $('#add-project-link').on('click', _showPopUp);
+        $('.add-project-link').on('click', _showPopUp);
     };
 
     var _showPopUp = function(e) {
 
         e.preventDefault();
 
-        $('#bpopup').bPopup({
+        $('.bpopup').bPopup({
             escClose: true,
             onClose: function() {
-                $('.popup-info-msg').text('').hide();
-                this.find('.error-field').removeClass('error-field');
-                document.getElementById('add-project-form').reset();
-//                this.find('.input, .textarea').trigger('hideToolTip');
+//                $(this).find('.error-field').removeClass('error-field');      
+//                $(this).find('.status-msg').removeClass('success-msg').hide();
+                $('.add-project-form').find('.error-field').removeClass('error-field');      
+                $('.status-msg').text("").removeClass('success-msg').removeClass('error-msg').hide();
+                this.find('.input, .textarea').trigger('hideToolTip');
+                this.find('.input, .textarea').val('');
             }
         });
     };

@@ -1,9 +1,9 @@
 <!-- ПОПАП ФОРМА - НАЧАЛО -->
-.bpopup#bpopup
-    form(action="add_project.php" method="post")#add-project-form
+.bpopup
+    form(action="add_project.php" method="post").add-project-form
         .bpopup-title Добавление проекта
         a(href="#").b-close
-        .popup-msg msg box
+        .status-msg msg box
         .popup-blocks
             label(for="project-name") Название проекта
             input(type="text" name="project-name" placeholder="Введите название" qtip-position='left' qtip-content='Введите название проекта').input#project-name
@@ -12,7 +12,7 @@
             label(for="project-image").popup-label-img.clearfix
                 span.popup-label-img-txt Загрузите изображение
                 span.popup-label-img-ico
-                input(type="file" name="project-image" qtip-position='left' qtip-content='Изображение').project-image#project-image
+                input(type="file" name="project-file" qtip-position='left' qtip-content='Изображение').project-file#project-file
         .popup-blocks
             label(for="project-url") URL проекта
             input(type="text" name="project-url" placeholder="Добавьте ссылку" qtip-position='left' qtip-content='Ссылка на проект').input#project-url

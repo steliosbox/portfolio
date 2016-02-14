@@ -2,6 +2,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var jade        = require('gulp-jade');
+var plumber = require('gulp-plumber');
 
 // Static Server + watching scss/html files
 gulp.task('server', ['sass'], function() {
@@ -18,6 +19,7 @@ gulp.task('server', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("scss/*.scss")
+        .pipe(plumber())
         .pipe(sass())
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
@@ -26,6 +28,7 @@ gulp.task('sass', function() {
 
 gulp.task('jade', function() {
   gulp.src('jade/**/*.jade')
+    .pipe(plumber())
     .pipe(jade({
       pretty: true
     }))
