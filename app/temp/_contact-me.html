@@ -1,0 +1,41 @@
+
+<section class="section top-margin-none">
+  <h3 class="section-title">У вас интересный проект? Напишите мне</h3>
+  <div class="section-content">
+    <form action="/contact.php" method="post" class="contact-me">
+      <div class="contact-form">
+        <div class="status-msg">msg box</div>
+        <div class="contact-form-top clearfix">
+          <div class="contact-form-name">
+            <label for="name">Имя</label>
+            <input type="text" name="name" placeholder="Как к Вам оброщаться" qtip-position="left" qtip-content="Введите имя" id="name" class="input"/>
+          </div>
+          <div class="contact-form-email">
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Введите email" id="email" class="input"/>
+          </div>
+        </div>
+        <div class="contact-form-msg">
+          <label for="message">Сообщение</label>
+          <textarea name="message" placeholder="Кратко в чем суть" qtip-position="left" qtip-content="Введите вопрос" id="message" class="textarea"></textarea>
+        </div>
+        <div class="captcha clearfix">
+          <div class="captcha-img">
+            <label for="captch-contact-me"><img src="/img/captcha.png" alt="captch"/></label>
+          </div>
+          <div class="captcha-input">
+            <input type="text" name="captcha" placeholder="Введите код с картинки" qtip-position="right" qtip-content="код капчи" id="captch-contact-me" class="input"/>
+          </div>
+        </div>
+        <div class="contact-form-input clearfix">
+          <div class="contact-form-input-send">
+            <button type="submit" name="send" class="button button-send">Отправить</button>
+          </div>
+          <div class="contact-form-input-reset">
+            <button type="reset" name="reset" class="button button-reset">Очистить</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

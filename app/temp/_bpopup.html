@@ -1,0 +1,28 @@
+<!-- ПОПАП ФОРМА - НАЧАЛО -->
+<div class="bpopup">
+  <form action="add_project.php" method="post" class="add-project-form">
+    <div class="bpopup-title">Добавление проекта</div><a href="#" class="b-close"></a>
+    <div class="status-msg">msg box</div>
+    <div class="popup-blocks">
+      <label for="project-name">Название проекта</label>
+      <input type="text" name="project-name" placeholder="Введите название" qtip-position="left" qtip-content="Введите название проекта" id="project-name" class="input"/>
+    </div>
+    <div class="popup-blocks">
+      <label for="project-image">Картинка проекта</label>
+      <label for="project-image" class="popup-label-img clearfix"><span class="popup-label-img-txt">Загрузите изображение</span><span class="popup-label-img-ico"></span>
+        <input type="file" name="project-file" qtip-position="left" qtip-content="Изображение" id="project-file" class="project-file"/>
+      </label>
+    </div>
+    <div class="popup-blocks">
+      <label for="project-url">URL проекта</label>
+      <input type="text" name="project-url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="Ссылка на проект" id="project-url" class="input"/>
+    </div>
+    <div class="popup-blocks">
+      <label for="project-desc">Описание</label>
+      <textarea type="textarea" name="project-desc" placeholder="Пара слов о Вашем проекте" qtip-position="left" qtip-content="Описание проекта" id="project-desc" class="textarea"></textarea>
+    </div>
+    <div class="popup-blocks popup-blocks-submit">
+      <button type="submit" name="project-submit" id="project-submit" class="popup-submit">Добавить</button>
+    </div>
+  </form>
+</div>

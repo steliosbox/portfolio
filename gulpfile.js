@@ -8,7 +8,8 @@ var plumber = require('gulp-plumber');
 gulp.task('server', ['sass'], function() {
 
     browserSync.init({
-        server: "app"
+//        server: "app"
+        proxy: "http://portfolio/"
     });
 
     gulp.watch("jade/**/*.jade", ['jade']);
