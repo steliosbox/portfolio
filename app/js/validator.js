@@ -75,8 +75,8 @@ var validator = (function() {
     // добавим функцию валидации - пробежимся по всем элементам формы
     var validationForm = function(form) {
 
-        // возьмём все элементы формы
-        var inputs = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
+        // возьмём все элементы формы input[type="file"], 
+        var inputs = form.find('input, textarea').not('input[type="hidden"], input[type="submit"]'),
             valid = true;
 
         $.each(inputs, function(index, val) {
@@ -85,7 +85,13 @@ var validator = (function() {
                 pos = element.attr('qtip-position');
 
             if (!val.length) {
-
+    
+                    var pr = $(".project-file").val();
+                    
+                    if(!pr.length){
+                        $(".popup-label-img").addClass('error-field');
+                    }
+                
                 element.addClass('error-field');
 
                 _viewTooltip(element, pos);

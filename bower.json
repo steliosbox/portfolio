@@ -1,9 +1,15 @@
 {
-    "name": "portfolio",
-    "dependencies": {
-        "bPopup": "~0.11.0",
-        "jquery-placeholder": "~2.3.1",
-        "normalize-css": "~3.0.3",
-        "qtip2": "~2.2.1"
-    }
+  "name": "portfolio",
+  "dependencies": {
+    "jquery-placeholder": "~2.3.1",
+    "normalize-css": "~3.0.3",
+    "qtip2": "~2.2.1"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.1",
+    "bPopup": "bpopup#^0.11.0",
+    "normalize-css": "normalize.css#^3.0.3",
+    "jquery.placeholder": "^0.2.4",
+    "qtip2": "^2.2.1"
+  }
 }

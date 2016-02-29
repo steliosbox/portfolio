@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="/css/bpopup.css">
     <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
     <script src="js/modernizr-custom.js"></script>
-    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
     <title>Мои работы</title>
   </head>
   <body>
@@ -104,8 +103,8 @@
                   <input type="text" name="project-name" placeholder="Введите название" qtip-position="left" qtip-content="Введите название проекта" id="project-name" class="input">
                 </div>
                 <div class="popup-blocks">
-                  <label for="project-image">Картинка проекта</label>
-                  <label for="project-image" class="popup-label-img clearfix"><span class="popup-label-img-txt">Загрузите изображение</span><span class="popup-label-img-ico"></span>
+                  <label for="project-file">Картинка проекта</label>
+                  <label for="project-file" class="popup-label-img clearfix"><span class="popup-label-img-txt">Загрузите изображение</span><span class="popup-label-img-ico"></span>
                     <input type="file" name="project-file" qtip-position="left" qtip-content="Изображение" id="project-file" class="project-file">
                   </label>
                 </div>
@@ -135,9 +134,11 @@
   </body>
   <!-- JS-->
   <script src="/bower/jquery/dist/jquery.js"></script>
+  <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
   <script src="/bower/bPopup/jquery.bpopup.js"></script>
   <script src="/bower/qtip2/jquery.qtip.js"></script>
   <script src="/js/pop_up_window.js"></script>
   <script src="/js/ajax-requests.js"></script>
   <script src="/js/validator.js"></script>
+  <script src="/js/file-upload.js"></script>
 </html>

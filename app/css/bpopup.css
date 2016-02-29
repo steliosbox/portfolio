@@ -55,11 +55,6 @@ label {
   font: 12px open_sanslight, Arial, sans-serif;
   resize: none; }
 
-.error-field {
-  outline: none;
-  border: 1px solid #F00;
-  background: rgba(255, 0, 0, 0.25); }
-
 .popup-label-img {
   border: 1px solid #D6D5D3;
   color: #9A9898;
@@ -97,7 +92,10 @@ label {
 .popup-blocks input[type="file"] {
   opacity: 0;
   font-size: 0;
-  height: 0; }
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 0; }
 
 .popup-blocks-submit {
   margin-top: 8px; }
@@ -139,3 +137,8 @@ label {
 
 button:focus {
   outline: none; }
+
+.error-field {
+  outline: none;
+  border: 1px solid #F00;
+  background: rgba(255, 0, 0, 0.25); }

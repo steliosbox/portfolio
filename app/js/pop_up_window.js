@@ -23,6 +23,9 @@ var myModule = (function() {
                 $('.status-msg').text("").removeClass('success-msg').removeClass('error-msg').hide();
                 this.find('.input, .textarea').trigger('hideToolTip');
                 this.find('.input, .textarea').val('');
+                $('.project-file').trigger('hideToolTip');
+                $('.popup-label-img').removeClass('error-field');
+                $('.popup-label-img-txt').text('Загрузите изображение');
             }
         });
     };
